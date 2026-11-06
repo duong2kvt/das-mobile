@@ -1,0 +1,20 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="check-circle" filter="url(#filter0_g_0_279)">
+<g id="Icon (Stroke)">
+<path d="M28.0002 16.0026C28.0002 9.37519 22.6276 4.0026 16.0002 4.0026C9.37275 4.0026 4.00016 9.37519 4.00016 16.0026C4.00016 22.63 9.37275 28.0026 16.0002 28.0026C22.6276 28.0026 28.0002 22.63 28.0002 16.0026ZM22.9429 11.0599C22.4222 10.5392 21.5782 10.5392 21.0575 11.0599L14.0002 18.1172L10.9429 15.0599C10.4222 14.5392 9.57815 14.5392 9.05745 15.0599C8.53676 15.5806 8.53676 16.4246 9.05745 16.9453L13.0575 20.9453C13.5782 21.466 14.4222 21.466 14.9429 20.9453L22.9429 12.9453C23.4636 12.4246 23.4636 11.5806 22.9429 11.0599Z" fill-rule="evenodd" clip-rule="evenodd" fill="#79C724"/>
+<path d="M16.0002 4.0026C22.6276 4.0026 28.0002 9.37519 28.0002 16.0026C28.0002 22.63 22.6276 28.0026 16.0002 28.0026C9.37275 28.0026 4.00016 22.63 4.00016 16.0026C4.00016 9.37519 9.37275 4.0026 16.0002 4.0026ZM16.0002 30.6693C24.1003 30.6693 30.6668 24.1028 30.6668 16.0026C30.6668 7.90243 24.1003 1.33594 16.0002 1.33594C7.89999 1.33594 1.3335 7.90243 1.3335 16.0026C1.3335 24.1028 7.89999 30.6693 16.0002 30.6693Z" fill-rule="evenodd" clip-rule="evenodd" fill="#79C724"/>
+<path d="M21.0575 11.0599C21.5782 10.5392 22.4222 10.5392 22.9429 11.0599C23.4636 11.5806 23.4636 12.4246 22.9429 12.9453L14.9429 20.9453C14.4222 21.466 13.5782 21.466 13.0575 20.9453L9.05745 16.9453C8.53676 16.4246 8.53676 15.5806 9.05745 15.0599C9.57815 14.5392 10.4222 14.5392 10.9429 15.0599L14.0002 18.1172L21.0575 11.0599Z" fill="white"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_g_0_279" x="-0.5" y="-0.5" width="33" height="33" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feTurbulence type="fractalNoise" baseFrequency="0.99900001287460327 0.99900001287460327" numOctaves="3" seed="363" />
+<feDisplacementMap in="shape" scale="1" xChannelSelector="R" yChannelSelector="G" result="displacedImage" width="100%" height="100%" />
+<feMerge result="effect1_texture_0_279">
+<feMergeNode in="displacedImage"/>
+</feMerge>
+</filter>
+</defs>
+</svg>

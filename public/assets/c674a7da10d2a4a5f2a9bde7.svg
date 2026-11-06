@@ -1,0 +1,11 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="480" height="480" viewBox="0 0 480 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="L&#195;&#173;ght" style="mix-blend-mode:screen">
+<path d="M254.38 205.273L300 0L180 0L225.62 205.273L112.72 27.8733L27.8667 112.713L205.273 225.613L0 180L0 300L205.273 254.38L27.8733 367.28L112.713 452.133L225.613 274.727L180 480H300L254.38 274.727L367.28 452.127L452.133 367.287L274.727 254.38L480 300V180L274.727 225.62L452.127 112.72L367.287 27.8667L254.38 205.273Z" fill-rule="evenodd" clip-rule="evenodd" fill="url(#paint0_radial_0_7)"/>
+</g>
+<defs>
+<radialGradient id="paint0_radial_0_7" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(240 240) scale(220.5)">
+<stop stop-color="#F5D451"/>
+<stop offset="1" stop-color="#F5D451" stop-opacity="0"/>
+</radialGradient>
+</defs>
+</svg>

@@ -1,0 +1,20 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Icon" filter="url(#filter0_dg_0_1614)">
+<path id="Subtract" d="M21.2141 9.37506C21.2141 9.89672 20.7912 10.3196 20.2695 10.3196C19.3322 10.3196 18.5723 11.0796 18.5723 12.0168C18.5723 12.954 19.3323 13.7137 20.2695 13.7137C20.7912 13.7137 21.2141 14.1366 21.2141 14.6583V17.8549C21.2141 18.4072 20.7663 18.8549 20.2141 18.8549H2.78613C2.23385 18.8549 1.78613 18.4072 1.78613 17.8549V14.7049C1.78613 14.1575 2.22991 13.7137 2.77734 13.7137C3.71456 13.7137 4.47449 12.954 4.47457 12.0168C4.47457 11.0796 3.71461 10.3196 2.77734 10.3196C2.22991 10.3196 1.78613 9.87584 1.78613 9.32841V6.14063C1.78613 5.58834 2.23385 5.14062 2.78613 5.14062H20.2141C20.7663 5.14062 21.2141 5.58834 21.2141 6.14062V9.37506ZM9.01043 14.7353C8.48983 14.7353 8.06764 15.1575 8.06764 15.6781C8.06773 16.1986 8.48989 16.6206 9.01043 16.6206C9.53088 16.6205 9.95277 16.1986 9.95286 15.6781C9.95286 15.1576 9.53094 14.7354 9.01043 14.7353ZM9.01043 11.0546C8.48983 11.0546 8.06764 11.4768 8.06764 11.9974C8.06773 12.5179 8.48989 12.9399 9.01043 12.9399C9.53088 12.9398 9.95277 12.5179 9.95286 11.9974C9.95286 11.4769 9.53094 11.0547 9.01043 11.0546ZM9.01043 7.37675C8.48983 7.37675 8.06764 7.79894 8.06764 8.31954C8.06772 8.84006 8.48988 9.26198 9.01043 9.26198C9.53089 9.26188 9.95278 8.84001 9.95286 8.31954C9.95286 7.799 9.53094 7.37684 9.01043 7.37675Z" fill-rule="evenodd" clip-rule="evenodd" fill="#8E955B"/>
+</g>
+<defs>
+<filter id="filter0_dg_0_1614" x="-0.5" y="-0.5" width="25.5" height="25.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="1" dy="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.309804 0 0 0 0 0.223529 0 0 0 0 0.152941 0 0 0 1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1614"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1614" result="shape"/>
+<feTurbulence type="fractalNoise" baseFrequency="0.99900001287460327 0.99900001287460327" numOctaves="3" seed="363" />
+<feDisplacementMap in="shape" scale="1" xChannelSelector="R" yChannelSelector="G" result="displacedImage" width="100%" height="100%" />
+<feMerge result="effect2_texture_0_1614">
+<feMergeNode in="displacedImage"/>
+</feMerge>
+</filter>
+</defs>
+</svg>
