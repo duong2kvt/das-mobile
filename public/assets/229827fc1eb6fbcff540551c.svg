@@ -1,0 +1,20 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="17.5" height="13.5" viewBox="0 0 17.5 13.5" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="icon" filter="url(#filter0_dg_0_1764)">
+<path d="M1.87644 0.642227C4.99515 0.53874 10.6277 0.405847 15.1362 0.596992C16.2005 0.642128 16.8374 1.67032 16.3127 2.49675C14.7762 4.9166 11.9315 9.27247 9.69719 11.9826C9.11487 12.6889 7.92394 12.6681 7.36901 11.9444C5.9444 10.0866 3.33139 6.58328 0.698068 2.56223C0.15261 1.72929 0.795044 0.678115 1.87644 0.642227Z" fill-rule="evenodd" clip-rule="evenodd" fill="#B49984"/>
+</g>
+<defs>
+<filter id="filter0_dg_0_1764" x="-2.02174e-09" y="-2.98169e-09" width="17.5" height="13.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="1" dy="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.309804 0 0 0 0 0.223529 0 0 0 0 0.152941 0 0 0 1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1764"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1764" result="shape"/>
+<feTurbulence type="fractalNoise" baseFrequency="0.99900001287460327 0.99900001287460327" numOctaves="3" seed="363" />
+<feDisplacementMap in="shape" scale="1" xChannelSelector="R" yChannelSelector="G" result="displacedImage" width="100%" height="100%" />
+<feMerge result="effect2_texture_0_1764">
+<feMergeNode in="displacedImage"/>
+</feMerge>
+</filter>
+</defs>
+</svg>

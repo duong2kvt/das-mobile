@@ -1,0 +1,11 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="2.54946" height="9.10695" viewBox="0 0 2.54946 9.10695" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Intersect" opacity="0.7" style="mix-blend-mode:multiply">
+<path d="M1.27473 0C2.97437 2.78748 2.97437 6.31947 1.27473 9.10695C-0.42491 6.31947 -0.42491 2.78748 1.27473 0Z" fill="url(#paint0_linear_0_988)"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_0_988" x1="-0.0151936" y1="-1.63811" x2="-18.8479" y2="17.1946" gradientUnits="userSpaceOnUse">
+<stop stop-color="#CC8BBD"/>
+<stop offset="1" stop-color="#9A90C4"/>
+</linearGradient>
+</defs>
+</svg>

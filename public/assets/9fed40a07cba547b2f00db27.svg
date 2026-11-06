@@ -1,0 +1,10 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="80.7082" height="84.9914" viewBox="0 0 80.7082 84.9914" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Shape 11">
+<mask id="mask0_0_260" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="81" height="85">
+<path id="Shape 9" d="M80.6191 30.7783L72.2227 33.4326L80.6367 36.1592L80.708 58.1553L42.8291 84.9912L5.99609 65.2891L5.13867 57.0576L14.9424 55.3125L4.77246 53.543L0 7.70996L80.5195 0L80.6191 30.7783Z" fill="#7B6FC3"/>
+</mask>
+<g mask="url(#mask0_0_260)">
+<path id="Shape 11_2" d="M-0.610767 14.4673L84.9338 10.6653L82.0824 -3.59211L-4.41275 3.06135L-0.610767 14.4673Z" fill-rule="evenodd" clip-rule="evenodd" fill="#CF6158"/>
+</g>
+</g>
+</svg>

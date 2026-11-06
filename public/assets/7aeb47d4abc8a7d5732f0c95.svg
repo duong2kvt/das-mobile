@@ -1,0 +1,29 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="48.1592" height="37.2139" viewBox="0 0 48.1592 37.2139" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Camera Icon">
+<path id="Camera Shape" d="M28.4058 0H19.3885C18.4209 0 17.4929 0.384386 16.8087 1.0686L13.7755 4.10179C13.365 4.51232 12.8082 4.74295 12.2276 4.74295H8.17247C5.31184 4.74295 3.88152 4.74295 2.7889 5.29967C1.82781 5.78937 1.04642 6.57076 0.556716 7.53185C0 8.62447 0 10.0548 0 12.9154V29.0415C0 31.9021 0 33.3324 0.556716 34.425C1.04642 35.3861 1.82781 36.1675 2.7889 36.6572C3.88152 37.2139 5.31184 37.2139 8.17247 37.2139H39.9867C42.8474 37.2139 44.2777 37.2139 45.3703 36.6572C46.3314 36.1675 47.1128 35.3861 47.6025 34.425C48.1592 33.3324 48.1592 31.9021 48.1592 29.0415V12.9154C48.1592 10.0548 48.1592 8.62447 47.6025 7.53185C47.1128 6.57076 46.3314 5.78937 45.3703 5.29967C44.2777 4.74295 42.8474 4.74295 39.9867 4.74295H35.5668C34.9862 4.74295 34.4294 4.51232 34.0189 4.10179L30.9857 1.0686C30.3015 0.384386 29.3735 0 28.4058 0Z" fill="url(#paint0_linear_0_1032)"/>
+<circle id="Flash" cx="40.4978" cy="12.0401" r="2.18905" fill="#FCCA00"/>
+<g id="Lens" filter="url(#filter0_d_0_1032)">
+<path d="M24.0796 9.85091C30.1245 9.85093 35.0249 14.7513 35.0249 20.7962C35.0249 26.8411 30.1245 31.7415 24.0796 31.7415C18.0347 31.7415 13.1343 26.8411 13.1343 20.7962C13.1343 14.7513 18.0347 9.85091 24.0796 9.85091ZM24.0796 12.0394C19.2437 12.0394 15.3238 15.9603 15.3238 20.7962C15.3239 25.6321 19.2438 29.5521 24.0796 29.5521C28.9155 29.552 32.8354 25.632 32.8355 20.7962C32.8355 15.9603 28.9155 12.0394 24.0796 12.0394Z" fill="url(#paint1_linear_0_1032)"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_d_0_1032" x="11.675" y="9.85091" width="24.8094" height="24.8094" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="1.45937"/>
+<feGaussianBlur stdDeviation="0.729685"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1032"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1032" result="shape"/>
+</filter>
+<linearGradient id="paint0_linear_0_1032" x1="24.0796" y1="0" x2="24.0796" y2="37.2139" gradientUnits="userSpaceOnUse">
+<stop stop-color="#2D2D2D"/>
+<stop offset="1" stop-color="#2D2C2E"/>
+</linearGradient>
+<linearGradient id="paint1_linear_0_1032" x1="24.0796" y1="9.85091" x2="24.0796" y2="31.7415" gradientUnits="userSpaceOnUse">
+<stop stop-color="#C4C3C7"/>
+<stop offset="1" stop-color="#AAA9B0"/>
+</linearGradient>
+</defs>
+</svg>

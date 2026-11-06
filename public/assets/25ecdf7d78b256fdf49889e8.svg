@@ -1,0 +1,17 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="65.6716" height="65.6716" viewBox="0 0 65.6716 65.6716" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Icon">
+<g clip-path="url(#clip0_0_945)">
+<path id="Icon Background" d="M0 0H65.6716V65.6716H0V0Z" fill="url(#paint0_linear_0_945)"/>
+<path id="Ellipse 34" d="M56.8214 31.4249C56.8214 42.4049 46.0827 51.306 32.8358 51.306C30.8295 51.306 28.8806 51.1018 27.0179 50.7171C26.4552 50.6009 25.8685 50.5856 25.3605 50.8542C23.6969 51.7338 20.9591 53.9612 17.394 54.119C17.2331 54.1261 17.143 53.9412 17.2421 53.8142C19.349 51.1102 20.7221 48.6111 19.8169 48.1253C13.2173 44.5834 8.85028 38.4269 8.85028 31.4249C8.85028 20.4449 19.589 11.5438 32.8358 11.5438C46.0827 11.5438 56.8214 20.4449 56.8214 31.4249Z" fill="white"/>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_0_945" x1="32.8358" y1="0" x2="32.8358" y2="65.6716" gradientUnits="userSpaceOnUse">
+<stop stop-color="#5CF777"/>
+<stop offset="1" stop-color="#0EBC29"/>
+</linearGradient>
+<clipPath id="clip0_0_945">
+<rect width="65.6716" height="65.6716" rx="14.5353" fill="white"/>
+</clipPath>
+</defs>
+</svg>

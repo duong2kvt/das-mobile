@@ -1,0 +1,28 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="25.125" height="25.125" viewBox="0 0 25.125 25.125" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Icon Badge" filter="url(#filter0_dg_0_1504)">
+<path id="Union" d="M1.50132 4.625C2.078 4.625 2.55461 4.41517 2.67303 4.14474C3.61579 1.9917 7.60148 0.375 12.375 0.375C17.1484 0.375 21.1336 1.99165 22.0764 4.14462C22.1949 4.41512 22.6716 4.625 23.2484 4.625C23.8706 4.625 24.375 4.86669 24.375 5.16482L24.375 15.375C24.375 17.0487 22.8826 20.3053 20.5007 21.356C17.9845 22.466 14.781 23.2103 12.375 24.375C9.96868 23.2103 6.76486 22.4659 4.24867 21.3558C1.86713 20.305 0.375001 17.0485 0.375001 15.375L0.375 5.1647C0.375 4.86663 0.879271 4.625 1.50132 4.625Z" fill="#346888"/>
+<g id="Icon/material">
+<g id="Subtract">
+<path d="M12.6251 16.5625L7.9786 11.7555H17.2714L12.6251 16.5625Z" fill="#F4F0ED"/>
+<path d="M11.5551 10.8879H7.84375L8.9356 9.02915L11.5551 10.8879Z" fill="#F4F0ED"/>
+<path d="M17.4062 10.8879H13.6952L16.3147 9.02982L17.4062 10.8879Z" fill="#F4F0ED"/>
+<path d="M12.6249 10.5744L9.96549 8.6875H15.2855L12.6249 10.5744Z" fill="#F4F0ED"/>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_dg_0_1504" x="-2.08616e-07" y="-1.37091e-06" width="25.125" height="25.125" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="0.75" dy="0.75"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.309804 0 0 0 0 0.223529 0 0 0 0 0.152941 0 0 0 1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1504"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1504" result="shape"/>
+<feTurbulence type="fractalNoise" baseFrequency="0.99900001287460327 0.99900001287460327" numOctaves="3" seed="363" />
+<feDisplacementMap in="shape" scale="0.75" xChannelSelector="R" yChannelSelector="G" result="displacedImage" width="100%" height="100%" />
+<feMerge result="effect2_texture_0_1504">
+<feMergeNode in="displacedImage"/>
+</feMerge>
+</filter>
+</defs>
+</svg>
