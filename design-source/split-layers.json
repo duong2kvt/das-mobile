@@ -1,0 +1,766 @@
+[
+  {
+    "id": "5675:37564",
+    "children": [
+      {
+        "id": "5675:37565",
+        "name": "Group tag",
+        "visible": true,
+        "x": 31,
+        "y": 78,
+        "width": 344,
+        "height": 56
+      },
+      {
+        "id": "5675:37566",
+        "name": "Book",
+        "visible": true,
+        "x": -10,
+        "y": 120,
+        "width": 445,
+        "height": 756
+      },
+      {
+        "id": "5675:37567",
+        "name": "Navbar",
+        "visible": true,
+        "x": 0,
+        "y": 827,
+        "width": 440,
+        "height": 129
+      },
+      {
+        "id": "5675:37568",
+        "name": "List",
+        "visible": true,
+        "x": 15,
+        "y": 120,
+        "width": 377,
+        "height": 691
+      },
+      {
+        "id": "5675:37580",
+        "name": "Linear BG",
+        "visible": true,
+        "x": 0,
+        "y": 76,
+        "width": 440,
+        "height": 76
+      }
+    ],
+    "fills": [
+      {
+        "type": "IMAGE",
+        "visible": true,
+        "opacity": 1,
+        "blendMode": "NORMAL",
+        "scaleMode": "FILL",
+        "scalingFactor": 0.5,
+        "rotation": 0,
+        "filters": {
+          "exposure": 0,
+          "contrast": 0,
+          "saturation": 0,
+          "temperature": 0,
+          "tint": 0,
+          "highlights": 0,
+          "shadows": 0
+        },
+        "imageTransform": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0.011431175284087658
+          ]
+        ],
+        "imageHash": "87abcd24b9c858aab7549771d1464a8218d9c547"
+      },
+      {
+        "type": "SOLID",
+        "visible": false,
+        "opacity": 0.1599999964237213,
+        "blendMode": "NORMAL",
+        "color": {
+          "r": 0,
+          "g": 0,
+          "b": 0
+        },
+        "boundVariables": {}
+      }
+    ]
+  },
+  {
+    "id": "5853:107638",
+    "children": [
+      {
+        "id": "5853:107639",
+        "name": "Group tag",
+        "visible": true,
+        "x": 31,
+        "y": 78,
+        "width": 344,
+        "height": 56
+      },
+      {
+        "id": "5853:107640",
+        "name": "Book",
+        "visible": true,
+        "x": -10,
+        "y": 120,
+        "width": 445,
+        "height": 756
+      },
+      {
+        "id": "5853:107641",
+        "name": "Navbar",
+        "visible": true,
+        "x": 0,
+        "y": 827,
+        "width": 440,
+        "height": 129
+      },
+      {
+        "id": "5853:107642",
+        "name": "List",
+        "visible": true,
+        "x": 15,
+        "y": 120,
+        "width": 377,
+        "height": 691
+      },
+      {
+        "id": "5853:107654",
+        "name": "Linear BG",
+        "visible": true,
+        "x": 0,
+        "y": 76,
+        "width": 440,
+        "height": 76
+      },
+      {
+        "id": "5853:108713",
+        "name": "Dimmer",
+        "visible": true,
+        "x": 0,
+        "y": 956,
+        "width": 440,
+        "height": 956
+      },
+      {
+        "id": "5853:108855",
+        "name": "Mascot Guide",
+        "visible": true,
+        "x": 34,
+        "y": 497,
+        "width": 371,
+        "height": 419
+      },
+      {
+        "id": "6144:32640",
+        "name": "Selection artifact",
+        "visible": true,
+        "x": 37.181640625,
+        "y": 132,
+        "width": 168,
+        "height": 208
+      },
+      {
+        "id": "6160:29102",
+        "name": "Pointer up",
+        "visible": true,
+        "x": 80,
+        "y": 340,
+        "width": 80,
+        "height": 112
+      }
+    ],
+    "fills": [
+      {
+        "type": "IMAGE",
+        "visible": true,
+        "opacity": 1,
+        "blendMode": "NORMAL",
+        "scaleMode": "FILL",
+        "scalingFactor": 0.5,
+        "rotation": 0,
+        "filters": {
+          "exposure": 0,
+          "contrast": 0,
+          "saturation": 0,
+          "temperature": 0,
+          "tint": 0,
+          "highlights": 0,
+          "shadows": 0
+        },
+        "imageTransform": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0.011431175284087658
+          ]
+        ],
+        "imageHash": "87abcd24b9c858aab7549771d1464a8218d9c547"
+      },
+      {
+        "type": "SOLID",
+        "visible": false,
+        "opacity": 0.1599999964237213,
+        "blendMode": "NORMAL",
+        "color": {
+          "r": 0,
+          "g": 0,
+          "b": 0
+        },
+        "boundVariables": {}
+      }
+    ]
+  },
+  {
+    "id": "5853:95894",
+    "children": [
+      {
+        "id": "5853:95895",
+        "name": "Group tag",
+        "visible": true,
+        "x": 31,
+        "y": 78,
+        "width": 344,
+        "height": 56
+      },
+      {
+        "id": "5853:95896",
+        "name": "Book",
+        "visible": true,
+        "x": -10,
+        "y": 120,
+        "width": 445,
+        "height": 756
+      },
+      {
+        "id": "5853:95897",
+        "name": "Navbar",
+        "visible": true,
+        "x": 0,
+        "y": 827,
+        "width": 440,
+        "height": 129
+      },
+      {
+        "id": "5853:95898",
+        "name": "List",
+        "visible": true,
+        "x": 15,
+        "y": 120,
+        "width": 377,
+        "height": 691
+      },
+      {
+        "id": "5853:95910",
+        "name": "Linear BG",
+        "visible": true,
+        "x": 0,
+        "y": 76,
+        "width": 440,
+        "height": 76
+      },
+      {
+        "id": "5853:96969",
+        "name": "Dimmer",
+        "visible": true,
+        "x": 0,
+        "y": 956,
+        "width": 440,
+        "height": 956
+      },
+      {
+        "id": "6118:38656",
+        "name": "Mascot Guide",
+        "visible": true,
+        "x": 34,
+        "y": 497,
+        "width": 371,
+        "height": 419
+      }
+    ],
+    "fills": [
+      {
+        "type": "IMAGE",
+        "visible": true,
+        "opacity": 1,
+        "blendMode": "NORMAL",
+        "scaleMode": "FILL",
+        "scalingFactor": 0.5,
+        "rotation": 0,
+        "filters": {
+          "exposure": 0,
+          "contrast": 0,
+          "saturation": 0,
+          "temperature": 0,
+          "tint": 0,
+          "highlights": 0,
+          "shadows": 0
+        },
+        "imageTransform": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0.011431175284087658
+          ]
+        ],
+        "imageHash": "87abcd24b9c858aab7549771d1464a8218d9c547"
+      },
+      {
+        "type": "SOLID",
+        "visible": false,
+        "opacity": 0.1599999964237213,
+        "blendMode": "NORMAL",
+        "color": {
+          "r": 0,
+          "g": 0,
+          "b": 0
+        },
+        "boundVariables": {}
+      }
+    ]
+  },
+  {
+    "id": "5781:30418",
+    "children": [
+      {
+        "id": "5781:30419",
+        "name": "Group tag",
+        "visible": true,
+        "x": 31,
+        "y": 78,
+        "width": 344,
+        "height": 56
+      },
+      {
+        "id": "5781:30420",
+        "name": "Book",
+        "visible": true,
+        "x": -10,
+        "y": 120,
+        "width": 445,
+        "height": 756
+      },
+      {
+        "id": "5781:30421",
+        "name": "Navbar",
+        "visible": true,
+        "x": 0,
+        "y": 827,
+        "width": 440,
+        "height": 129
+      },
+      {
+        "id": "5781:31493",
+        "name": "List",
+        "visible": true,
+        "x": 15,
+        "y": 120,
+        "width": 377,
+        "height": 691
+      },
+      {
+        "id": "5781:30434",
+        "name": "Linear BG",
+        "visible": true,
+        "x": 0,
+        "y": 76,
+        "width": 440,
+        "height": 76
+      }
+    ],
+    "fills": [
+      {
+        "type": "IMAGE",
+        "visible": true,
+        "opacity": 1,
+        "blendMode": "NORMAL",
+        "scaleMode": "FILL",
+        "scalingFactor": 0.5,
+        "rotation": 0,
+        "filters": {
+          "exposure": 0,
+          "contrast": 0,
+          "saturation": 0,
+          "temperature": 0,
+          "tint": 0,
+          "highlights": 0,
+          "shadows": 0
+        },
+        "imageTransform": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0.011431175284087658
+          ]
+        ],
+        "imageHash": "87abcd24b9c858aab7549771d1464a8218d9c547"
+      },
+      {
+        "type": "SOLID",
+        "visible": false,
+        "opacity": 0.1599999964237213,
+        "blendMode": "NORMAL",
+        "color": {
+          "r": 0,
+          "g": 0,
+          "b": 0
+        },
+        "boundVariables": {}
+      }
+    ]
+  },
+  {
+    "id": "5867:110836",
+    "children": [
+      {
+        "id": "5867:110837",
+        "name": "Group tag",
+        "visible": true,
+        "x": 31,
+        "y": 78,
+        "width": 344,
+        "height": 56
+      },
+      {
+        "id": "5867:110838",
+        "name": "Book",
+        "visible": true,
+        "x": -10,
+        "y": 120,
+        "width": 445,
+        "height": 756
+      },
+      {
+        "id": "5867:110839",
+        "name": "Navbar",
+        "visible": true,
+        "x": 0,
+        "y": 827,
+        "width": 440,
+        "height": 129
+      },
+      {
+        "id": "5867:110840",
+        "name": "List",
+        "visible": true,
+        "x": 15,
+        "y": 120,
+        "width": 377,
+        "height": 691
+      },
+      {
+        "id": "5867:110852",
+        "name": "Linear BG",
+        "visible": true,
+        "x": 0,
+        "y": 76,
+        "width": 440,
+        "height": 76
+      },
+      {
+        "id": "5867:110853",
+        "name": "Dimmer",
+        "visible": true,
+        "x": 0,
+        "y": 956,
+        "width": 440,
+        "height": 956
+      },
+      {
+        "id": "5867:110854",
+        "name": "Mascot Guide",
+        "visible": true,
+        "x": 34,
+        "y": 497,
+        "width": 371,
+        "height": 419
+      },
+      {
+        "id": "6144:32758",
+        "name": "Selection artifact",
+        "visible": true,
+        "x": 37.181640625,
+        "y": 132,
+        "width": 168,
+        "height": 208
+      },
+      {
+        "id": "6160:29116",
+        "name": "Pointer up",
+        "visible": true,
+        "x": 80,
+        "y": 340,
+        "width": 80,
+        "height": 112
+      }
+    ],
+    "fills": [
+      {
+        "type": "IMAGE",
+        "visible": true,
+        "opacity": 1,
+        "blendMode": "NORMAL",
+        "scaleMode": "FILL",
+        "scalingFactor": 0.5,
+        "rotation": 0,
+        "filters": {
+          "exposure": 0,
+          "contrast": 0,
+          "saturation": 0,
+          "temperature": 0,
+          "tint": 0,
+          "highlights": 0,
+          "shadows": 0
+        },
+        "imageTransform": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0.011431175284087658
+          ]
+        ],
+        "imageHash": "87abcd24b9c858aab7549771d1464a8218d9c547"
+      },
+      {
+        "type": "SOLID",
+        "visible": false,
+        "opacity": 0.1599999964237213,
+        "blendMode": "NORMAL",
+        "color": {
+          "r": 0,
+          "g": 0,
+          "b": 0
+        },
+        "boundVariables": {}
+      }
+    ]
+  },
+  {
+    "id": "5955:35421",
+    "children": [
+      {
+        "id": "5955:35422",
+        "name": "Book",
+        "visible": true,
+        "x": -10,
+        "y": 56,
+        "width": 445,
+        "height": 820
+      },
+      {
+        "id": "5955:35423",
+        "name": "Navbar",
+        "visible": true,
+        "x": 0,
+        "y": 827,
+        "width": 440,
+        "height": 129
+      },
+      {
+        "id": "5955:35424",
+        "name": "Containner",
+        "visible": true,
+        "x": 14,
+        "y": 56,
+        "width": 380,
+        "height": 750
+      },
+      {
+        "id": "5955:35463",
+        "name": "Linear BG",
+        "visible": true,
+        "x": 0,
+        "y": 76,
+        "width": 440,
+        "height": 76
+      }
+    ],
+    "fills": [
+      {
+        "type": "IMAGE",
+        "visible": true,
+        "opacity": 1,
+        "blendMode": "NORMAL",
+        "scaleMode": "FILL",
+        "scalingFactor": 0.5,
+        "rotation": 0,
+        "filters": {
+          "exposure": 0,
+          "contrast": 0,
+          "saturation": 0,
+          "temperature": 0,
+          "tint": 0,
+          "highlights": 0,
+          "shadows": 0
+        },
+        "imageTransform": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0.011431175284087658
+          ]
+        ],
+        "imageHash": "87abcd24b9c858aab7549771d1464a8218d9c547"
+      },
+      {
+        "type": "SOLID",
+        "visible": false,
+        "opacity": 0.1599999964237213,
+        "blendMode": "NORMAL",
+        "color": {
+          "r": 0,
+          "g": 0,
+          "b": 0
+        },
+        "boundVariables": {}
+      }
+    ]
+  },
+  {
+    "id": "6123:90739",
+    "children": [
+      {
+        "id": "6123:90740",
+        "name": "Book",
+        "visible": true,
+        "x": -10,
+        "y": 56,
+        "width": 445,
+        "height": 820
+      },
+      {
+        "id": "6123:90741",
+        "name": "Navbar",
+        "visible": true,
+        "x": 0,
+        "y": 827,
+        "width": 440,
+        "height": 129
+      },
+      {
+        "id": "6123:90742",
+        "name": "Containner",
+        "visible": true,
+        "x": 14,
+        "y": 56,
+        "width": 380,
+        "height": 750
+      },
+      {
+        "id": "6123:90800",
+        "name": "Linear BG",
+        "visible": true,
+        "x": 0,
+        "y": 76,
+        "width": 440,
+        "height": 76
+      },
+      {
+        "id": "6123:91875",
+        "name": "Dimmer",
+        "visible": true,
+        "x": 0,
+        "y": 956,
+        "width": 440,
+        "height": 956
+      },
+      {
+        "id": "6123:92019",
+        "name": "Popup",
+        "visible": true,
+        "x": 31,
+        "y": 331,
+        "width": 377,
+        "height": 294
+      },
+      {
+        "id": "6123:92161",
+        "name": "Header",
+        "visible": true,
+        "x": 0,
+        "y": 0,
+        "width": 440,
+        "height": 144
+      }
+    ],
+    "fills": [
+      {
+        "type": "IMAGE",
+        "visible": true,
+        "opacity": 1,
+        "blendMode": "NORMAL",
+        "scaleMode": "FILL",
+        "scalingFactor": 0.5,
+        "rotation": 0,
+        "filters": {
+          "exposure": 0,
+          "contrast": 0,
+          "saturation": 0,
+          "temperature": 0,
+          "tint": 0,
+          "highlights": 0,
+          "shadows": 0
+        },
+        "imageTransform": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0.011431175284087658
+          ]
+        ],
+        "imageHash": "87abcd24b9c858aab7549771d1464a8218d9c547"
+      },
+      {
+        "type": "SOLID",
+        "visible": false,
+        "opacity": 0.1599999964237213,
+        "blendMode": "NORMAL",
+        "color": {
+          "r": 0,
+          "g": 0,
+          "b": 0
+        },
+        "boundVariables": {}
+      }
+    ]
+  }
+]

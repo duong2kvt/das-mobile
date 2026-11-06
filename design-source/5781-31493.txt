@@ -1,0 +1,241 @@
+const imgShapes = "https://www.figma.com/api/mcp/asset/da8b3631-6115-4b5a-8e33-8f0b3b05d6e0.svg";
+const imgGroup1171277045 = "https://www.figma.com/api/mcp/asset/243ac781-1103-4300-9a32-7e5413461293.svg";
+const imgStyle1 = "https://www.figma.com/api/mcp/asset/3059b09a-4f7d-46f3-881b-466935523e45.svg";
+const imgArtifactImage = "https://www.figma.com/api/mcp/asset/2cf5496a-1fe0-4827-8f1a-94f2ca84e3e5.png";
+const imgArtifactImage1 = "https://www.figma.com/api/mcp/asset/cd1df6e1-c124-476d-80c3-dda85604260a.png";
+const imgArtifactImage2 = "https://www.figma.com/api/mcp/asset/6efe1e67-aaed-475d-acaf-6b1cbb1b57db.png";
+const imgArtifactImage3 = "https://www.figma.com/api/mcp/asset/05f1d220-772d-42f1-88e5-a13ae9ffa4ed.png";
+const imgArtifactImage4 = "https://www.figma.com/api/mcp/asset/9bc76350-bec7-4afd-bae8-2f0fa9e0d7c3.png";
+const imgArtifactImage5 = "https://www.figma.com/api/mcp/asset/92a83102-ada6-494c-9156-523333f3bf65.png";
+const imgShape = "https://www.figma.com/api/mcp/asset/3d47f894-6ad3-4864-8393-af088e700990.svg";
+const imgShape1 = "https://www.figma.com/api/mcp/asset/d4432536-bb6d-46d1-aebf-3c446c5c00aa.svg";
+const imgShape2 = "https://www.figma.com/api/mcp/asset/16cdd1e4-7894-4732-bb75-f03f538316c6.svg";
+
+type PaginationProps = {
+  className?: string;
+  position?: "Right";
+  text?: string;
+};
+
+function Pagination({ className, position = "Right", text = "1/5" }: PaginationProps) {
+  return (
+    <div className={className || "content-stretch flex items-center justify-between relative w-[320px]"} data-node-id="5675:20062">
+      <div className="h-[40px] opacity-0 relative shrink-0 w-[76px]" data-node-id="5675:20063" data-name="Icon Button">
+        <div className="absolute h-[40px] left-0 right-0 top-0" data-node-id="I5675:20063;4856:21247" data-name="Shapes">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgShapes} />
+        </div>
+        <div className="-translate-x-1/2 -translate-y-1/2 absolute left-1/2 overflow-clip size-[24px] top-1/2" data-node-id="I5675:20063;4856:21250" data-name="Icon">
+          <div className="absolute inset-[8.33%_15.83%_8.33%_12.5%]" data-node-id="I5675:20063;4856:21251">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgGroup1171277045} />
+          </div>
+        </div>
+      </div>
+      <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Semi_Bold'] font-semibold leading-[24px] min-w-px not-italic relative text-[#291d14] text-[16px] text-center tracking-[-0.32px]" data-node-id="5675:20064" style={{ fontFeatureSettings: '"cv01" 1, "cv02" 1, "cv03" 1, "cv04" 1, "cv10" 1' }}>
+        {text}
+      </p>
+      <div className="flex items-center justify-center relative shrink-0" data-node-id="5675:20065">
+        <div className="-scale-y-100 flex-none rotate-180">
+          <div className="h-[40px] relative w-[76px]" data-name="Icon Button">
+            <div className="absolute h-[40px] left-0 right-0 top-0" data-node-id="I5675:20065;4856:21239" data-name="Shapes">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgShapes} />
+            </div>
+            <div className="-translate-x-1/2 -translate-y-1/2 absolute left-1/2 overflow-clip size-[24px] top-1/2" data-node-id="I5675:20065;4856:21242" data-name="Icon">
+              <div className="absolute inset-[8.33%_15.83%_8.33%_12.5%]" data-node-id="I5675:20065;4856:21243">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgGroup1171277045} />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+type PatternProps = {
+  className?: string;
+  style?: "1";
+};
+
+function Pattern({ className, style = "1" }: PatternProps) {
+  return (
+    <div className={className || "h-[164.002px] relative w-[122px]"} data-node-id="4387:25763">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgStyle1} />
+    </div>
+  );
+}
+
+type TextContainerProps = {
+  className?: string;
+  prop2Lines?: boolean;
+};
+
+function TextContainer({ className, prop2Lines = false }: TextContainerProps) {
+  const isProp2Lines = prop2Lines;
+  return (
+    <div className={className || `content-stretch flex h-[36px] items-center justify-center relative w-[122px] ${isProp2Lines ? "px-[2px]" : ""}`} id={isProp2Lines ? "node-4387_25332" : "node-4387_25333"}>
+      <p className={`[word-break:break-word] font-["Young_Display_Bold:Bold"] not-italic relative text-[#ffedc0] text-[14px] text-center ${isProp2Lines ? "flex-[1_0_0] leading-[1.2] min-w-px" : "leading-none shrink-0 whitespace-nowrap"}`} id={isProp2Lines ? "node-4387_25201" : "node-4387_22981"}>
+        {isProp2Lines ? "Đầu chim phượng " : "Đầu rồng"}
+      </p>
+    </div>
+  );
+}
+
+export default function List() {
+  return (
+    <div className="content-stretch flex flex-col items-center justify-between pb-[16px] pt-[24px] relative size-full" data-node-id="5781:31493" data-name="List">
+      <div className="content-stretch flex flex-col gap-[12px] h-[576px] items-start relative shrink-0" data-node-id="5781:31494" data-name="Row group">
+        <div className="content-stretch flex gap-[20px] items-center justify-center relative shrink-0" data-node-id="5781:31495" data-name="Row">
+          <div className="h-[183.998px] relative shrink-0 w-[144px]" data-node-id="5781:31496" data-name="Stamp">
+            <div className="absolute inset-[0_1.21%_1.1%_0]" data-node-id="I5781:31496;4387:25767" data-name="Shape">
+              <div className="absolute inset-[-0.27%_-0.7%_-0.55%_-0.35%]">
+                <img alt="" className="block max-w-none size-full" src={imgShape} />
+              </div>
+            </div>
+            <div className="absolute border-[#b1352a] border-[1.4px] border-solid content-stretch flex flex-col inset-[4.88%_8.33%_5.99%_6.94%] items-center overflow-clip p-[8px]" data-node-id="I5781:31496;4387:25874" data-name="Frame border">
+              <div className="relative shrink-0 size-[120px]" data-node-id="I5781:31496;4387:25875" data-name="Artifact image">
+                <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgArtifactImage} />
+              </div>
+            </div>
+            <div className="absolute bg-[#b1352a] inset-[72.28%_8.33%_5.98%_6.94%]" data-node-id="I5781:31496;4387:25876" data-name="Tag name" />
+            <TextContainer className="absolute content-stretch flex h-[36px] items-center justify-center left-[10px] px-[2px] top-[137px] w-[122px]" prop2Lines />
+            <div className="absolute content-stretch flex flex-col h-[24px] items-end p-[8px] right-[11px] top-[8px] w-[40px]" data-node-id="I5781:31496;5604:46681" data-name="Text containner">
+              <p className="[word-break:break-word] font-['Young_Display_Bold:Bold'] leading-[normal] not-italic relative shrink-0 text-[#b1352a] text-[14px] tracking-[-0.28px] whitespace-nowrap" data-node-id="I5781:31496;4387:25878" style={{ fontFeatureSettings: '"cv01" 1, "cv02" 1, "cv03" 1, "cv04" 1, "cv10" 1' }}>
+                01
+              </p>
+            </div>
+          </div>
+          <div className="h-[183.998px] relative shrink-0 w-[144px]" data-node-id="5781:31497" data-name="Stamp">
+            <div className="absolute inset-[0_1.21%_1.1%_0]" data-node-id="I5781:31497;4387:25767" data-name="Shape">
+              <div className="absolute inset-[-0.27%_-0.7%_-0.55%_-0.35%]">
+                <img alt="" className="block max-w-none size-full" src={imgShape} />
+              </div>
+            </div>
+            <div className="absolute border-[#b1352a] border-[1.4px] border-solid content-stretch flex flex-col inset-[4.88%_8.33%_5.99%_6.94%] items-center overflow-clip p-[8px]" data-node-id="I5781:31497;4387:25874" data-name="Frame border">
+              <div className="relative shrink-0 size-[120px]" data-node-id="I5781:31497;4387:25875" data-name="Artifact image">
+                <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgArtifactImage1} />
+              </div>
+            </div>
+            <div className="absolute bg-[#b1352a] inset-[72.28%_8.33%_5.98%_6.94%]" data-node-id="I5781:31497;4387:25876" data-name="Tag name" />
+            <div className="absolute content-stretch flex h-[36px] items-center justify-center left-[10px] px-[2px] top-[137px] w-[122px]" data-node-id="I5781:31497;4515:18775" data-name="Text container">
+              <p className="[word-break:break-word] flex-[1_0_0] font-['Young_Display_Bold:Bold'] leading-[1.2] min-w-px not-italic relative text-[#ffedc0] text-[14px] text-center" data-node-id="I5781:31497;4515:18775;4387:25201">
+                Đầu rồng
+              </p>
+            </div>
+            <div className="absolute content-stretch flex flex-col h-[24px] items-end p-[8px] right-[11px] top-[8px] w-[40px]" data-node-id="I5781:31497;5604:46681" data-name="Text containner">
+              <p className="[word-break:break-word] font-['Young_Display_Bold:Bold'] leading-[normal] not-italic relative shrink-0 text-[#b1352a] text-[14px] tracking-[-0.28px] whitespace-nowrap" data-node-id="I5781:31497;4387:25878" style={{ fontFeatureSettings: '"cv01" 1, "cv02" 1, "cv03" 1, "cv04" 1, "cv10" 1' }}>
+                02
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="content-stretch flex gap-[20px] items-center justify-center relative shrink-0" data-node-id="5781:31498" data-name="Row">
+          <div className="h-[183.998px] relative shrink-0 w-[144px]" data-node-id="5781:31499" data-name="Stamp">
+            <div className="absolute inset-[0_1.21%_1.1%_0]" data-node-id="I5781:31499;4387:26103" data-name="Shape">
+              <div className="absolute inset-[-0.27%_-0.7%_-0.55%_-0.35%]">
+                <img alt="" className="block max-w-none size-full" src={imgShape1} />
+              </div>
+            </div>
+            <div className="absolute border-[#2f5f7c] border-[1.4px] border-solid content-stretch flex flex-col inset-[4.88%_8.33%_5.99%_6.94%] items-center overflow-clip p-[8px]" data-node-id="I5781:31499;4387:26106" data-name="Frame border">
+              <div className="relative shrink-0 size-[120px]" data-node-id="I5781:31499;4387:26107" data-name="Artifact image">
+                <img alt="" className="absolute inset-0 max-w-none object-bottom pointer-events-none size-full" src={imgArtifactImage2} />
+              </div>
+            </div>
+            <div className="absolute bg-[#2f5f7c] inset-[72.28%_8.33%_5.98%_6.94%]" data-node-id="I5781:31499;4387:26108" data-name="Tag name" />
+            <div className="-translate-x-1/2 absolute bottom-[11px] content-stretch flex h-[36px] items-center justify-center left-[calc(50%-1px)] w-[122px]" data-node-id="I5781:31499;4515:18728" data-name="Text container">
+              <p className="[word-break:break-word] font-['Young_Display_Bold:Bold'] leading-none not-italic relative shrink-0 text-[#ffedc0] text-[14px] text-center whitespace-pre" data-node-id="I5781:31499;4515:18728;4387:22981">{`Gạch hoa  `}</p>
+            </div>
+            <div className="absolute content-stretch flex flex-col h-[24px] items-end p-[8px] right-[11px] top-[8px] w-[40px]" data-node-id="I5781:31499;5604:46680" data-name="Text containner">
+              <p className="[word-break:break-word] font-['Young_Display_Bold:Bold'] leading-[normal] not-italic relative shrink-0 text-[#2f5f7c] text-[14px] tracking-[-0.28px] whitespace-nowrap" data-node-id="I5781:31499;4387:26110" style={{ fontFeatureSettings: '"cv01" 1, "cv02" 1, "cv03" 1, "cv04" 1, "cv10" 1' }}>
+                03
+              </p>
+            </div>
+          </div>
+          <div className="h-[183.998px] relative shrink-0 w-[144px]" data-node-id="5781:31500" data-name="Stamp">
+            <div className="absolute inset-[0_1.21%_1.1%_0]" data-node-id="I5781:31500;4387:26103" data-name="Shape">
+              <div className="absolute inset-[-0.27%_-0.7%_-0.55%_-0.35%]">
+                <img alt="" className="block max-w-none size-full" src={imgShape1} />
+              </div>
+            </div>
+            <div className="absolute border-[#2f5f7c] border-[1.4px] border-solid content-stretch flex flex-col inset-[4.88%_8.33%_5.99%_6.94%] items-center overflow-clip p-[8px]" data-node-id="I5781:31500;4387:26106" data-name="Frame border">
+              <div className="relative shrink-0 size-[120px]" data-node-id="I5781:31500;4387:26107" data-name="Artifact image">
+                <img alt="" className="absolute inset-0 max-w-none object-bottom pointer-events-none size-full" src={imgArtifactImage3} />
+              </div>
+            </div>
+            <div className="absolute bg-[#2f5f7c] inset-[72.28%_8.33%_5.98%_6.94%]" data-node-id="I5781:31500;4387:26108" data-name="Tag name" />
+            <div className="-translate-x-1/2 absolute bottom-[11px] content-stretch flex h-[36px] items-center justify-center left-[calc(50%-1px)] px-[2px] w-[122px]" data-node-id="I5781:31500;4515:18728" data-name="Text container">
+              <p className="[word-break:break-word] flex-[1_0_0] font-['Young_Display_Bold:Bold'] leading-[1.2] min-w-px not-italic relative text-[#ffedc0] text-[14px] text-center" data-node-id="I5781:31500;4515:18728;4387:25201">
+                Mảnh lá đề
+              </p>
+            </div>
+            <div className="absolute content-stretch flex flex-col h-[24px] items-end p-[8px] right-[11px] top-[8px] w-[40px]" data-node-id="I5781:31500;5604:46680" data-name="Text containner">
+              <p className="[word-break:break-word] font-['Young_Display_Bold:Bold'] leading-[normal] not-italic relative shrink-0 text-[#2f5f7c] text-[14px] tracking-[-0.28px] whitespace-nowrap" data-node-id="I5781:31500;4387:26110" style={{ fontFeatureSettings: '"cv01" 1, "cv02" 1, "cv03" 1, "cv04" 1, "cv10" 1' }}>
+                04
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="content-stretch flex gap-[20px] items-center justify-center relative shrink-0" data-node-id="5781:31501" data-name="Row">
+          <div className="h-[183.998px] relative shrink-0 w-[144px]" data-node-id="5781:31502" data-name="Stamp">
+            <div className="absolute inset-[0_1.21%_1.1%_0]" data-node-id="I5781:31502;4387:26218" data-name="Shape">
+              <div className="absolute inset-[-0.27%_-0.7%_-0.55%_-0.35%]">
+                <img alt="" className="block max-w-none size-full" src={imgShape2} />
+              </div>
+            </div>
+            <div className="absolute border-[#686f2e] border-[1.4px] border-solid content-stretch flex flex-col inset-[4.88%_8.33%_5.99%_6.94%] items-center overflow-clip p-[8px]" data-node-id="I5781:31502;4387:26221" data-name="Frame border">
+              <div className="relative shrink-0 size-[120px]" data-node-id="I5781:31502;4387:26222" data-name="Artifact image">
+                <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                  <img alt="" className="absolute h-[82.79%] left-[0.62%] max-w-none top-[8.55%] w-[98.76%]" src={imgArtifactImage4} />
+                </div>
+              </div>
+            </div>
+            <div className="absolute bg-[#686f2e] inset-[72.28%_8.33%_5.98%_6.94%]" data-node-id="I5781:31502;4387:26223" data-name="Tag name" />
+            <div className="-translate-x-1/2 absolute bottom-[11px] content-stretch flex h-[36px] items-center justify-center left-[calc(50%-1px)] w-[122px]" data-node-id="I5781:31502;4515:18556" data-name="Text container">
+              <p className="[word-break:break-word] font-['Young_Display_Bold:Bold'] leading-none not-italic relative shrink-0 text-[#ffedc0] text-[14px] text-center whitespace-nowrap" data-node-id="I5781:31502;4515:18556;4387:22981">
+                Tượng vịt
+              </p>
+            </div>
+            <div className="absolute content-stretch flex h-[24px] items-start justify-end p-[8px] right-[11px] top-[8px] w-[40px]" data-node-id="I5781:31502;5604:46679" data-name="Text containner">
+              <p className="[word-break:break-word] font-['Young_Display_Bold:Bold'] leading-[normal] not-italic relative shrink-0 text-[#686f2e] text-[14px] tracking-[-0.28px] whitespace-nowrap" data-node-id="I5781:31502;4387:26225" style={{ fontFeatureSettings: '"cv01" 1, "cv02" 1, "cv03" 1, "cv04" 1, "cv10" 1' }}>
+                05
+              </p>
+            </div>
+          </div>
+          <div className="h-[183.998px] relative shrink-0 w-[144px]" data-node-id="5781:31503" data-name="Stamp">
+            <div className="absolute inset-[0_1.21%_1.1%_0]" data-node-id="I5781:31503;4387:26218" data-name="Shape">
+              <div className="absolute inset-[-0.27%_-0.7%_-0.55%_-0.35%]">
+                <img alt="" className="block max-w-none size-full" src={imgShape2} />
+              </div>
+            </div>
+            <div className="absolute border-[#686f2e] border-[1.4px] border-solid content-stretch flex flex-col inset-[4.88%_8.33%_5.99%_6.94%] items-center overflow-clip p-[8px]" data-node-id="I5781:31503;4387:26221" data-name="Frame border">
+              <div className="relative shrink-0 size-[120px]" data-node-id="I5781:31503;4387:26222" data-name="Artifact image">
+                <img alt="" className="absolute inset-0 max-w-none object-bottom pointer-events-none size-full" src={imgArtifactImage5} />
+              </div>
+            </div>
+            <div className="absolute bg-[#686f2e] inset-[72.28%_8.33%_5.98%_6.94%]" data-node-id="I5781:31503;4387:26223" data-name="Tag name" />
+            <div className="-translate-x-1/2 absolute bottom-[11px] content-stretch flex h-[36px] items-center justify-center left-[calc(50%-1px)] px-[2px] w-[122px]" data-node-id="I5781:31503;4515:18556" data-name="Text container">
+              <p className="[word-break:break-word] flex-[1_0_0] font-['Young_Display_Bold:Bold'] leading-[1.2] min-w-px not-italic relative text-[#ffedc0] text-[14px] text-center" data-node-id="I5781:31503;4515:18556;4387:25201">
+                Tượng uyên ương
+              </p>
+            </div>
+            <div className="absolute content-stretch flex h-[24px] items-start justify-end p-[8px] right-[11px] top-[8px] w-[40px]" data-node-id="I5781:31503;5604:46679" data-name="Text containner">
+              <p className="[word-break:break-word] font-['Young_Display_Bold:Bold'] leading-[normal] not-italic relative shrink-0 text-[#686f2e] text-[14px] tracking-[-0.28px] whitespace-nowrap" data-node-id="I5781:31503;4387:26225" style={{ fontFeatureSettings: '"cv01" 1, "cv02" 1, "cv03" 1, "cv04" 1, "cv10" 1' }}>
+                06
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <Pagination className="content-stretch flex items-center justify-between relative shrink-0 w-[320px]" />
+    </div>
+  );
+}
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+These styles are contained in the design: Foundation /Yellow/yellow-200: #FFEDC0, Card Shadow/Card shadow 0.5: Effect(type: DROP_SHADOW, color: #000000E5, offset: (-2, -2), radius: 0, spread: 0); Effect(type: DROP_SHADOW, color: #4F3927, offset: (1, 1), radius: 0, spread: 0); Effect(type: GRAIN, radius: 0.5), Blur texture/Blur texture 1: Effect(type: GRAIN, radius: 0.5), Foundation /Red/red-600: #B1352A, Fonts/Display/bold: Font(family: "Young Display Bold", style: Bold, size: 14, weight: 700, lineHeight: 100, letterSpacing: -2), Foundation /Blue/blue-600: #2F5F7C, Foundation /Green/green-600: #686F2E, Foundation/Neutral/neutral-50: #F4F0ED, Linear coloor/Neutral dark: , Linear coloor/Neutral dark 2: , Card Shadow/Card shadow: Effect(type: DROP_SHADOW, color: #000000E5, offset: (-2, -2), radius: 0, spread: 0); Effect(type: DROP_SHADOW, color: #4F3927, offset: (2, 2), radius: 0, spread: 0); Effect(type: GRAIN, radius: 0.5), Foundation/Neutral/neutral-950: #291D14, Body/text-Body/semibold: Font(family: "Inter", style: Semi Bold, size: 16, weight: 600, lineHeight: 24, letterSpacing: -2).
+The generated code contains image and SVG URL constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These URLs are temporary download sources and expire after 7 days. Download each asset into the project with curl -L, then replace its URL in the generated code with a reference to the downloaded asset. Never use the temporary URLs as runtime image sources.

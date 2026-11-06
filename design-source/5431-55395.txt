@@ -1,0 +1,42 @@
+const imgImage = "https://www.figma.com/api/mcp/asset/3f2e1991-deb1-4dac-b2ed-f2a180d2bccd.png";
+const imgImage1 = "https://www.figma.com/api/mcp/asset/6336b299-6901-42f1-a158-758e22427812.png";
+
+type LoadingProps = {
+  className?: string;
+  state?: "None";
+};
+
+function Loading({ className, state = "None" }: LoadingProps) {
+  return (
+    <div className={className || "h-[49px] opacity-0 relative w-[388px]"} data-node-id="5248:50256">
+      <div className="absolute bg-[#f4f0ed] border-2 border-[#8f6747] border-solid content-stretch flex gap-[8px] h-[48px] items-center left-0 px-[16px] rounded-[12px] top-[-0.48px] w-[388px]" data-node-id="5248:50257" data-name="BG" />
+      <div className="absolute bg-[#f3cb2e] content-stretch flex gap-[8px] h-[48px] items-center left-0 opacity-0 px-[16px] rounded-[12px] top-0 w-[6px]" data-node-id="5248:50358" data-name="Load" />
+    </div>
+  );
+}
+
+export default function LoadingScreen() {
+  return (
+    <a className="bg-[rgba(0,0,0,0.3)] block cursor-pointer relative size-full" data-node-id="5431:55395" data-name="Loading screen">
+      <div className="-translate-x-1/2 -translate-y-1/2 absolute h-[956px] left-1/2 top-1/2 w-[440px]" data-node-id="5431:55396" data-name="Image">
+        <div aria-hidden className="absolute inset-0 pointer-events-none">
+          <div className="absolute inset-0 overflow-hidden">
+            <img alt="" className="absolute h-full left-[-112.95%] max-w-none top-0 w-[325.91%]" src={imgImage} />
+          </div>
+          <img alt="" className="absolute max-w-none object-cover size-full" src={imgImage1} />
+        </div>
+      </div>
+      <Loading className="-translate-x-1/2 absolute h-[49px] left-1/2 opacity-0 top-[857px] w-[388px]" />
+    </a>
+  );
+}
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+These styles are contained in the design: Blur texture/Blur texture 3.5: Effect(type: GRAIN, radius: 1.5), Foundation/Neutral/neutral-50: #F4F0ED, Foundation/Neutral/neutral-500: #8F6747, Card Shadow/Card shadow: Effect(type: DROP_SHADOW, color: #000000E5, offset: (-2, -2), radius: 0, spread: 0); Effect(type: DROP_SHADOW, color: #4F3927, offset: (2, 2), radius: 0, spread: 0); Effect(type: GRAIN, radius: 0.5).
+The generated code contains image and SVG URL constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These URLs are temporary download sources and expire after 7 days. Download each asset into the project with curl -L, then replace its URL in the generated code with a reference to the downloaded asset. Never use the temporary URLs as runtime image sources.

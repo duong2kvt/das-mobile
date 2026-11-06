@@ -1,0 +1,2 @@
+import {defineConfig} from '@playwright/test';
+export default defineConfig({testDir:'./tests/browser',timeout:60000,workers:2,retries:0,use:{viewport:{width:440,height:956},deviceScaleFactor:1,baseURL:'http://127.0.0.1:4173/das-mobile/'},webServer:{command:'npx vite preview --host 127.0.0.1 --port 4173',url:'http://127.0.0.1:4173/das-mobile/',reuseExistingServer:false},reporter:[['list'],['html',{open:'never'}]]});

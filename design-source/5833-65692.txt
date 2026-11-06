@@ -1,0 +1,502 @@
+const imgVector1166Stroke = "https://www.figma.com/api/mcp/asset/0e61c387-efdf-44de-bd6d-5b5835d4a8a4.svg";
+const imgGroup427322577 = "https://www.figma.com/api/mcp/asset/90768a55-309e-4c91-a9ab-cb7cc0c3b7dd.svg";
+const imgVector1164Stroke = "https://www.figma.com/api/mcp/asset/25641ff1-c3c1-4b6a-9d56-d359e552ac2c.svg";
+const imgGroup427322578 = "https://www.figma.com/api/mcp/asset/8155ceca-a1c0-4f98-bb82-9b43f67e4b35.svg";
+const imgPattern = "https://www.figma.com/api/mcp/asset/6de89d61-b93c-4041-8fac-11402986bc12.svg";
+const imgVector1164Stroke1 = "https://www.figma.com/api/mcp/asset/172af6ce-a056-41c3-89bc-b69be1844b2b.svg";
+const imgVector1164Stroke2 = "https://www.figma.com/api/mcp/asset/cd9cb5c6-51ab-442b-8c2d-50d95c826df0.svg";
+const imgVector1164Stroke3 = "https://www.figma.com/api/mcp/asset/10571636-2f45-4efa-bffa-4d12eb212020.svg";
+const imgVector1165 = "https://www.figma.com/api/mcp/asset/0c9c1a5f-1707-407d-8152-fbe7a7d50d05.svg";
+const imgUnion = "https://www.figma.com/api/mcp/asset/99855887-0483-464d-8efd-70393642925d.png";
+const imgVector = "https://www.figma.com/api/mcp/asset/eb29394d-eb76-48ce-84f9-b6f1ca639e50.png";
+const imgVector1 = "https://www.figma.com/api/mcp/asset/c8990313-aa5c-4f98-a092-0473af37fe58.png";
+const imgVector2 = "https://www.figma.com/api/mcp/asset/f7640da3-d1f7-46ce-83ec-1751e26b3d9f.png";
+const imgImage726 = "https://www.figma.com/api/mcp/asset/d3af9f2e-4f29-464c-9463-ca3970c1de2a.png";
+const imgVector3 = "https://www.figma.com/api/mcp/asset/b560b83d-5f10-41fd-a231-60f372186271.svg";
+const imgVector4 = "https://www.figma.com/api/mcp/asset/9664c882-5a3f-4053-ae53-1d283b492331.svg";
+const imgScene8 = "https://www.figma.com/api/mcp/asset/52fa4f37-5b57-416c-9947-9c680590a439.png";
+const imgBook = "https://www.figma.com/api/mcp/asset/cc928db9-d969-40cd-bb61-e1f371983a7e.png";
+const imgIcon = "https://www.figma.com/api/mcp/asset/e4afe98d-b6a3-4dd0-8c40-4852f9832557.png";
+const imgArtifactImage = "https://www.figma.com/api/mcp/asset/7d218aa0-38ce-4449-a315-cd79a1a09e24.png";
+const imgImage566 = "https://www.figma.com/api/mcp/asset/5041e193-98e1-4b2e-9c6e-75dd2c2e2e10.png";
+const imgImage727 = "https://www.figma.com/api/mcp/asset/38dfa6f0-35b5-44fb-aa9f-414f481807d4.png";
+const imgVector7 = "https://www.figma.com/api/mcp/asset/a7eb566a-4a89-42b4-b273-b1206188089e.png";
+const imgMascot14 = "https://www.figma.com/api/mcp/asset/6ce4e322-ab0c-4a24-8b3f-8c27b65a15e3.png";
+const imgUnion1 = "https://www.figma.com/api/mcp/asset/44cd6ecb-36ea-4ad6-a69f-a7dd267afd63.png";
+const imgShape = "https://www.figma.com/api/mcp/asset/15921805-89a9-4913-9923-69663b774b12.svg";
+const imgShape1 = "https://www.figma.com/api/mcp/asset/639017a4-8328-4761-a9a5-92ba229cdcf9.svg";
+const imgShape2 = "https://www.figma.com/api/mcp/asset/39a9d4ec-d95c-4da4-b459-b9cf4499cbe1.svg";
+const imgVector5 = "https://www.figma.com/api/mcp/asset/0deaa956-2890-4c75-aab4-6e70d9f5dcde.svg";
+const imgVector6 = "https://www.figma.com/api/mcp/asset/ea599b51-5ef4-4866-b75f-3b2a0801ea78.svg";
+const imgVector1186 = "https://www.figma.com/api/mcp/asset/51dfc14a-7ffb-46bb-8e0c-6688c99adba2.svg";
+const imgVector1171 = "https://www.figma.com/api/mcp/asset/a68bc15d-183d-4f0d-8e09-4cdfacb8fa39.svg";
+const imgIconInteract = "https://www.figma.com/api/mcp/asset/6427aa0c-ba8a-40b1-b489-98917c30cb5a.svg";
+
+type BadgeProps = {
+  className?: string;
+  color?: "Accent";
+  style?: "Pattern";
+  type?: "Round";
+};
+
+function Badge({ className, color = "Accent", style = "Pattern", type = "Round" }: BadgeProps) {
+  return (
+    <div className={className || "drop-shadow-[0px_4.354px_1.088px_rgba(136,122,29,0.25)] relative size-[40px]"} data-node-id="4848:33768">
+      <div className="absolute inset-[5.74%_4.39%_3.1%_3.36%] pointer-events-none rounded-[2014.611px]" data-node-id="4848:33769" data-name="BASE">
+        <div aria-hidden className="absolute bg-gradient-to-b from-[#ad9021] from-[35.577%] inset-0 rounded-[2014.611px] to-[#f3cb2e] to-[76.923%]" />
+        <div className="absolute inset-0 rounded-[inherit] shadow-[inset_-4.354px_-2.177px_1.088px_0px_rgba(41,35,28,0.25),inset_2.177px_2.177px_4.354px_0px_rgba(0,0,0,0.5)]" />
+      </div>
+      <div className="absolute contents inset-0" data-node-id="4848:33770">
+        <div className="absolute inset-[10.45%_7.69%_4.53%_6.09%]" data-node-id="4848:33771" data-name="Vector 1166 (Stroke)">
+          <div className="absolute inset-[-1.92%_-1.89%]">
+            <img alt="" className="block max-w-none size-full" src={imgVector1166Stroke} />
+          </div>
+        </div>
+        <div className="absolute inset-[-5.44%_-16.33%_-16.33%_-5.44%]">
+          <img alt="" className="block max-w-none size-full" src={imgGroup427322577} />
+        </div>
+        <div className="absolute flex inset-[39.14%_2.2%_47.37%_90.31%] items-center justify-center mix-blend-plus-lighter" data-node-id="4848:33773" style={{ containerType: "size" }}>
+          <div className="flex-none h-[hypot(-56.9222cqw,8.04409cqh)] rotate-[75.41deg] skew-x-[-0.33deg] w-[hypot(43.0778cqw,91.9559cqh)]">
+            <div className="relative size-full" data-name="Vector 1164 (Stroke)">
+              <div className="absolute inset-[-171.42%_-54.38%_-158.45%_-57.34%]">
+                <img alt="" className="block max-w-none size-full" src={imgVector1164Stroke} />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="absolute inset-[-2.69%_-1.69%_-1.46%_-2%]">
+          <img alt="" className="block max-w-none size-full" src={imgGroup427322578} />
+        </div>
+      </div>
+      <div className="-translate-y-1/2 absolute aspect-[65.99798583984375/65.53138732910156] left-1/4 right-1/4 top-[calc(50%+1px)]" data-node-id="4848:33775" data-name="Pattern">
+        <div className="absolute inset-[-1%]">
+          <img alt="" className="block max-w-none size-full" src={imgPattern} />
+        </div>
+      </div>
+      <div className="absolute contents inset-[1.1%_50.69%_80.06%_16.84%]" data-node-id="4848:33776" style={{ containerType: "size" }}>
+        <div className="absolute flex inset-[8.31%_66.04%_80.55%_17.22%] items-center justify-center mix-blend-soft-light" data-node-id="4848:33777" style={{ containerType: "size" }}>
+          <div className="flex-none h-[hypot(12.8854cqw,45.2155cqh)] rotate-[-22.7deg] skew-x-[0.49deg] w-[hypot(87.1146cqw,-54.7845cqh)]">
+            <div className="opacity-60 relative size-full" data-name="Vector 1164 (Stroke)">
+              <div className="absolute inset-[-34.51%_-3.85%_-29.59%_-9.77%]">
+                <img alt="" className="block max-w-none size-full" src={imgVector1164Stroke1} />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="absolute flex inset-[3.57%_51.5%_90.32%_38.5%] items-center justify-center mix-blend-soft-light" data-node-id="4848:33778" style={{ containerType: "size" }}>
+          <div className="flex-none h-[hypot(8.78698cqw,69.9143cqh)] rotate-[-11.38deg] skew-x-[0.27deg] w-[hypot(91.213cqw,-30.0857cqh)]">
+            <div className="opacity-60 relative size-full" data-name="Vector 1164 (Stroke)">
+              <div className="absolute inset-[-68.61%_-28.05%_-60.36%_-32.21%]">
+                <img alt="" className="block max-w-none size-full" src={imgVector1164Stroke2} />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="absolute flex inset-[6.6%_65.69%_90.56%_31.44%] items-center justify-center mix-blend-soft-light" data-node-id="4848:33779" style={{ containerType: "size" }}>
+          <div className="flex-none h-[hypot(29.7427cqw,70.2573cqh)] rotate-[-22.7deg] skew-x-[0.49deg] w-[hypot(70.2573cqw,-29.7427cqh)]">
+            <div className="opacity-60 relative size-full" data-name="Vector 1164 (Stroke)">
+              <div className="absolute inset-[-85.79%_-73.76%_-65.9%_-84.48%]">
+                <img alt="" className="block max-w-none size-full" src={imgVector1164Stroke3} />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="absolute flex inset-[5.74%_63.66%_91.42%_33.46%] items-center justify-center mix-blend-soft-light" data-node-id="4848:33780" style={{ containerType: "size" }}>
+          <div className="flex-none h-[hypot(29.7427cqw,70.2573cqh)] rotate-[-22.7deg] skew-x-[0.49deg] w-[hypot(70.2573cqw,-29.7427cqh)]">
+            <div className="opacity-60 relative size-full" data-name="Vector 1164 (Stroke)">
+              <div className="absolute inset-[-85.79%_-73.76%_-65.9%_-84.48%]">
+                <img alt="" className="block max-w-none size-full" src={imgVector1164Stroke3} />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="absolute inset-[5.74%_4.39%_3.1%_3.36%] mix-blend-screen" data-node-id="4848:33781">
+        <div className="absolute inset-[-3.78%_-3.19%_-3.82%_-4.19%]">
+          <img alt="" className="block max-w-none size-full" src={imgVector1165} />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+type SelectionMuseunProps = {
+  className?: string;
+  state?: "2";
+};
+
+function SelectionMuseun({ className, state = "2" }: SelectionMuseunProps) {
+  return (
+    <div className={className || "border-2 border-[#f3cb2e] border-dashed h-[228px] relative rounded-[8px] w-[301px]"} data-node-id="6144:32277">
+      <div className="-translate-x-1/2 -translate-y-1/2 absolute h-[226px] left-1/2 top-[calc(50%-9px)] w-[277px]" data-node-id="6144:30933" data-name="Museum card">
+        <div className="absolute h-[208px] left-0 top-[18px] w-[277px]" data-node-id="6144:30934" data-name="Museum  Frame">
+          <div className="absolute inset-[2.31%_2.17%_3.53%_1.11%]" data-node-id="6144:30935" data-name="Union">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" height="195.865" src={imgUnion} width="267.902" />
+          </div>
+          <div className="absolute inset-[8.08%_9.17%_23%_7.8%]" data-node-id="6144:30936" data-name="Vector">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" height="143.341" src={imgVector} width="229.983" />
+          </div>
+        </div>
+        <Badge className="absolute drop-shadow-[0px_4.354px_1.088px_rgba(136,122,29,0.25)] inset-[1.61%_-3.5%_80.69%_89.06%]" />
+        <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Young_Display_Bold:Bold'] leading-[normal] left-1/2 not-italic text-[#3c2b1e] text-[14px] text-center top-[190px] tracking-[-0.28px] whitespace-nowrap" data-node-id="6144:30938" style={{ fontFeatureSettings: '"cv01" 1, "cv02" 1, "cv03" 1, "cv04" 1, "cv10" 1' }}>
+          Bảo tàng Thành phố Hồ Chí Minh
+        </p>
+        <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Young_Display_Bold:Bold'] h-[13px] leading-[normal] left-[calc(50%-3px)] not-italic text-[#3c2b1e] text-[16px] text-center top-[161px] tracking-[-0.32px] w-[9px]" data-node-id="6144:30939" style={{ fontFeatureSettings: '"cv01" 1, "cv02" 1, "cv03" 1, "cv04" 1, "cv10" 1' }}>
+          1
+        </p>
+      </div>
+    </div>
+  );
+}
+
+type VaHayLuonNhHanhTrinhSanCVtChThcSTrnVnKhiCuDnTnNiProps = {
+  className?: string;
+  name?: "Letter 1" | "Letter 2" | "Letter 3" | "Letter 4" | "Letter 5" | "Letter 6" | "Letter 7" | "Letter 8" | "Letter 9" | "Letter 10" | "Letter 11" | "Letter 12" | "Letter 13" | "Letter 14" | "Letter 15" | "Letter 16" | "Letter 17" | "Letter 18" | "Letter 19";
+  stage?: "1";
+};
+
+function VaHayLuonNhHanhTrinhSanCVtChThcSTrnVnKhiCuDnTnNi({ className, name = "Letter 1", stage = "1" }: VaHayLuonNhHanhTrinhSanCVtChThcSTrnVnKhiCuDnTnNiProps) {
+  const is1AndIsLetter2OrLetter3OrLetter4OrLetter5OrLetter6OrLetter7Or = stage === "1" && ["Letter 2", "Letter 3", "Letter 4", "Letter 5", "Letter 6", "Letter 7", "Letter 8", "Letter 9", "Letter 10", "Letter 11", "Letter 12", "Letter 13", "Letter 14", "Letter 15", "Letter 16", "Letter 17", "Letter 18", "Letter 19"].includes(name);
+  const isLetter10And1 = name === "Letter 10" && stage === "1";
+  const isLetter11And1 = name === "Letter 11" && stage === "1";
+  const isLetter12And1 = name === "Letter 12" && stage === "1";
+  const isLetter13And1 = name === "Letter 13" && stage === "1";
+  const isLetter14And1 = name === "Letter 14" && stage === "1";
+  const isLetter15And1 = name === "Letter 15" && stage === "1";
+  const isLetter16And1 = name === "Letter 16" && stage === "1";
+  const isLetter17And1 = name === "Letter 17" && stage === "1";
+  const isLetter18And1 = name === "Letter 18" && stage === "1";
+  const isLetter19And1 = name === "Letter 19" && stage === "1";
+  const isLetter2And1 = name === "Letter 2" && stage === "1";
+  const isLetter3And1 = name === "Letter 3" && stage === "1";
+  const isLetter4And1 = name === "Letter 4" && stage === "1";
+  const isLetter5And1 = name === "Letter 5" && stage === "1";
+  const isLetter6And1 = name === "Letter 6" && stage === "1";
+  const isLetter7And1 = name === "Letter 7" && stage === "1";
+  const isLetter8And1 = name === "Letter 8" && stage === "1";
+  const isLetter9And1 = name === "Letter 9" && stage === "1";
+  return (
+    <div className={className || "h-[84px] relative w-[320.781px]"} id={isLetter19And1 ? "node-5853_94706" : isLetter18And1 ? "node-5853_94704" : isLetter17And1 ? "node-5853_94702" : isLetter16And1 ? "node-5853_94700" : isLetter15And1 ? "node-5853_94698" : isLetter14And1 ? "node-5853_94696" : isLetter13And1 ? "node-5853_94694" : isLetter12And1 ? "node-5853_94692" : isLetter11And1 ? "node-5853_94690" : isLetter10And1 ? "node-5853_94688" : isLetter9And1 ? "node-5853_94686" : isLetter8And1 ? "node-5853_94684" : isLetter7And1 ? "node-5853_94682" : isLetter6And1 ? "node-5853_94680" : isLetter5And1 ? "node-5853_94678" : isLetter4And1 ? "node-5853_94676" : isLetter3And1 ? "node-5853_94674" : isLetter2And1 ? "node-5853_94672" : "node-5853_94670"}>
+      <p className="[word-break:break-word] absolute font-['Young_Display_Bold:Bold'] leading-[0] left-0 not-italic opacity-0 text-[20px] text-[rgba(0,0,0,0)] top-0 w-[320.781px]" id={isLetter19And1 ? "node-5853_94705" : isLetter18And1 ? "node-5853_94703" : isLetter17And1 ? "node-5853_94701" : isLetter16And1 ? "node-5853_94699" : isLetter15And1 ? "node-5853_94697" : isLetter14And1 ? "node-5853_94695" : isLetter13And1 ? "node-5853_94693" : isLetter12And1 ? "node-5853_94691" : isLetter11And1 ? "node-5853_94689" : isLetter10And1 ? "node-5853_94687" : isLetter9And1 ? "node-5853_94685" : isLetter8And1 ? "node-5853_94683" : isLetter7And1 ? "node-5853_94681" : isLetter6And1 ? "node-5853_94679" : isLetter5And1 ? "node-5853_94677" : isLetter4And1 ? "node-5853_94675" : isLetter3And1 ? "node-5853_94673" : isLetter2And1 ? "node-5853_94671" : "node-5853_94669"}>
+        <span className={`leading-[1.4] ${is1AndIsLetter2OrLetter3OrLetter4OrLetter5OrLetter6OrLetter7Or ? "" : "text-[#3c2b1e]"}`}>{isLetter19And1 ? "Và hãy luôn nhớ Hành trình săn cổ vật chỉ thực sự trọn vẹn khi cậu đến tận " : isLetter18And1 ? "Và hãy luôn nhớ Hành trình săn cổ vật chỉ thực sự trọn vẹn khi cậu đến " : isLetter17And1 ? "Và hãy luôn nhớ Hành trình săn cổ vật chỉ thực sự trọn vẹn khi cậu " : isLetter16And1 ? "Và hãy luôn nhớ Hành trình săn cổ vật chỉ thực sự trọn vẹn khi " : isLetter15And1 ? "Và hãy luôn nhớ Hành trình săn cổ vật chỉ thực sự trọn vẹn " : isLetter14And1 ? "Và hãy luôn nhớ Hành trình săn cổ vật chỉ thực sự trọn " : isLetter13And1 ? "Và hãy luôn nhớ Hành trình săn cổ vật chỉ thực sự " : isLetter12And1 ? "Và hãy luôn nhớ Hành trình săn cổ vật chỉ thực " : isLetter11And1 ? "Và hãy luôn nhớ Hành trình săn cổ vật chỉ " : isLetter10And1 ? "Và hãy luôn nhớ Hành trình săn cổ vật " : isLetter9And1 ? "Và hãy luôn nhớ Hành trình săn cổ " : isLetter8And1 ? "Và hãy luôn nhớ Hành trình săn " : isLetter7And1 ? "Và hãy luôn nhớ Hành trình " : isLetter6And1 ? "Và hãy luôn nhớ Hành " : isLetter5And1 ? "Và hãy luôn nhớ " : isLetter4And1 ? "Và hãy luôn " : isLetter3And1 ? "Và hãy " : isLetter2And1 ? "Và " : "Và "}</span>
+        <span className={`leading-[1.4] ${stage === "1" && ["Letter 17", "Letter 18", "Letter 19"].includes(name) ? "text-[#8a2921]" : stage === "1" && ["Letter 2", "Letter 3", "Letter 4", "Letter 5", "Letter 6", "Letter 7", "Letter 8", "Letter 9", "Letter 10", "Letter 11", "Letter 12", "Letter 13", "Letter 14", "Letter 15", "Letter 16"].includes(name) ? "text-[#3c2b1e]" : ""}`}>{isLetter19And1 ? "nơi" : isLetter18And1 ? "tận " : isLetter17And1 ? "đến " : isLetter16And1 ? "cậu " : isLetter15And1 ? "khi " : isLetter14And1 ? "vẹn " : isLetter13And1 ? "trọn " : isLetter12And1 ? "sự " : isLetter11And1 ? "thực " : isLetter10And1 ? "chỉ " : isLetter9And1 ? "vật " : isLetter8And1 ? "cổ " : isLetter7And1 ? "săn " : isLetter6And1 ? "trình " : isLetter5And1 ? "Hành " : isLetter4And1 ? "nhớ " : isLetter3And1 ? "luôn " : isLetter2And1 ? "hãy " : "hãy luôn nhớ Hành trình săn cổ vật chỉ thực sự trọn vẹn khi cậu đến tận nơi. "}</span>
+        {is1AndIsLetter2OrLetter3OrLetter4OrLetter5OrLetter6OrLetter7Or && <span className={`leading-[1.4] ${isLetter19And1 ? "text-[#3c2b1e]" : ""}`}>{isLetter19And1 ? ". " : isLetter18And1 ? "nơi. " : isLetter17And1 ? "tận nơi. " : isLetter16And1 ? "đến tận nơi. " : isLetter15And1 ? "cậu đến tận nơi. " : isLetter14And1 ? "khi cậu đến tận nơi. " : isLetter13And1 ? "vẹn khi cậu đến tận nơi. " : isLetter12And1 ? "trọn vẹn khi cậu đến tận nơi. " : isLetter11And1 ? "sự trọn vẹn khi cậu đến tận nơi. " : isLetter10And1 ? "thực sự trọn vẹn khi cậu đến tận nơi. " : isLetter9And1 ? "chỉ thực sự trọn vẹn khi cậu đến tận nơi. " : isLetter8And1 ? "vật chỉ thực sự trọn vẹn khi cậu đến tận nơi. " : isLetter7And1 ? "cổ vật chỉ thực sự trọn vẹn khi cậu đến tận nơi. " : isLetter6And1 ? "săn cổ vật chỉ thực sự trọn vẹn khi cậu đến tận nơi. " : isLetter5And1 ? "trình săn cổ vật chỉ thực sự trọn vẹn khi cậu đến tận nơi. " : isLetter4And1 ? "Hành trình săn cổ vật chỉ thực sự trọn vẹn khi cậu đến tận nơi. " : isLetter3And1 ? "nhớ Hành trình săn cổ vật chỉ thực sự trọn vẹn khi cậu đến tận nơi. " : isLetter2And1 ? "luôn nhớ Hành trình săn cổ vật chỉ thực sự trọn vẹn khi cậu đến tận nơi. " : ""}</span>}
+      </p>
+    </div>
+  );
+}
+
+type MuseumCardProps = {
+  className?: string;
+  prop2TextLine?: boolean;
+};
+
+function MuseumCard({ className, prop2TextLine = false }: MuseumCardProps) {
+  const isNotProp2TextLine = !prop2TextLine;
+  const isProp2TextLine = prop2TextLine;
+  return (
+    <div className={className || "h-[226px] relative w-[277px]"} id={isProp2TextLine ? "node-4625_73238" : "node-4625_73239"}>
+      <div className="absolute h-[208px] left-0 top-[18px] w-[277px]" id={isProp2TextLine ? "node-4625_73215" : "node-4625_73027"} data-name="Museum  Frame">
+        <div className="absolute inset-[2.31%_2.17%_3.53%_1.11%]" id={isProp2TextLine ? "node-4625_73216" : "node-4625_73028"} data-name="Union">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" height="195.865" src={imgUnion} width="267.902" />
+        </div>
+        <div className="absolute inset-[8.08%_9.17%_23%_7.8%]" id={isProp2TextLine ? "node-4625_73217" : "node-4625_73029"} data-name="Vector">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" height="143.341" src={isProp2TextLine ? imgVector2 : imgVector1} width="229.983" />
+        </div>
+      </div>
+      <Badge className="absolute drop-shadow-[0px_4.354px_1.088px_rgba(136,122,29,0.25)] inset-[1.61%_-3.5%_80.69%_89.06%]" />
+      {isNotProp2TextLine && (
+        <>
+          <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Young_Display_Bold:Bold'] leading-[normal] left-1/2 not-italic text-[#3c2b1e] text-[14px] text-center top-[190px] tracking-[-0.28px] whitespace-nowrap" data-node-id="4625:73047" style={{ fontFeatureSettings: '"cv01" 1, "cv02" 1, "cv03" 1, "cv04" 1, "cv10" 1' }}>
+            Bảo tàng vũng tàu
+          </p>
+          <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Young_Display_Bold:Bold'] h-[13px] leading-[normal] left-[calc(50%-3px)] not-italic text-[#3c2b1e] text-[16px] text-center top-[161px] tracking-[-0.32px] w-[9px]" data-node-id="4625:73212" style={{ fontFeatureSettings: '"cv01" 1, "cv02" 1, "cv03" 1, "cv04" 1, "cv10" 1' }}>
+            2
+          </p>
+        </>
+      )}
+      {isProp2TextLine && (
+        <>
+          <div className="-translate-x-1/2 [word-break:break-word] absolute content-stretch flex flex-col font-['Young_Display_Bold:Bold'] gap-[2px] items-center leading-[normal] left-1/2 not-italic text-[#3c2b1e] text-[14px] text-center top-[184px] tracking-[-0.28px]" data-node-id="4625:73234" data-name="Text group">
+            <p className="relative shrink-0 w-full" data-node-id="4625:73235" style={{ fontFeatureSettings: '"cv01" 1, "cv02" 1, "cv03" 1, "cv04" 1, "cv10" 1' }}>{`Bảo tàng lịch sử thành phố `}</p>
+            <p className="relative shrink-0 w-full" data-node-id="4625:73236" style={{ fontFeatureSettings: '"cv01" 1, "cv02" 1, "cv03" 1, "cv04" 1, "cv10" 1' }}>
+              Hồ chí minh
+            </p>
+          </div>
+          <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Young_Display_Bold:Bold'] h-[13px] leading-[normal] left-[calc(50%-3px)] not-italic text-[#3c2b1e] text-[16px] text-center top-[161px] tracking-[-0.32px] w-[9px]" data-node-id="4625:73233" style={{ fontFeatureSettings: '"cv01" 1, "cv02" 1, "cv03" 1, "cv04" 1, "cv10" 1' }}>
+            3
+          </p>
+        </>
+      )}
+    </div>
+  );
+}
+
+function MapButton({ className }: { className?: string }) {
+  return (
+    <div className={className || "relative size-[72px]"} data-node-id="5781:32126" data-name="Map Button">
+      <div className="absolute contents left-0 top-0" data-node-id="5781:32120" data-name="Shapes">
+        <div className="absolute left-0 size-[72px] top-0" data-node-id="5781:32121" data-name="Vector">
+          <div className="absolute inset-[-0.48%_-1.92%_-1.92%_-0.48%]">
+            <img alt="" className="block max-w-none size-full" src={imgVector3} />
+          </div>
+        </div>
+        <div className="absolute left-[4.11px] size-[63.782px] top-[4.11px]" data-node-id="5781:32122" data-name="Vector">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector4} />
+        </div>
+        <div className="-translate-x-1/2 -translate-y-1/2 absolute left-1/2 size-[52px] top-1/2" data-node-id="5781:32123" data-name="image 726">
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <img alt="" className="absolute left-[-6.94%] max-w-none size-[112.87%] top-[-5.82%]" src={imgImage726} />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default function Scene8() {
+  return (
+    <a className="block cursor-pointer relative size-full" data-node-id="5833:65692" data-name="Scene 8">
+      <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgScene8} />
+      <div className="absolute h-[820px] left-[-9px] top-[56px] w-[445px]" data-node-id="5833:65693" data-name="Book">
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <img alt="" className="absolute h-[99.88%] left-0 max-w-none top-[0.12%] w-full" src={imgBook} />
+        </div>
+      </div>
+      <MapButton className="absolute right-[28px] size-[72px] top-[56px]" />
+      <div className="-translate-x-1/2 absolute bottom-0 content-stretch flex h-[129px] items-end justify-center left-1/2 pb-[28px] w-[440px]" data-node-id="5833:65706" data-name="Navbar">
+        <div className="-translate-x-1/2 absolute bg-gradient-to-b bottom-0 from-[rgba(12,10,8,0)] h-[179px] left-1/2 to-[#191510] w-[440px]" data-node-id="I5833:65706;4568:31676" data-name="Linear BG" />
+        <div className="content-stretch flex flex-col gap-[12px] h-[85px] items-center justify-end relative shrink-0 w-[104px]" data-node-id="I5833:65706;4568:31677" data-name="Museum">
+          <p className="[word-break:break-word] font-['Young_Display_Bold:Bold'] leading-[normal] min-w-full not-italic relative shrink-0 text-[#f3cb2e] text-[18px] text-center tracking-[-0.54px] w-[min-content]" data-node-id="I5833:65706;4568:31678" style={{ fontFeatureSettings: '"cv01" 1, "cv02" 1, "cv03" 1, "cv04" 1, "cv10" 1' }}>
+            Bảo tàng
+          </p>
+          <div className="-translate-x-1/2 absolute left-1/2 size-[72px] top-[-16px]" data-node-id="I5833:65706;4591:64448" data-name="Icon">
+            <div className="absolute inset-0 overflow-hidden pointer-events-none">
+              <img alt="" className="absolute left-[-12.18%] max-w-none size-[125%] top-[-12.82%]" src={imgIcon} />
+            </div>
+          </div>
+        </div>
+        <div className="content-stretch flex flex-col gap-[12px] h-[85px] items-center justify-end relative shrink-0 w-[104px]" data-node-id="I5833:65706;4568:31692" data-name="Artifact">
+          <p className="[word-break:break-word] font-['Young_Display_Bold:Bold'] leading-[normal] min-w-full not-italic relative shrink-0 text-[#fefaea] text-[18px] text-center tracking-[-0.54px] w-[min-content]" data-node-id="I5833:65706;4568:31693" style={{ fontFeatureSettings: '"cv01" 1, "cv02" 1, "cv03" 1, "cv04" 1, "cv10" 1' }}>
+            Cổ vật
+          </p>
+          <div className="-translate-x-1/2 absolute left-1/2 size-[56px] top-0" data-node-id="I5833:65706;4847:20305" data-name="Icon">
+            <div className="absolute flex h-[56.58px] items-center justify-center left-[7.17px] top-[1.88px] w-[52.999px]" data-node-id="I5833:65706;4847:20306">
+              <div className="flex-none rotate-30">
+                <div className="h-[45px] relative w-[35.218px]" data-name="Stamp">
+                  <div className="absolute inset-[0_1.21%_1.1%_0]" data-node-id="I5833:65706;4847:20308" data-name="Shape">
+                    <div className="absolute inset-[-0.43%_-1.41%_-1.1%_-0.55%]">
+                      <img alt="" className="block max-w-none size-full" src={imgShape} />
+                    </div>
+                  </div>
+                  <div className="absolute border-[#686f2e] border-[0.342px] border-solid content-stretch flex flex-col inset-[4.88%_8.34%_5.99%_6.94%] items-center overflow-clip p-[1.957px]" data-node-id="I5833:65706;4847:20311" data-name="Frame border" />
+                  <div className="absolute bg-[#686f2e] inset-[72.27%_8.35%_5.99%_6.93%]" data-node-id="I5833:65706;4847:20313" data-name="Tag name" />
+                  <p className="[word-break:break-word] absolute font-['Young_Display_Bold:Bold'] leading-[normal] not-italic right-[8.34px] text-[#686f2e] text-[3.424px] text-left top-[3.82px] tracking-[-0.0685px] translate-x-full whitespace-nowrap" data-node-id="I5833:65706;4847:20315" style={{ fontFeatureSettings: '"cv01" 1, "cv02" 1, "cv03" 1, "cv04" 1, "cv10" 1' }}>
+                    03
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="absolute flex h-[52.582px] items-center justify-center left-[2.63px] top-[-1.98px] w-[45.665px]" data-node-id="I5833:65706;4847:20316">
+              <div className="flex-none rotate-15">
+                <div className="h-[45px] relative w-[35.218px]" data-name="Stamp">
+                  <div className="absolute inset-[0_1.21%_1.1%_0]" data-node-id="I5833:65706;4847:20318" data-name="Shape">
+                    <div className="absolute inset-[-0.43%_-1.41%_-1.1%_-0.55%]">
+                      <img alt="" className="block max-w-none size-full" src={imgShape1} />
+                    </div>
+                  </div>
+                  <div className="absolute border-[#2f5f7c] border-[0.342px] border-solid content-stretch flex flex-col inset-[4.89%_8.33%_5.98%_6.94%] items-center overflow-clip p-[1.957px]" data-node-id="I5833:65706;4847:20321" data-name="Frame border" />
+                  <div className="absolute bg-[#2f5f7c] inset-[72.26%_8.34%_6.01%_6.94%]" data-node-id="I5833:65706;4847:20323" data-name="Tag name" />
+                  <p className="[word-break:break-word] absolute font-['Young_Display_Bold:Bold'] leading-[normal] not-italic right-[8.53px] text-[#2f5f7c] text-[3.424px] text-left top-[3.67px] tracking-[-0.0685px] translate-x-full whitespace-nowrap" data-node-id="I5833:65706;4847:20325" style={{ fontFeatureSettings: '"cv01" 1, "cv02" 1, "cv03" 1, "cv04" 1, "cv10" 1' }}>
+                    02
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="absolute h-[45px] left-[-2.42px] top-[-1.61px] w-[35.218px]" data-node-id="I5833:65706;4847:20326" data-name="Stamp">
+              <div className="absolute inset-[0_1.2%_1.1%_0.01%]" data-node-id="I5833:65706;4847:20328" data-name="Shape">
+                <div className="absolute inset-[-0.43%_-1.41%_-1.1%_-0.55%]">
+                  <img alt="" className="block max-w-none size-full" src={imgShape2} />
+                </div>
+              </div>
+              <div className="absolute border-[#b1352a] border-[0.342px] border-solid content-stretch flex flex-col inset-[4.9%_8.33%_5.97%_6.95%] items-center overflow-clip p-[1.957px]" data-node-id="I5833:65706;4847:20331" data-name="Frame border">
+                <div className="relative shrink-0 size-[29.348px]" data-node-id="I5833:65706;4847:20332" data-name="Artifact image">
+                  <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgArtifactImage} />
+                </div>
+              </div>
+              <div className="absolute bg-[#b1352a] inset-[72.31%_8.33%_5.95%_6.95%]" data-node-id="I5833:65706;4847:20333" data-name="Tag name" />
+              <p className="[word-break:break-word] absolute font-['Young_Display_Bold:Bold'] leading-[normal] not-italic right-[8.05px] text-[#b1352a] text-[3.424px] text-left top-[3.8px] tracking-[-0.0685px] translate-x-full whitespace-nowrap" data-node-id="I5833:65706;4847:20335" style={{ fontFeatureSettings: '"cv01" 1, "cv02" 1, "cv03" 1, "cv04" 1, "cv10" 1' }}>
+                01
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="content-stretch flex flex-col gap-[12px] h-[85px] items-center justify-end relative shrink-0 w-[104px]" data-node-id="I5833:65706;5131:35069" data-name="Hunt">
+          <p className="[word-break:break-word] font-['Young_Display_Bold:Bold'] leading-[normal] min-w-full not-italic relative shrink-0 text-[#fefaea] text-[18px] text-center tracking-[-0.54px] w-[min-content]" data-node-id="I5833:65706;5131:35070" style={{ fontFeatureSettings: '"cv01" 1, "cv02" 1, "cv03" 1, "cv04" 1, "cv10" 1' }}>
+            Săn ngay
+          </p>
+          <div className="-translate-x-1/2 absolute left-1/2 size-[56px] top-0" data-node-id="I5833:65706;5131:35303" data-name="image 566">
+            <div className="absolute inset-0 overflow-hidden pointer-events-none">
+              <img alt="" className="absolute left-[-13.53%] max-w-none size-[128.57%] top-[-12.2%]" src={imgImage566} />
+            </div>
+          </div>
+        </div>
+        <div className="content-stretch flex flex-col gap-[12px] h-[85px] items-center justify-end relative shrink-0 w-[104px]" data-node-id="I5833:65706;5961:95100" data-name="Events">
+          <p className="[word-break:break-word] font-['Young_Display_Bold:Bold'] leading-[normal] min-w-full not-italic relative shrink-0 text-[#fefaea] text-[18px] text-center tracking-[-0.54px] w-[min-content]" data-node-id="I5833:65706;5961:95101" style={{ fontFeatureSettings: '"cv01" 1, "cv02" 1, "cv03" 1, "cv04" 1, "cv10" 1' }}>
+            Hồ sơ
+          </p>
+          <div className="-translate-x-1/2 absolute left-1/2 size-[56px] top-0" data-node-id="I5833:65706;5961:98755" data-name="Icon frame">
+            <div className="-translate-x-1/2 -translate-y-1/2 absolute left-1/2 size-[52px] top-1/2" data-node-id="I5833:65706;5961:98756" data-name="Avatar">
+              <div className="absolute contents left-0 top-0" data-node-id="I5833:65706;5961:98756;5104:42636" data-name="Shapes">
+                <div className="absolute left-0 size-[52px] top-0" data-node-id="I5833:65706;5961:98756;5104:42637" data-name="Vector">
+                  <div className="absolute inset-[-0.48%_-1.92%_-1.92%_-0.48%]">
+                    <img alt="" className="block max-w-none size-full" src={imgVector5} />
+                  </div>
+                </div>
+                <div className="absolute left-[2.97px] size-[46.065px] top-[2.96px]" data-node-id="I5833:65706;5961:98756;5104:42638" data-name="Vector">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector6} />
+                </div>
+                <div className="absolute left-[7.85px] size-[36.198px] top-[7.91px]" data-node-id="I5833:65706;5961:98756;5104:42639" data-name="image 726">
+                  <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                    <img alt="" className="absolute h-[114.9%] left-[5.67%] max-w-none top-[-8.06%] w-[88.66%]" src={imgImage727} />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <MuseumCard className="absolute flex h-[244.312px] items-center justify-center left-[22px] top-[559px] w-[291.726px]" prop2TextLine />
+      <div className="absolute flex h-[245.032px] items-center justify-center left-[101px] top-[318px] w-[292.296px]" data-node-id="5833:65708">
+        <div className="flex-none rotate-[4.06deg]">
+          <div className="h-[226px] relative w-[277px]" data-name="Museum card">
+            <div className="absolute h-[208px] left-0 top-[18px] w-[277px]" data-node-id="I5833:65708;4625:73027" data-name="Museum  Frame">
+              <div className="absolute inset-[2.31%_2.17%_3.53%_1.11%]" data-node-id="I5833:65708;4625:73028" data-name="Union">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" height="195.865" src={imgUnion} width="267.902" />
+              </div>
+              <div className="absolute inset-[8.08%_9.17%_23%_7.8%]" data-node-id="I5833:65708;4625:73029" data-name="Vector">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" height="143.341" src={imgVector7} width="229.983" />
+              </div>
+            </div>
+            <Badge className="absolute drop-shadow-[0px_4.354px_1.088px_rgba(136,122,29,0.25)] inset-[1.61%_-3.5%_80.69%_89.06%]" />
+            <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Young_Display_Bold:Bold'] leading-[normal] left-1/2 not-italic text-[#3c2b1e] text-[14px] text-center top-[190px] tracking-[-0.28px] whitespace-nowrap" data-node-id="I5833:65708;4625:73047" style={{ fontFeatureSettings: '"cv01" 1, "cv02" 1, "cv03" 1, "cv04" 1, "cv10" 1' }}>
+              Bảo tàng vũng tàu
+            </p>
+            <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Young_Display_Bold:Bold'] h-[13px] leading-[normal] left-[calc(50%-3px)] not-italic text-[#3c2b1e] text-[16px] text-center top-[161px] tracking-[-0.32px] w-[9px]" data-node-id="I5833:65708;4625:73212" style={{ fontFeatureSettings: '"cv01" 1, "cv02" 1, "cv03" 1, "cv04" 1, "cv10" 1' }}>
+              2
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="absolute flex h-[260.779px] items-center justify-center left-[13px] top-[69px] w-[304.555px]" data-node-id="5833:65709">
+        <div className="flex-none rotate-[-7.63deg]">
+          <div className="h-[226px] relative w-[277px]" data-name="Museum card">
+            <div className="absolute h-[208px] left-0 top-[18px] w-[277px]" data-node-id="I5833:65709;4625:73027" data-name="Museum  Frame">
+              <div className="absolute inset-[2.31%_2.17%_3.53%_1.11%]" data-node-id="I5833:65709;4625:73028" data-name="Union">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" height="195.865" src={imgUnion} width="267.902" />
+              </div>
+              <div className="absolute inset-[8.08%_9.17%_23%_7.8%]" data-node-id="I5833:65709;4625:73029" data-name="Vector">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" height="143.341" src={imgVector} width="229.983" />
+              </div>
+            </div>
+            <Badge className="absolute drop-shadow-[0px_4.354px_1.088px_rgba(136,122,29,0.25)] inset-[1.61%_-3.5%_80.69%_89.06%]" />
+            <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Young_Display_Bold:Bold'] leading-[normal] left-1/2 not-italic text-[#3c2b1e] text-[14px] text-center top-[190px] tracking-[-0.28px] whitespace-nowrap" data-node-id="I5833:65709;4625:73047" style={{ fontFeatureSettings: '"cv01" 1, "cv02" 1, "cv03" 1, "cv04" 1, "cv10" 1' }}>
+              Bảo tàng Thành phố Hồ Chí Minh
+            </p>
+            <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Young_Display_Bold:Bold'] h-[13px] leading-[normal] left-[calc(50%-3px)] not-italic text-[#3c2b1e] text-[16px] text-center top-[161px] tracking-[-0.32px] w-[9px]" data-node-id="I5833:65709;4625:73212" style={{ fontFeatureSettings: '"cv01" 1, "cv02" 1, "cv03" 1, "cv04" 1, "cv10" 1' }}>
+              1
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="-translate-x-1/2 absolute flex h-[76px] items-center justify-center left-1/2 top-0 w-[440px]" data-node-id="5833:65710">
+        <div className="-scale-y-100 flex-none">
+          <div className="bg-gradient-to-b from-[19.079%] from-[rgba(12,10,8,0)] h-[76px] relative to-[108.75%] to-[rgba(25,21,16,0.7)] w-[440px]" data-name="Linear BG" />
+        </div>
+      </div>
+      <div className="-translate-x-1/2 -translate-y-1/2 absolute bg-black h-[956px] left-1/2 opacity-80 top-1/2 w-[440px]" data-node-id="5833:65711" data-name="BG" />
+      <div className="-translate-x-1/2 absolute bottom-[40px] h-[419px] left-[calc(50%-0.5px)] w-[371px]" data-node-id="5833:65712" data-name="Mascot Guide">
+        <div className="absolute flex h-[345.648px] items-center justify-center left-[-49px] top-0 w-[352.254px]" data-node-id="5853:94807">
+          <div className="-scale-y-100 flex-none rotate-180">
+            <div className="h-[345.648px] relative w-[352.254px]" data-name="mascot 1 4">
+              <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                <img alt="" className="absolute h-[128.47%] left-[-10.71%] max-w-none top-[-17.87%] w-[126.06%]" src={imgMascot14} />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="absolute h-[193.973px] left-0 top-[225px] w-[370.83px]" data-node-id="5833:65714">
+          <div className="absolute h-[46.707px] left-[15px] top-0 w-[159.045px]" data-node-id="5833:65715" data-name="Name tag">
+            <div className="absolute flex h-[46.707px] items-center justify-center left-0 top-0 w-[159.045px]" data-node-id="5833:65716">
+              <div className="flex-none rotate-[-1.28deg]">
+                <div className="h-[43.191px] relative w-[158.121px]">
+                  <div className="absolute inset-[-1.16%_-1.26%_-4.63%_-0.32%]">
+                    <img alt="" className="block max-w-none size-full" src={imgVector1186} />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="-translate-x-1/2 absolute flex h-[25.578px] items-center justify-center left-[76.4px] top-[9.99px] w-[130.793px]" data-node-id="5833:65717">
+              <div className="flex-none rotate-[-0.98deg]">
+                <p className="[word-break:break-word] font-['Young_Display_Bold:Bold'] h-[23.349px] leading-[1.4] not-italic relative text-[#f4f0ed] text-[20px] text-center w-[130.412px]">Giáo sư Zũ</p>
+              </div>
+            </div>
+          </div>
+          <div className="absolute h-[161.973px] left-0 top-[32px] w-[370.83px]" data-node-id="5833:65718" data-name="Box chat">
+            <div className="absolute h-[145.489px] left-[15.44px] top-[16.48px] w-[355.386px]" data-node-id="5833:65719">
+              <div className="absolute inset-[-0.69%_-0.28%]">
+                <img alt="" className="block max-w-none size-full" src={imgVector1171} />
+              </div>
+            </div>
+            <div className="absolute content-stretch flex flex-col gap-[8px] h-[153.288px] items-start left-0 px-[14px] py-[20px] top-0 w-[370.83px]" data-node-id="5833:65720" data-name="Content">
+              <div className="absolute h-[153.288px] left-0 top-0 w-[370.829px]" data-node-id="5833:65721" data-name="Union">
+                <div className="absolute inset-[-0.33%_-0.54%_-1.3%_-0.13%]">
+                  <img alt="" className="block max-w-none size-full" height="155.788" src={imgUnion1} width="373.33" />
+                </div>
+              </div>
+              <div className="content-stretch flex gap-[8px] h-[107.532px] items-start p-[8px] relative shrink-0 w-[336.781px]" data-node-id="5833:65723" data-name="Text">
+                <div className="bg-[rgba(255,255,255,0)] h-[140px] relative shrink-0 w-[212.781px]" data-node-id="5853:94765" data-name="Và hãy luôn nhớ Hành trình săn... - Animation ▶">
+                  <VaHayLuonNhHanhTrinhSanCVtChThcSTrnVnKhiCuDnTnNi className="absolute h-[84px] left-0 top-0 w-[320.781px]" />
+                  <VaHayLuonNhHanhTrinhSanCVtChThcSTrnVnKhiCuDnTnNi className="absolute h-[84px] left-0 top-0 w-[320.781px]" name="Letter 2" />
+                  <VaHayLuonNhHanhTrinhSanCVtChThcSTrnVnKhiCuDnTnNi className="absolute h-[84px] left-0 top-0 w-[320.781px]" name="Letter 3" />
+                  <VaHayLuonNhHanhTrinhSanCVtChThcSTrnVnKhiCuDnTnNi className="absolute h-[84px] left-0 top-0 w-[320.781px]" name="Letter 4" />
+                  <VaHayLuonNhHanhTrinhSanCVtChThcSTrnVnKhiCuDnTnNi className="absolute h-[84px] left-0 top-0 w-[320.781px]" name="Letter 5" />
+                  <VaHayLuonNhHanhTrinhSanCVtChThcSTrnVnKhiCuDnTnNi className="absolute h-[84px] left-0 top-0 w-[320.781px]" name="Letter 6" />
+                  <VaHayLuonNhHanhTrinhSanCVtChThcSTrnVnKhiCuDnTnNi className="absolute h-[84px] left-0 top-0 w-[320.781px]" name="Letter 7" />
+                  <VaHayLuonNhHanhTrinhSanCVtChThcSTrnVnKhiCuDnTnNi className="absolute h-[84px] left-0 top-0 w-[320.781px]" name="Letter 8" />
+                  <VaHayLuonNhHanhTrinhSanCVtChThcSTrnVnKhiCuDnTnNi className="absolute h-[84px] left-0 top-0 w-[320.781px]" name="Letter 9" />
+                  <VaHayLuonNhHanhTrinhSanCVtChThcSTrnVnKhiCuDnTnNi className="absolute h-[84px] left-0 top-0 w-[320.781px]" name="Letter 10" />
+                  <VaHayLuonNhHanhTrinhSanCVtChThcSTrnVnKhiCuDnTnNi className="absolute h-[84px] left-0 top-0 w-[320.781px]" name="Letter 11" />
+                  <VaHayLuonNhHanhTrinhSanCVtChThcSTrnVnKhiCuDnTnNi className="absolute h-[84px] left-0 top-0 w-[320.781px]" name="Letter 12" />
+                  <VaHayLuonNhHanhTrinhSanCVtChThcSTrnVnKhiCuDnTnNi className="absolute h-[84px] left-0 top-0 w-[320.781px]" name="Letter 13" />
+                  <VaHayLuonNhHanhTrinhSanCVtChThcSTrnVnKhiCuDnTnNi className="absolute h-[84px] left-0 top-0 w-[320.781px]" name="Letter 14" />
+                  <VaHayLuonNhHanhTrinhSanCVtChThcSTrnVnKhiCuDnTnNi className="absolute h-[84px] left-0 top-0 w-[320.781px]" name="Letter 15" />
+                  <VaHayLuonNhHanhTrinhSanCVtChThcSTrnVnKhiCuDnTnNi className="absolute h-[84px] left-0 top-0 w-[320.781px]" name="Letter 16" />
+                  <VaHayLuonNhHanhTrinhSanCVtChThcSTrnVnKhiCuDnTnNi className="absolute h-[84px] left-0 top-0 w-[320.781px]" name="Letter 17" />
+                  <VaHayLuonNhHanhTrinhSanCVtChThcSTrnVnKhiCuDnTnNi className="absolute h-[84px] left-0 top-0 w-[320.781px]" name="Letter 18" />
+                  <VaHayLuonNhHanhTrinhSanCVtChThcSTrnVnKhiCuDnTnNi className="absolute h-[84px] left-0 top-0 w-[320.781px]" name="Letter 19" />
+                </div>
+              </div>
+              <div className="absolute h-[19px] left-[333px] top-[128px] w-[18px]" data-node-id="5833:65725" data-name="Icon Interact">
+                <div className="absolute inset-[-2.63%_-5.56%_0_-2.78%]">
+                  <img alt="" className="block max-w-none size-full" src={imgIconInteract} />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <SelectionMuseun className="absolute flex h-[265.947px] items-center justify-center left-[2px] top-[75px] w-[328.608px]" />
+    </a>
+  );
+}
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+These styles are contained in the design: Blur texture/Blur texture 3.5: Effect(type: GRAIN, radius: 1.5), Foundation /Light Brown/light brown-50: #F9F3EE, Foundation /Light Brown/light brown-500: #C58859, Foundation/Accent/accent-500: #F3CB2E, Fonts/Display/bold: Font(family: "Young Display Bold", style: Bold, size: 16, weight: 700, lineHeight: 100, letterSpacing: -2), Blur texture/Blur texture 1: Effect(type: GRAIN, radius: 0.5), Foundation /Accent/accent-50: #FEFAEA, Foundation /Accent/accent-100: #FBEFBE, Foundation /Green/green-600: #686F2E, Foundation /Blue/blue-600: #2F5F7C, Foundation /Red/red-600: #B1352A, Card Shadow/Card shadow 1: Effect(type: DROP_SHADOW, color: #000000E5, offset: (-2, -2), radius: 0, spread: 0); Effect(type: DROP_SHADOW, color: #4F3927, offset: (4, 4), radius: 0, spread: 0); Effect(type: GRAIN, radius: 1), Blur texture/Blur texture 0.2: Effect(type: GRAIN, radius: 0.20000000298023224), Foundation/Neutral/neutral-900: #3C2B1E, Blur texture/Blur texture 2.5: Effect(type: GRAIN, radius: 1.5), Card Shadow/Card shadow: Effect(type: DROP_SHADOW, color: #000000E5, offset: (-2, -2), radius: 0, spread: 0); Effect(type: DROP_SHADOW, color: #4F3927, offset: (2, 2), radius: 0, spread: 0); Effect(type: GRAIN, radius: 0.5), Foundation/Neutral/neutral-50: #F4F0ED, Chat text: Font(family: "Young Display Bold", style: Bold, size: 20, weight: 700, lineHeight: 1.399999976158142, letterSpacing: 0), Foundation/Neutral/neutral-500: #8F6747, Blur texture/Blur texture 2: Effect(type: GRAIN, radius: 1), White paper BG/40: #FBFAF9,, Foundation/Neutral/neutral-300: #B49984, Card Shadow/Card shadow 0.5: Effect(type: DROP_SHADOW, color: #000000E5, offset: (-2, -2), radius: 0, spread: 0); Effect(type: DROP_SHADOW, color: #4F3927, offset: (1, 1), radius: 0, spread: 0); Effect(type: GRAIN, radius: 0.5).
+The generated code contains image and SVG URL constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These URLs are temporary download sources and expire after 7 days. Download each asset into the project with curl -L, then replace its URL in the generated code with a reference to the downloaded asset. Never use the temporary URLs as runtime image sources.

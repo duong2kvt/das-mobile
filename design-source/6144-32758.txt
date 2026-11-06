@@ -1,0 +1,74 @@
+const imgStyle1 = "https://www.figma.com/api/mcp/asset/be1a6901-38af-4812-a9e3-64f7b12c355a.svg";
+const imgArtifactImage = "https://www.figma.com/api/mcp/asset/526e4e62-d88d-4ac4-b3dc-00b5acd97b85.png";
+const imgShape = "https://www.figma.com/api/mcp/asset/5ae0fab9-6691-4803-a396-1e3e5a595cb5.svg";
+
+type TextContainerProps = {
+  className?: string;
+  prop2Lines?: "True";
+};
+
+function TextContainer({ className, prop2Lines = "True" }: TextContainerProps) {
+  return (
+    <div className={className || "content-stretch flex h-[36px] items-center justify-center px-[2px] relative w-[122px]"} data-node-id="4387:25332">
+      <p className="[word-break:break-word] flex-[1_0_0] font-['Young_Display_Bold:Bold'] leading-[1.2] min-w-px not-italic relative text-[#ffedc0] text-[14px] text-center" data-node-id="4387:25201">{`Đầu chim phượng `}</p>
+    </div>
+  );
+}
+
+type PatternProps = {
+  className?: string;
+  style?: "1";
+};
+
+function Pattern({ className, style = "1" }: PatternProps) {
+  return (
+    <div className={className || "h-[164.002px] relative w-[122px]"} data-node-id="4387:25763">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgStyle1} />
+    </div>
+  );
+}
+
+type SelectionArtifactProps = {
+  className?: string;
+  state?: "Default";
+};
+
+function SelectionArtifact({ className, state = "Default" }: SelectionArtifactProps) {
+  return (
+    <div className={className || "border-2 border-[rgba(243,203,46,0)] border-dashed h-[208px] relative rounded-[10px] w-[168px]"} data-node-id="6144:32636">
+      <div className="-translate-x-1/2 -translate-y-1/2 absolute h-[183.998px] left-1/2 opacity-0 top-1/2 w-[144px]" data-node-id="6144:32284" data-name="Stamp">
+        <div className="absolute inset-[0_1.21%_1.1%_0]" data-node-id="I6144:32284;4387:25767" data-name="Shape">
+          <div className="absolute inset-[-0.27%_-0.7%_-0.55%_-0.35%]">
+            <img alt="" className="block max-w-none size-full" src={imgShape} />
+          </div>
+        </div>
+        <div className="absolute border-[#b1352a] border-[1.4px] border-solid content-stretch flex flex-col inset-[4.88%_8.33%_5.99%_6.94%] items-center overflow-clip p-[8px]" data-node-id="I6144:32284;4387:25874" data-name="Frame border">
+          <div className="relative shrink-0 size-[120px]" data-node-id="I6144:32284;4387:25875" data-name="Artifact image">
+            <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgArtifactImage} />
+          </div>
+        </div>
+        <div className="absolute bg-[#b1352a] inset-[72.28%_8.33%_5.98%_6.94%]" data-node-id="I6144:32284;4387:25876" data-name="Tag name" />
+        <TextContainer className="absolute content-stretch flex h-[36px] items-center justify-center left-[10px] px-[2px] top-[137px] w-[122px]" />
+        <div className="absolute content-stretch flex flex-col h-[24px] items-end p-[8px] right-[11px] top-[8px] w-[40px]" data-node-id="I6144:32284;5604:46681" data-name="Text containner">
+          <p className="[word-break:break-word] font-['Young_Display_Bold:Bold'] leading-[normal] not-italic relative shrink-0 text-[#b1352a] text-[14px] tracking-[-0.28px] whitespace-nowrap" data-node-id="I6144:32284;4387:25878" style={{ fontFeatureSettings: '"cv01" 1, "cv02" 1, "cv03" 1, "cv04" 1, "cv10" 1' }}>
+            01
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default function SelectionArtifact1() {
+  return <SelectionArtifact className="block border-2 border-[rgba(243,203,46,0)] border-dashed cursor-pointer relative rounded-[10px] size-full" />;
+}
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+These styles are contained in the design: Foundation /Yellow/yellow-200: #FFEDC0, Card Shadow/Card shadow 0.5: Effect(type: DROP_SHADOW, color: #000000E5, offset: (-2, -2), radius: 0, spread: 0); Effect(type: DROP_SHADOW, color: #4F3927, offset: (1, 1), radius: 0, spread: 0); Effect(type: GRAIN, radius: 0.5), Blur texture/Blur texture 1: Effect(type: GRAIN, radius: 0.5), Foundation /Red/red-600: #B1352A, Fonts/Display/bold: Font(family: "Young Display Bold", style: Bold, size: 14, weight: 700, lineHeight: 100, letterSpacing: -2).
+The generated code contains image and SVG URL constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These URLs are temporary download sources and expire after 7 days. Download each asset into the project with curl -L, then replace its URL in the generated code with a reference to the downloaded asset. Never use the temporary URLs as runtime image sources.

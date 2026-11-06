@@ -1,0 +1,435 @@
+const imgShapes = "https://www.figma.com/api/mcp/asset/78db3649-ef3c-4395-b423-57746fd57e37.svg";
+const imgGroup1171277045 = "https://www.figma.com/api/mcp/asset/af5f88d5-2a0e-4e22-b486-391a3b7b11dd.svg";
+const imgHistoryPage1 = "https://www.figma.com/api/mcp/asset/4993689f-3752-4352-b187-337fecace5b0.png";
+const imgBook = "https://www.figma.com/api/mcp/asset/68e841a7-28bb-45ae-a277-20e1f775740e.png";
+const imgIcon = "https://www.figma.com/api/mcp/asset/23a3f7d3-41bc-4253-99c0-50db9f2024c6.png";
+const imgArtifactImage = "https://www.figma.com/api/mcp/asset/8bb7a95e-90a8-4c78-92fa-15a345717e20.png";
+const imgImage566 = "https://www.figma.com/api/mcp/asset/373b8b89-1f78-4482-8d67-347811497abd.png";
+const imgImage726 = "https://www.figma.com/api/mcp/asset/90b69080-3d69-4e93-9ba1-ce4b044ed902.png";
+const imgPutYourPhotoHere = "https://www.figma.com/api/mcp/asset/f3175b88-1938-4c20-99dd-1a811ba528d7.png";
+const imgPutYourPhotoHere1 = "https://www.figma.com/api/mcp/asset/dc771e38-c683-433b-89f5-53de73a6330b.png";
+const imgPutYourPhotoHere2 = "https://www.figma.com/api/mcp/asset/72976ba6-0615-4be7-a436-f0b0f1c99a2c.png";
+const imgPaperTape07 = "https://www.figma.com/api/mcp/asset/ae7cef29-0cb5-4659-8b1f-cdb7e94f1d0b.png";
+const imgPaperTape8 = "https://www.figma.com/api/mcp/asset/e6a46b28-ba8a-47e2-b6c1-147e38b6f2a0.png";
+const imgNote = "https://www.figma.com/api/mcp/asset/4ca4cc66-dd9d-4fe0-acfb-ec0c80ca3043.png";
+const imgShape = "https://www.figma.com/api/mcp/asset/30a4a7a6-fe8c-4d76-8541-ee5c4cf0d65e.svg";
+const imgShape1 = "https://www.figma.com/api/mcp/asset/613dc470-3851-49f3-901e-e37e0764f5a7.svg";
+const imgShape2 = "https://www.figma.com/api/mcp/asset/adfc83c2-e378-4668-9ed7-9200cbd2b009.svg";
+const imgVector = "https://www.figma.com/api/mcp/asset/d49a735c-9555-4e2f-8ecb-6303d2e012f9.svg";
+const imgVector1 = "https://www.figma.com/api/mcp/asset/d85afd85-e1f0-4210-9130-330edfa032bd.svg";
+const imgShapes1 = "https://www.figma.com/api/mcp/asset/66dd04df-c090-435b-82b8-91b598430949.svg";
+const imgGroup1171277046 = "https://www.figma.com/api/mcp/asset/16eb4be3-6489-4be1-a92c-58aacd9fc791.svg";
+const imgVector2 = "https://www.figma.com/api/mcp/asset/d6b78ee4-2c20-4489-ba79-a1deefc4dfcf.svg";
+const imgVector4 = "https://www.figma.com/api/mcp/asset/bf8cb12a-642f-4e9b-ae72-e67e30592109.svg";
+const imgVector7 = "https://www.figma.com/api/mcp/asset/f52c457d-4bf1-4f02-956c-60b711899cb6.svg";
+const imgVector8 = "https://www.figma.com/api/mcp/asset/2ad454aa-d859-4d2c-84f1-7a2627a308e0.svg";
+const imgVector1166Stroke = "https://www.figma.com/api/mcp/asset/67d5e894-d6bf-426b-a277-a92c8d488014.svg";
+const imgGroup427322577 = "https://www.figma.com/api/mcp/asset/bdd31180-1619-4170-ad2d-d97eac387ade.svg";
+const imgVector1164Stroke = "https://www.figma.com/api/mcp/asset/1a7e2b25-217a-4576-9b69-ff57a7e182db.svg";
+const imgGroup427322578 = "https://www.figma.com/api/mcp/asset/1e185d53-73b6-435c-bbc7-587ef5cbb55f.svg";
+const imgPattern = "https://www.figma.com/api/mcp/asset/15ef6f2b-7327-4254-900b-89270cb02572.svg";
+const imgVector1164Stroke1 = "https://www.figma.com/api/mcp/asset/c659c7d4-7c42-4218-b954-244a5e9659c6.svg";
+const imgVector1164Stroke2 = "https://www.figma.com/api/mcp/asset/753474a5-e8bd-4c3d-9561-3adca188ced1.svg";
+const imgVector1164Stroke3 = "https://www.figma.com/api/mcp/asset/5f9019ed-0a58-4c50-9fa0-74a002d0e2d4.svg";
+const imgVector1165 = "https://www.figma.com/api/mcp/asset/fd0e3091-3701-4f0a-90e3-44e414fa45d1.svg";
+const imgUnion = "https://www.figma.com/api/mcp/asset/21d26417-d20b-4996-934f-0c6a075fd089.svg";
+const imgShapes2 = "https://www.figma.com/api/mcp/asset/6a0dd193-42d6-4b82-a1c9-930e1f8d5365.svg";
+const imgGroup1171277047 = "https://www.figma.com/api/mcp/asset/f8ee170f-15ee-464e-aa58-1e47a2239214.svg";
+
+type IconButtonProps = {
+  className?: string;
+  light?: boolean;
+  type?: "Left";
+};
+
+function IconButton({ className, light = false, type = "Left" }: IconButtonProps) {
+  return (
+    <div className={className || "h-[40px] relative w-[76px]"} data-node-id="4856:22055">
+      <div className="absolute h-[40px] left-0 right-0 top-0" data-node-id="4848:62450" data-name="Shapes">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgShapes} />
+      </div>
+      <div className="-translate-x-1/2 -translate-y-1/2 absolute left-1/2 overflow-clip size-[24px] top-1/2" data-node-id="4848:62453" data-name="Icon">
+        <div className="absolute inset-[8.33%_15.83%_8.33%_12.5%]" data-node-id="4848:62454">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgGroup1171277045} />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default function HistoryPage1() {
+  return (
+    <div className="relative size-full" data-node-id="5431:76903" data-name="History - Page 1">
+      <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgHistoryPage1} />
+      <div className="absolute h-[820px] left-[-10px] top-[56px] w-[445px]" data-node-id="5431:76904" data-name="Book">
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <img alt="" className="absolute h-[104.51%] left-[-32.11%] max-w-none top-[-4.51%] w-[158.98%]" src={imgBook} />
+        </div>
+      </div>
+      <div className="-translate-x-1/2 absolute bottom-0 content-stretch flex h-[129px] items-end justify-center left-1/2 pb-[28px] w-[440px]" data-node-id="5431:76905" data-name="Navbar">
+        <div className="-translate-x-1/2 absolute bg-gradient-to-b bottom-0 from-[rgba(12,10,8,0)] h-[179px] left-1/2 to-[#191510] w-[440px]" data-node-id="I5431:76905;4568:31676" data-name="Linear BG" />
+        <div className="content-stretch flex flex-col gap-[12px] h-[85px] items-center justify-end relative shrink-0 w-[104px]" data-node-id="I5431:76905;4568:31677" data-name="Museum">
+          <p className="[word-break:break-word] font-['Young_Display_Bold:Bold'] leading-[normal] min-w-full not-italic relative shrink-0 text-[#f3cb2e] text-[18px] text-center tracking-[-0.54px] w-[min-content]" data-node-id="I5431:76905;4568:31678" style={{ fontFeatureSettings: '"cv01" 1, "cv02" 1, "cv03" 1, "cv04" 1, "cv10" 1' }}>
+            Bảo tàng
+          </p>
+          <div className="-translate-x-1/2 absolute left-1/2 size-[72px] top-[-16px]" data-node-id="I5431:76905;4591:64448" data-name="Icon">
+            <div className="absolute inset-0 overflow-hidden pointer-events-none">
+              <img alt="" className="absolute left-[-12.18%] max-w-none size-[125%] top-[-12.82%]" src={imgIcon} />
+            </div>
+          </div>
+        </div>
+        <div className="content-stretch flex flex-col gap-[12px] h-[85px] items-center justify-end relative shrink-0 w-[104px]" data-node-id="I5431:76905;4568:31692" data-name="Artifact">
+          <p className="[word-break:break-word] font-['Young_Display_Bold:Bold'] leading-[normal] min-w-full not-italic relative shrink-0 text-[#fefaea] text-[18px] text-center tracking-[-0.54px] w-[min-content]" data-node-id="I5431:76905;4568:31693" style={{ fontFeatureSettings: '"cv01" 1, "cv02" 1, "cv03" 1, "cv04" 1, "cv10" 1' }}>
+            Cổ vật
+          </p>
+          <div className="-translate-x-1/2 absolute left-1/2 size-[56px] top-0" data-node-id="I5431:76905;4847:20305" data-name="Icon">
+            <div className="absolute flex h-[56.58px] items-center justify-center left-[7.17px] top-[1.88px] w-[52.999px]" data-node-id="I5431:76905;4847:20306">
+              <div className="flex-none rotate-30">
+                <div className="h-[45px] relative w-[35.218px]" data-name="Stamp">
+                  <div className="absolute inset-[0_1.21%_1.1%_0]" data-node-id="I5431:76905;4847:20308" data-name="Shape">
+                    <div className="absolute inset-[-0.43%_-1.41%_-1.1%_-0.55%]">
+                      <img alt="" className="block max-w-none size-full" src={imgShape} />
+                    </div>
+                  </div>
+                  <div className="absolute border-[#686f2e] border-[0.342px] border-solid content-stretch flex flex-col inset-[4.88%_8.34%_5.99%_6.94%] items-center overflow-clip p-[1.957px]" data-node-id="I5431:76905;4847:20311" data-name="Frame border" />
+                  <div className="absolute bg-[#686f2e] inset-[72.27%_8.35%_5.99%_6.93%]" data-node-id="I5431:76905;4847:20313" data-name="Tag name" />
+                  <p className="[word-break:break-word] absolute font-['Young_Display_Bold:Bold'] leading-[normal] not-italic right-[8.34px] text-[#686f2e] text-[3.424px] top-[3.82px] tracking-[-0.0685px] translate-x-full whitespace-nowrap" data-node-id="I5431:76905;4847:20315" style={{ fontFeatureSettings: '"cv01" 1, "cv02" 1, "cv03" 1, "cv04" 1, "cv10" 1' }}>
+                    03
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="absolute flex h-[52.582px] items-center justify-center left-[2.63px] top-[-1.98px] w-[45.665px]" data-node-id="I5431:76905;4847:20316">
+              <div className="flex-none rotate-15">
+                <div className="h-[45px] relative w-[35.218px]" data-name="Stamp">
+                  <div className="absolute inset-[0_1.21%_1.1%_0]" data-node-id="I5431:76905;4847:20318" data-name="Shape">
+                    <div className="absolute inset-[-0.43%_-1.41%_-1.1%_-0.55%]">
+                      <img alt="" className="block max-w-none size-full" src={imgShape1} />
+                    </div>
+                  </div>
+                  <div className="absolute border-[#2f5f7c] border-[0.342px] border-solid content-stretch flex flex-col inset-[4.89%_8.33%_5.98%_6.94%] items-center overflow-clip p-[1.957px]" data-node-id="I5431:76905;4847:20321" data-name="Frame border" />
+                  <div className="absolute bg-[#2f5f7c] inset-[72.26%_8.34%_6.01%_6.94%]" data-node-id="I5431:76905;4847:20323" data-name="Tag name" />
+                  <p className="[word-break:break-word] absolute font-['Young_Display_Bold:Bold'] leading-[normal] not-italic right-[8.53px] text-[#2f5f7c] text-[3.424px] top-[3.67px] tracking-[-0.0685px] translate-x-full whitespace-nowrap" data-node-id="I5431:76905;4847:20325" style={{ fontFeatureSettings: '"cv01" 1, "cv02" 1, "cv03" 1, "cv04" 1, "cv10" 1' }}>
+                    02
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="absolute h-[45px] left-[-2.42px] top-[-1.61px] w-[35.218px]" data-node-id="I5431:76905;4847:20326" data-name="Stamp">
+              <div className="absolute inset-[0_1.2%_1.1%_0.01%]" data-node-id="I5431:76905;4847:20328" data-name="Shape">
+                <div className="absolute inset-[-0.43%_-1.41%_-1.1%_-0.55%]">
+                  <img alt="" className="block max-w-none size-full" src={imgShape2} />
+                </div>
+              </div>
+              <div className="absolute border-[#b1352a] border-[0.342px] border-solid content-stretch flex flex-col inset-[4.9%_8.33%_5.97%_6.95%] items-center overflow-clip p-[1.957px]" data-node-id="I5431:76905;4847:20331" data-name="Frame border">
+                <div className="relative shrink-0 size-[29.348px]" data-node-id="I5431:76905;4847:20332" data-name="Artifact image">
+                  <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgArtifactImage} />
+                </div>
+              </div>
+              <div className="absolute bg-[#b1352a] inset-[72.31%_8.33%_5.95%_6.95%]" data-node-id="I5431:76905;4847:20333" data-name="Tag name" />
+              <p className="[word-break:break-word] absolute font-['Young_Display_Bold:Bold'] leading-[normal] not-italic right-[8.05px] text-[#b1352a] text-[3.424px] top-[3.8px] tracking-[-0.0685px] translate-x-full whitespace-nowrap" data-node-id="I5431:76905;4847:20335" style={{ fontFeatureSettings: '"cv01" 1, "cv02" 1, "cv03" 1, "cv04" 1, "cv10" 1' }}>
+                01
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="content-stretch flex flex-col gap-[12px] h-[85px] items-center justify-end relative shrink-0 w-[104px]" data-node-id="I5431:76905;5131:35069" data-name="Hunt">
+          <p className="[word-break:break-word] font-['Young_Display_Bold:Bold'] leading-[normal] min-w-full not-italic relative shrink-0 text-[#fefaea] text-[18px] text-center tracking-[-0.54px] w-[min-content]" data-node-id="I5431:76905;5131:35070" style={{ fontFeatureSettings: '"cv01" 1, "cv02" 1, "cv03" 1, "cv04" 1, "cv10" 1' }}>
+            Săn ngay
+          </p>
+          <div className="-translate-x-1/2 absolute left-1/2 size-[56px] top-0" data-node-id="I5431:76905;5131:35303" data-name="image 566">
+            <div className="absolute inset-0 overflow-hidden pointer-events-none">
+              <img alt="" className="absolute left-[-13.53%] max-w-none size-[128.57%] top-[-12.2%]" src={imgImage566} />
+            </div>
+          </div>
+        </div>
+        <div className="content-stretch flex flex-col gap-[12px] h-[85px] items-center justify-end relative shrink-0 w-[104px]" data-node-id="I5431:76905;5961:95100" data-name="Events">
+          <p className="[word-break:break-word] font-['Young_Display_Bold:Bold'] leading-[normal] min-w-full not-italic relative shrink-0 text-[#fefaea] text-[18px] text-center tracking-[-0.54px] w-[min-content]" data-node-id="I5431:76905;5961:95101" style={{ fontFeatureSettings: '"cv01" 1, "cv02" 1, "cv03" 1, "cv04" 1, "cv10" 1' }}>
+            Hồ sơ
+          </p>
+          <div className="-translate-x-1/2 absolute left-1/2 size-[56px] top-0" data-node-id="I5431:76905;5961:98755" data-name="Icon frame">
+            <div className="-translate-x-1/2 -translate-y-1/2 absolute left-1/2 size-[52px] top-1/2" data-node-id="I5431:76905;5961:98756" data-name="Avatar">
+              <div className="absolute contents left-0 top-0" data-node-id="I5431:76905;5961:98756;5104:42636" data-name="Shapes">
+                <div className="absolute left-0 size-[52px] top-0" data-node-id="I5431:76905;5961:98756;5104:42637" data-name="Vector">
+                  <div className="absolute inset-[-0.48%_-1.92%_-1.92%_-0.48%]">
+                    <img alt="" className="block max-w-none size-full" src={imgVector} />
+                  </div>
+                </div>
+                <div className="absolute left-[2.97px] size-[46.065px] top-[2.96px]" data-node-id="I5431:76905;5961:98756;5104:42638" data-name="Vector">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector1} />
+                </div>
+                <div className="absolute left-[7.85px] size-[36.198px] top-[7.91px]" data-node-id="I5431:76905;5961:98756;5104:42639" data-name="image 726">
+                  <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                    <img alt="" className="absolute h-[114.9%] left-[5.67%] max-w-none top-[-8.06%] w-[88.66%]" src={imgImage726} />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="-translate-x-1/2 -translate-y-1/2 absolute content-stretch flex h-[750px] items-start justify-center left-[calc(50%-16px)] pt-[24px] top-[calc(50%-47px)] w-[380px]" data-node-id="5431:76906" data-name="Containner">
+        <div className="content-stretch flex flex-col h-[702px] items-center justify-between relative shrink-0 w-[354px]" data-node-id="5431:76907" data-name="UI layout">
+          <div className="content-stretch flex gap-[32px] items-center relative shrink-0 w-full" data-node-id="5431:76908" data-name="Navigation">
+            <IconButton className="block cursor-pointer h-[40px] relative shrink-0 w-[76px]" />
+            <div className="content-stretch flex h-[14px] items-center justify-center relative shrink-0" data-node-id="5431:76910" data-name="Text containner">
+              <p className="[word-break:break-word] font-['Young_Display_Bold:Bold'] h-full leading-[normal] not-italic relative shrink-0 text-[#291d14] text-[18px] text-center tracking-[-0.54px] w-[168px]" data-node-id="5431:76911" style={{ fontFeatureSettings: '"cv01" 1, "cv02" 1, "cv03" 1, "cv04" 1, "cv10" 1' }}>
+                Thông tin bảo tàng
+              </p>
+            </div>
+            <div className="opacity-0 relative shrink-0 size-[40px]" data-node-id="5431:76912">
+              <div className="absolute h-[40px] left-0 right-0 top-[3px]" data-node-id="5431:76913" data-name="Shapes">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgShapes1} />
+              </div>
+              <div className="-translate-x-1/2 -translate-y-1/2 absolute left-1/2 overflow-clip size-[24px] top-[calc(50%+3px)]" data-node-id="5431:76916" data-name="Icon">
+                <div className="absolute inset-[1.56%_8.33%_1.54%_8.33%]" data-node-id="5431:76917">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgGroup1171277046} />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="content-stretch flex h-[240px] items-center justify-between relative shrink-0 w-[330px]" data-node-id="5431:76920" data-name="Image frame">
+            <div className="content-stretch flex flex-col gap-[12px] h-full items-start leading-[0] relative shrink-0 w-[114px]" data-node-id="5431:76921" data-name="Group">
+              <div className="flex h-[121.677px] items-center justify-center relative shrink-0 w-[121.676px]" data-node-id="5431:76922">
+                <div className="-rotate-4 flex-none">
+                  <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid place-items-start relative" data-name="Middle section">
+                    <div className="col-1 h-[112.393px] ml-0 mt-[0.91px] relative row-1 w-[114.001px]" data-node-id="5431:76923" data-name="PUT YOUR PHOTO HERE">
+                      <img alt="" className="absolute block inset-0 max-w-none size-full" height="112.393" src={imgPutYourPhotoHere} width="114.002" />
+                    </div>
+                    <div className="col-1 h-[8.01px] ml-0 mt-[105.99px] relative row-1 w-[114px]" data-node-id="5431:76930">
+                      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector2} />
+                    </div>
+                    <div className="col-1 flex h-[8.01px] items-center justify-center ml-0 mt-0 relative row-1 w-[114px]" data-node-id="5431:76931">
+                      <div className="flex-none rotate-180">
+                        <div className="h-[8.01px] relative w-[114px]">
+                          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector4} />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="flex h-[117.913px] items-center justify-center relative shrink-0 w-[117.911px]" data-node-id="5431:76932">
+                <div className="flex-none rotate-2">
+                  <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid place-items-start relative" data-name="Middle section">
+                    <div className="col-1 h-[112.393px] ml-0 mt-[0.91px] relative row-1 w-[114.002px]" data-node-id="5431:76933" data-name="PUT YOUR PHOTO HERE">
+                      <img alt="" className="absolute block inset-0 max-w-none size-full" height="112.393" src={imgPutYourPhotoHere1} width="114.002" />
+                    </div>
+                    <div className="col-1 h-[8.01px] ml-0 mt-[105.99px] relative row-1 w-[114px]" data-node-id="5431:76940">
+                      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector2} />
+                    </div>
+                    <div className="col-1 flex h-[8.01px] items-center justify-center ml-0 mt-0 relative row-1 w-[114px]" data-node-id="5431:76941">
+                      <div className="flex-none rotate-180">
+                        <div className="h-[8.01px] relative w-[114px]">
+                          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector4} />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid leading-[0] place-items-start relative shrink-0" data-node-id="5431:76942" data-name="Photo Frame">
+              <div className="col-1 h-[254px] ml-0 mt-0 relative row-1 w-[194px]" data-node-id="5431:76943" data-name="PUT YOUR PHOTO HERE">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" height="254" src={imgPutYourPhotoHere2} width="194" />
+              </div>
+              <div className="col-1 h-[24.66px] ml-0 mt-0 relative row-1 w-[194px]" data-node-id="5431:76947">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector7} />
+              </div>
+              <div className="col-1 h-[28.261px] ml-0 mt-[225.74px] relative row-1 w-[194px]" data-node-id="5431:76948">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVector8} />
+              </div>
+            </div>
+            <div className="absolute flex h-[32.171px] items-center justify-center left-[-10.65px] top-[-0.46px] w-[35.403px]" data-node-id="5431:76949">
+              <div className="flex-none rotate-[140.46deg]">
+                <div className="h-[12px] relative w-[36px]" data-name="Paper Tape_07">
+                  <img alt="" className="absolute inset-0 max-w-none object-bottom pointer-events-none size-full" src={imgPaperTape07} />
+                </div>
+              </div>
+            </div>
+            <div className="absolute flex h-[29.093px] items-center justify-center left-[-13px] top-[232px] w-[36.947px]" data-node-id="5431:76950">
+              <div className="flex-none rotate-[-148.38deg]">
+                <div className="h-[12px] relative w-[36px]" data-name="Paper Tape_07">
+                  <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgPaperTape8} />
+                </div>
+              </div>
+            </div>
+            <div className="absolute flex h-[32.171px] items-center justify-center left-[306px] top-[217px] w-[35.403px]" data-node-id="5431:76951">
+              <div className="flex-none rotate-[140.46deg]">
+                <div className="h-[12px] relative w-[36px]" data-name="Paper Tape_07">
+                  <img alt="" className="absolute inset-0 max-w-none object-bottom pointer-events-none size-full" src={imgPaperTape07} />
+                </div>
+              </div>
+            </div>
+            <div className="absolute flex h-[34.143px] items-center justify-center left-[302px] top-[-4px] w-[38.87px]" data-node-id="5431:76952">
+              <div className="flex-none rotate-[-141.86deg]">
+                <div className="h-[12px] relative w-[40px]" data-name="Paper Tape_07">
+                  <img alt="" className="absolute inset-0 max-w-none object-bottom pointer-events-none size-full" src={imgPaperTape07} />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="content-stretch flex flex-col h-[366px] items-center justify-between px-[16px] py-[24px] relative shrink-0 w-[354px]" data-node-id="5431:76954" data-name="Meseum Info">
+            <div className="absolute bottom-0 contents left-0 top-0" data-node-id="5431:76955" data-name="Note">
+              <div className="absolute aspect-[354/366] bottom-0 left-0 top-0" data-node-id="5431:76957" data-name="note">
+                <div className="absolute inset-[-0.27%_-1.13%_-1.09%_-0.28%]">
+                  <img alt="" className="block max-w-none size-full" height="371" src={imgNote} width="359" />
+                </div>
+              </div>
+            </div>
+            <div className="-translate-x-1/2 absolute drop-shadow-[0px_4.354px_1.088px_rgba(136,122,29,0.25)] left-[calc(50%+165px)] size-[40px] top-[-16px]" data-node-id="5431:76959" data-name="Badge">
+              <div className="absolute inset-[5.74%_4.39%_3.1%_3.36%] pointer-events-none rounded-[2014.611px]" data-node-id="I5431:76959;4848:33769" data-name="BASE">
+                <div aria-hidden className="absolute bg-gradient-to-b from-[#ad9021] from-[35.577%] inset-0 rounded-[2014.611px] to-[#f3cb2e] to-[76.923%]" />
+                <div className="absolute inset-0 rounded-[inherit] shadow-[inset_-4.354px_-2.177px_1.088px_0px_rgba(41,35,28,0.25),inset_2.177px_2.177px_4.354px_0px_rgba(0,0,0,0.5)]" />
+              </div>
+              <div className="absolute contents inset-0" data-node-id="I5431:76959;4848:33770">
+                <div className="absolute inset-[10.45%_7.69%_4.53%_6.09%]" data-node-id="I5431:76959;4848:33771" data-name="Vector 1166 (Stroke)">
+                  <div className="absolute inset-[-1.92%_-1.89%]">
+                    <img alt="" className="block max-w-none size-full" src={imgVector1166Stroke} />
+                  </div>
+                </div>
+                <div className="absolute inset-[-5.44%_-16.33%_-16.33%_-5.44%]">
+                  <img alt="" className="block max-w-none size-full" src={imgGroup427322577} />
+                </div>
+                <div className="absolute flex inset-[39.14%_2.2%_47.37%_90.31%] items-center justify-center mix-blend-plus-lighter" data-node-id="I5431:76959;4848:33773" style={{ containerType: "size" }}>
+                  <div className="flex-none h-[hypot(-56.9222cqw,8.04409cqh)] rotate-[75.41deg] skew-x-[-0.33deg] w-[hypot(43.0778cqw,91.9559cqh)]">
+                    <div className="relative size-full" data-name="Vector 1164 (Stroke)">
+                      <div className="absolute inset-[-171.42%_-54.38%_-158.45%_-57.34%]">
+                        <img alt="" className="block max-w-none size-full" src={imgVector1164Stroke} />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="absolute inset-[-2.69%_-1.69%_-1.46%_-2%]">
+                  <img alt="" className="block max-w-none size-full" src={imgGroup427322578} />
+                </div>
+              </div>
+              <div className="-translate-y-1/2 absolute aspect-[65.99798583984375/65.53138732910156] left-1/4 right-1/4 top-[calc(50%+1px)]" data-node-id="I5431:76959;4848:33775" data-name="Pattern">
+                <div className="absolute inset-[-1%]">
+                  <img alt="" className="block max-w-none size-full" src={imgPattern} />
+                </div>
+              </div>
+              <div className="absolute contents inset-[1.1%_50.7%_80.06%_16.84%]" data-node-id="I5431:76959;4848:33776" style={{ containerType: "size" }}>
+                <div className="absolute flex inset-[8.31%_66.04%_80.55%_17.22%] items-center justify-center mix-blend-soft-light" data-node-id="I5431:76959;4848:33777" style={{ containerType: "size" }}>
+                  <div className="flex-none h-[hypot(12.8854cqw,45.2155cqh)] rotate-[-22.7deg] skew-x-[0.49deg] w-[hypot(87.1146cqw,-54.7845cqh)]">
+                    <div className="opacity-60 relative size-full" data-name="Vector 1164 (Stroke)">
+                      <div className="absolute inset-[-34.51%_-3.85%_-29.59%_-9.77%]">
+                        <img alt="" className="block max-w-none size-full" src={imgVector1164Stroke1} />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="absolute flex inset-[3.57%_51.5%_90.32%_38.5%] items-center justify-center mix-blend-soft-light" data-node-id="I5431:76959;4848:33778" style={{ containerType: "size" }}>
+                  <div className="flex-none h-[hypot(8.78698cqw,69.9143cqh)] rotate-[-11.38deg] skew-x-[0.27deg] w-[hypot(91.213cqw,-30.0857cqh)]">
+                    <div className="opacity-60 relative size-full" data-name="Vector 1164 (Stroke)">
+                      <div className="absolute inset-[-68.61%_-28.05%_-60.36%_-32.21%]">
+                        <img alt="" className="block max-w-none size-full" src={imgVector1164Stroke2} />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="absolute flex inset-[6.6%_65.69%_90.56%_31.44%] items-center justify-center mix-blend-soft-light" data-node-id="I5431:76959;4848:33779" style={{ containerType: "size" }}>
+                  <div className="flex-none h-[hypot(29.7427cqw,70.2573cqh)] rotate-[-22.7deg] skew-x-[0.49deg] w-[hypot(70.2573cqw,-29.7427cqh)]">
+                    <div className="opacity-60 relative size-full" data-name="Vector 1164 (Stroke)">
+                      <div className="absolute inset-[-85.79%_-73.76%_-65.9%_-84.48%]">
+                        <img alt="" className="block max-w-none size-full" src={imgVector1164Stroke3} />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="absolute flex inset-[5.74%_63.66%_91.42%_33.46%] items-center justify-center mix-blend-soft-light" data-node-id="I5431:76959;4848:33780" style={{ containerType: "size" }}>
+                  <div className="flex-none h-[hypot(29.7427cqw,70.2573cqh)] rotate-[-22.7deg] skew-x-[0.49deg] w-[hypot(70.2573cqw,-29.7427cqh)]">
+                    <div className="opacity-60 relative size-full" data-name="Vector 1164 (Stroke)">
+                      <div className="absolute inset-[-85.79%_-73.76%_-65.9%_-84.48%]">
+                        <img alt="" className="block max-w-none size-full" src={imgVector1164Stroke3} />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="absolute inset-[5.74%_4.39%_3.1%_3.36%] mix-blend-screen" data-node-id="I5431:76959;4848:33781">
+                <div className="absolute inset-[-3.78%_-3.19%_-3.82%_-4.19%]">
+                  <img alt="" className="block max-w-none size-full" src={imgVector1165} />
+                </div>
+              </div>
+            </div>
+            <div className="content-stretch flex flex-col gap-[16px] items-center relative shrink-0 w-[320px]" data-node-id="5431:76960" data-name="Content container">
+              <p className="[word-break:break-word] font-['Young_Display_Bold:Bold'] leading-[1.2] not-italic relative shrink-0 text-[#291d14] text-[24px] text-center tracking-[-0.72px] w-[271px]" data-node-id="5431:76961" style={{ fontFeatureSettings: '"cv01" 1, "cv02" 1, "cv03" 1, "cv04" 1, "cv10" 1' }}>
+                Lịch sử hình thành
+              </p>
+              <div className="content-stretch flex flex-col gap-[12px] items-start relative shrink-0 w-[320px]" data-node-id="5431:76962" data-name="Content">
+                <div className="content-stretch flex flex-col gap-[8px] items-center relative shrink-0 w-full" data-node-id="5431:76963" data-name="Title">
+                  <div className="content-stretch flex gap-[4.571px] h-[28px] items-center justify-center px-[13.714px] relative shrink-0 w-[64px]" data-node-id="5431:76964" data-name="Badge">
+                    <div className="absolute h-[28px] left-0 top-0 w-[64.002px]" data-node-id="I5431:76964;5112:37865" data-name="Union">
+                      <div className="absolute inset-[-3.12%_-2.95%_-6.45%_-1.18%]">
+                        <img alt="" className="block max-w-none size-full" src={imgUnion} />
+                      </div>
+                    </div>
+                    <p className="[word-break:break-word] font-['Inter:Semi_Bold'] font-semibold leading-[20px] not-italic relative shrink-0 text-[#291d14] text-[14px] tracking-[-0.28px] whitespace-nowrap" data-node-id="I5431:76964;5112:37868" style={{ fontFeatureSettings: '"cv01" 1, "cv02" 1, "cv03" 1, "cv04" 1, "cv10" 1' }}>
+                      1927
+                    </p>
+                  </div>
+                  <p className="[word-break:break-word] font-['Inter:Semi_Bold'] font-semibold leading-[24px] not-italic relative shrink-0 text-[#291d14] text-[18px] tracking-[-0.36px] whitespace-nowrap" data-node-id="5431:76965" style={{ fontFeatureSettings: '"cv01" 1, "cv02" 1, "cv03" 1, "cv04" 1, "cv10" 1' }}>
+                    Câu chuyện khai sinh
+                  </p>
+                </div>
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-[450] leading-[0] not-italic relative shrink-0 text-[#664932] text-[0px] tracking-[-0.32px] w-full" data-node-id="5431:76966" style={{ fontFeatureSettings: '"cv01" 1, "cv02" 1, "cv03" 1, "cv04" 1, "cv10" 1' }}>
+                  <span className="leading-[24px] text-[16px]">{`Dược sĩ Holbé mất năm 1927, để lại `}</span>
+                  <span className="font-['Inter:Semi_Bold'] font-semibold leading-[24px] text-[#291d14] text-[16px]" style={{ fontFeatureSettings: '"cv01" 1, "cv02" 1, "cv03" 1, "cv04" 1, "cv10" 1' }}>
+                    2,160
+                  </span>
+                  <span className="leading-[24px] text-[16px]">{` cổ vật sau 40 năm sưu tầm. Hội Nghiên cứu Đông Dương đã quyên góp mua lại toàn bộ, tặng cho chính quyền Pháp kèm yêu cầu: `}</span>
+                  <span className="font-['Inter:Semi_Bold_Italic'] font-semibold italic leading-[24px] text-[#291d14] text-[16px]" style={{ fontFeatureSettings: '"cv01" 1, "cv02" 1, "cv03" 1, "cv04" 1, "cv10" 1' }}>{`"Hãy xây cho Sài Gòn một bảo tàng!"`}</span>
+                </p>
+              </div>
+            </div>
+            <div className="content-stretch flex items-center justify-between relative shrink-0 w-[320px]" data-node-id="5431:76967" data-name="Pagination">
+              <div className="h-[40px] opacity-0 relative shrink-0 w-[76px]" data-node-id="I5431:76967;5113:53291" data-name="Icon Button">
+                <div className="absolute h-[40px] left-0 right-0 top-0" data-node-id="I5431:76967;5113:53291;4856:21247" data-name="Shapes">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgShapes2} />
+                </div>
+                <div className="-translate-x-1/2 -translate-y-1/2 absolute left-1/2 overflow-clip size-[24px] top-1/2" data-node-id="I5431:76967;5113:53291;4856:21250" data-name="Icon">
+                  <div className="absolute inset-[8.33%_15.84%_8.33%_12.5%]" data-node-id="I5431:76967;5113:53291;4856:21251">
+                    <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgGroup1171277047} />
+                  </div>
+                </div>
+              </div>
+              <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Semi_Bold'] font-semibold leading-[24px] min-w-px not-italic relative text-[#291d14] text-[16px] text-center tracking-[-0.32px]" data-node-id="I5431:76967;5113:53292" style={{ fontFeatureSettings: '"cv01" 1, "cv02" 1, "cv03" 1, "cv04" 1, "cv10" 1' }}>
+                1/5
+              </p>
+              <div className="flex items-center justify-center relative shrink-0" data-node-id="I5431:76967;5113:53293">
+                <div className="-scale-y-100 flex-none rotate-180">
+                  <a className="block cursor-pointer h-[40px] relative w-[76px]" data-name="Icon Button">
+                    <div className="absolute h-[40px] left-0 right-0 top-0" data-node-id="I5431:76967;5113:53293;4856:21239" data-name="Shapes">
+                      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgShapes2} />
+                    </div>
+                    <div className="-translate-x-1/2 -translate-y-1/2 absolute left-1/2 overflow-clip size-[24px] top-1/2" data-node-id="I5431:76967;5113:53293;4856:21242" data-name="Icon">
+                      <div className="absolute inset-[8.33%_15.84%_8.33%_12.5%]" data-node-id="I5431:76967;5113:53293;4856:21243">
+                        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgGroup1171277047} />
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="-translate-x-1/2 absolute flex h-[76px] items-center justify-center left-1/2 top-0 w-[440px]" data-node-id="5431:76968">
+        <div className="-scale-y-100 flex-none">
+          <div className="bg-gradient-to-b from-[19.079%] from-[rgba(12,10,8,0)] h-[76px] relative to-[108.75%] to-[rgba(25,21,16,0.7)] w-[440px]" data-name="Linear BG" />
+        </div>
+      </div>
+    </div>
+  );
+}
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+These styles are contained in the design: Blur texture/Blur texture 3: Effect(type: GRAIN, radius: 1), Foundation/Accent/accent-500: #F3CB2E, Fonts/Display/bold: Font(family: "Young Display Bold", style: Bold, size: 18, weight: 700, lineHeight: 100, letterSpacing: -3), Blur texture/Blur texture 1: Effect(type: GRAIN, radius: 0.5), Foundation /Accent/accent-50: #FEFAEA, Foundation /Accent/accent-100: #FBEFBE, Foundation /Green/green-600: #686F2E, Foundation /Blue/blue-600: #2F5F7C, Foundation /Red/red-600: #B1352A, Foundation /Light Brown/light brown-50: #F9F3EE, Foundation /Light Brown/light brown-500: #C58859, Linear coloor/Neutral light 1: , Linear coloor/Neutral light 2: , Card Shadow/Card shadow: Effect(type: DROP_SHADOW, color: #000000E5, offset: (-2, -2), radius: 0, spread: 0); Effect(type: DROP_SHADOW, color: #4F3927, offset: (2, 2), radius: 0, spread: 0); Effect(type: GRAIN, radius: 0.5), Foundation/Neutral/neutral-950: #291D14, Foundation/Neutral/neutral-800: #4F3927, Linear coloor/Neutral dark: , Foundation/Neutral/neutral-50: #F4F0ED, Blur texture/Blur texture 2.5: Effect(type: GRAIN, radius: 1.5), Card Shadow/Card shadow 0.5: Effect(type: DROP_SHADOW, color: #000000E5, offset: (-2, -2), radius: 0, spread: 0); Effect(type: DROP_SHADOW, color: #4F3927, offset: (1, 1), radius: 0, spread: 0); Effect(type: GRAIN, radius: 0.5), White paper BG/40: #FBFAF9,, Card Shadow/Card shadow 1: Effect(type: DROP_SHADOW, color: #000000E5, offset: (-2, -2), radius: 0, spread: 0); Effect(type: DROP_SHADOW, color: #4F3927, offset: (4, 4), radius: 0, spread: 0); Effect(type: GRAIN, radius: 1), Blur texture/Blur texture 0.2: Effect(type: GRAIN, radius: 0.20000000298023224), Foundation/Neutral/neutral-500: #8F6747, Body/text-Body-Small/semibold: Font(family: "Inter", style: Semi Bold, size: 14, weight: 600, lineHeight: 20, letterSpacing: -2), Body/text-Body/normal: Font(family: "Inter", style: Regular, size: 16, weight: 450, lineHeight: 24, letterSpacing: -2), Linear coloor/Neutral dark 2: , Body/text-Body/semibold: Font(family: "Inter", style: Semi Bold, size: 16, weight: 600, lineHeight: 24, letterSpacing: -2).
+The generated code contains image and SVG URL constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These URLs are temporary download sources and expire after 7 days. Download each asset into the project with curl -L, then replace its URL in the generated code with a reference to the downloaded asset. Never use the temporary URLs as runtime image sources.

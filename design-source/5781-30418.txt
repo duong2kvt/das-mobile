@@ -1,0 +1,2 @@
+<frame id="5781:30418" name="Collection - Full Page" x="4112" y="80" width="440" height="956" />
+IMPORTANT: The design was too large to fit into context with get_design_context. Instead you have received a sparse metadata response, you MUST call get_design_context on the IDs of the sublayers to get the full code. Split up the calls to ensure the sublayers do not also exceed the context limit.

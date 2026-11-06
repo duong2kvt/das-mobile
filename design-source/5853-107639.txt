@@ -1,0 +1,56 @@
+const imgStateSelected = "https://www.figma.com/api/mcp/asset/7f846c3c-b772-40db-a5d7-54009e4461c8.svg";
+const imgTag = "https://www.figma.com/api/mcp/asset/ccb6f15f-24b1-4d08-aa35-a493cb566863.svg";
+
+type TagProps = {
+  className?: string;
+  state?: "Selected";
+};
+
+function Tag({ className, state = "Selected" }: TagProps) {
+  return (
+    <div className={className || "content-stretch flex gap-[8px] h-[56px] items-center justify-center px-[8px] py-[18px] relative w-[112px]"} data-node-id="5608:71970">
+      <div className="absolute inset-[-1.79%_-0.89%]">
+        <img alt="" className="block max-w-none size-full" src={imgStateSelected} />
+      </div>
+      <p className="[word-break:break-word] flex-[1_0_0] font-['Young_Display_Bold:Bold'] leading-[normal] min-w-px not-italic relative text-[#3c2b1e] text-[16px] text-center tracking-[-0.32px]" data-node-id="5608:71964" style={{ fontFeatureSettings: '"cv01" 1, "cv02" 1, "cv03" 1, "cv04" 1, "cv10" 1' }}>
+        Thăng long
+      </p>
+    </div>
+  );
+}
+
+export default function GroupTag() {
+  return (
+    <div className="content-stretch flex items-center relative size-full" data-node-id="5853:107639" data-name="Group tag">
+      <div className="h-[56px] relative shrink-0 w-[344px]" data-node-id="I5853:107639;5778:28475" data-name="Frame">
+        <Tag className="absolute content-stretch flex gap-[8px] h-[56px] items-center justify-center left-0 px-[8px] py-[18px] top-[-8px] w-[112px]" />
+        <div className="absolute content-stretch flex gap-[8px] h-[56px] items-center justify-center left-[116px] px-[8px] py-[18px] top-0 w-[112px]" data-node-id="I5853:107639;5608:71977" data-name="Tag">
+          <div className="absolute inset-[-1.79%_-0.89%]">
+            <img alt="" className="block max-w-none size-full" src={imgTag} />
+          </div>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Young_Display_Bold:Bold'] leading-[normal] min-w-px not-italic relative text-[#3c2b1e] text-[16px] text-center tracking-[-0.32px]" data-node-id="I5853:107639;5608:71977;5608:71968" style={{ fontFeatureSettings: '"cv01" 1, "cv02" 1, "cv03" 1, "cv04" 1, "cv10" 1' }}>
+            Sa Huỳnh
+          </p>
+        </div>
+        <div className="absolute content-stretch flex gap-[8px] h-[56px] items-center justify-center left-[232px] px-[8px] py-[18px] top-0 w-[112px]" data-node-id="I5853:107639;5608:71982" data-name="Tag">
+          <div className="absolute inset-[-1.79%_-0.89%]">
+            <img alt="" className="block max-w-none size-full" src={imgTag} />
+          </div>
+          <p className="[word-break:break-word] flex-[1_0_0] font-['Young_Display_Bold:Bold'] leading-[normal] min-w-px not-italic relative text-[#3c2b1e] text-[16px] text-center tracking-[-0.32px]" data-node-id="I5853:107639;5608:71982;5608:71968" style={{ fontFeatureSettings: '"cv01" 1, "cv02" 1, "cv03" 1, "cv04" 1, "cv10" 1' }}>
+            Đông Sơn
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+}
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+These styles are contained in the design: Foundation/Neutral/neutral-100: #DCD0C6, Blur texture/Blur texture 2: Effect(type: GRAIN, radius: 1), Foundation/Neutral/neutral-900: #3C2B1E, Fonts/Display/bold: Font(family: "Young Display Bold", style: Bold, size: 16, weight: 700, lineHeight: 100, letterSpacing: -2), Foundation/Neutral/neutral-300: #B49984.
+The generated code contains image and SVG URL constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These URLs are temporary download sources and expire after 7 days. Download each asset into the project with curl -L, then replace its URL in the generated code with a reference to the downloaded asset. Never use the temporary URLs as runtime image sources.

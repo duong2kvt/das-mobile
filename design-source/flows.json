@@ -1,0 +1,2504 @@
+[
+  {
+    "id": "5431:48805",
+    "name": "Take photo",
+    "flow": "Hunt artifact",
+    "links": [
+      {
+        "id": "5431:48829",
+        "name": "Button",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5431:82930",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "SMART_ANIMATE",
+            "easing": {
+              "type": "EASE_IN"
+            },
+            "duration": 0.4000000059604645
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "5431:48897",
+    "name": "Reward screen",
+    "flow": "Hunt artifact",
+    "links": [
+      {
+        "id": "5431:48897",
+        "name": "Reward screen",
+        "t": {
+          "type": "ON_MEDIA_END"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5853:95894",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "DISSOLVE",
+            "easing": {
+              "type": "EASE_IN"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "5431:82930",
+    "name": "Scanning 2nd",
+    "flow": "Hunt artifact",
+    "links": [
+      {
+        "id": "5431:82930",
+        "name": "Scanning 2nd",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5431:48897",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "SMART_ANIMATE",
+            "easing": {
+              "type": "EASE_IN"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "6123:92281",
+    "name": "Scanning 1st",
+    "flow": "Hunt artifact",
+    "links": [
+      {
+        "id": "6123:92281",
+        "name": "Scanning 1st",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "6123:92947",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "SMART_ANIMATE",
+            "easing": {
+              "type": "EASE_IN"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "6123:92947",
+    "name": "Mascot guide",
+    "flow": "Hunt artifact",
+    "links": [
+      {
+        "id": "6123:92947",
+        "name": "Mascot guide",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5431:48805",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "SMART_ANIMATE",
+            "easing": {
+              "type": "EASE_IN"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "6123:92190",
+    "name": "Take photo - Default",
+    "flow": "Hunt artifact",
+    "links": [
+      {
+        "id": "6123:92190",
+        "name": "Take photo - Default",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "6118:39440",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "SMART_ANIMATE",
+            "easing": {
+              "type": "EASE_IN"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "6118:39440",
+    "name": "Take photo",
+    "flow": "Hunt artifact",
+    "links": [
+      {
+        "id": "6118:39464",
+        "name": "Button",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "6123:92281",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "SMART_ANIMATE",
+            "easing": {
+              "type": "EASE_IN"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "5431:76524",
+    "name": "Guide take photo",
+    "flow": "Tutorial",
+    "links": [
+      {
+        "id": "5431:76524",
+        "name": "Guide take photo",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5431:83021",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "SMART_ANIMATE",
+            "easing": {
+              "type": "EASE_IN"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "5431:83021",
+    "name": "Guide take photo -2",
+    "flow": "Tutorial",
+    "links": [
+      {
+        "id": "5431:83021",
+        "name": "Guide take photo -2",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5431:83086",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "SMART_ANIMATE",
+            "easing": {
+              "type": "EASE_IN"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "5431:83086",
+    "name": "Guide take photo - 3",
+    "flow": "Tutorial",
+    "links": [
+      {
+        "id": "5431:83086",
+        "name": "Guide take photo - 3",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5431:83151",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "SMART_ANIMATE",
+            "easing": {
+              "type": "EASE_IN"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "5431:83151",
+    "name": "Guide take photo - 4",
+    "flow": "Tutorial",
+    "links": [
+      {
+        "id": "5431:83151",
+        "name": "Guide take photo - 4",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5431:83216",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "SMART_ANIMATE",
+            "easing": {
+              "type": "EASE_IN"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "5431:83216",
+    "name": "Guide take photo - 5",
+    "flow": "Tutorial",
+    "links": [
+      {
+        "id": "5431:83216",
+        "name": "Guide take photo - 5",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5833:64302",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "DISSOLVE",
+            "easing": {
+              "type": "EASE_IN"
+            },
+            "duration": 0.4000000059604645
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "5431:72916",
+    "name": "Scene 3",
+    "flow": "Tutorial",
+    "links": [
+      {
+        "id": "5431:72916",
+        "name": "Scene 3",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5431:75985",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "SMART_ANIMATE",
+            "easing": {
+              "type": "EASE_IN"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      },
+      {
+        "id": "5833:64246",
+        "name": "Map Button",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5431:72844",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "SMART_ANIMATE",
+            "easing": {
+              "type": "EASE_IN"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      },
+      {
+        "id": "I5431:72929;4568:31692",
+        "name": "Artifact",
+        "t": {
+          "type": "ON_KEY_DOWN",
+          "device": "KEYBOARD",
+          "keyCodes": [
+            32
+          ]
+        },
+        "a": {
+          "type": "NODE",
+          "to": "4568:29953",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "DISSOLVE",
+            "easing": {
+              "type": "EASE_OUT"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "5431:75985",
+    "name": "Scene 4",
+    "flow": "Tutorial",
+    "links": [
+      {
+        "id": "5431:75985",
+        "name": "Scene 4",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5765:62788",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "DISSOLVE",
+            "easing": {
+              "type": "EASE_OUT"
+            },
+            "duration": 0.20000000298023224
+          }
+        }
+      },
+      {
+        "id": "5833:64250",
+        "name": "Map Button",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5431:72844",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "SMART_ANIMATE",
+            "easing": {
+              "type": "EASE_IN"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      },
+      {
+        "id": "I5431:75998;4568:31692",
+        "name": "Artifact",
+        "t": {
+          "type": "ON_KEY_DOWN",
+          "device": "KEYBOARD",
+          "keyCodes": [
+            32
+          ]
+        },
+        "a": {
+          "type": "NODE",
+          "to": "4568:29953",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "DISSOLVE",
+            "easing": {
+              "type": "EASE_OUT"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "5765:62788",
+    "name": "Scene 5",
+    "flow": "Tutorial",
+    "links": [
+      {
+        "id": "5833:64247",
+        "name": "Map Button",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5431:72844",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "SMART_ANIMATE",
+            "easing": {
+              "type": "EASE_IN"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      },
+      {
+        "id": "I5765:62801;4568:31692",
+        "name": "Artifact",
+        "t": {
+          "type": "ON_KEY_DOWN",
+          "device": "KEYBOARD",
+          "keyCodes": [
+            32
+          ]
+        },
+        "a": {
+          "type": "NODE",
+          "to": "4568:29953",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "DISSOLVE",
+            "easing": {
+              "type": "EASE_OUT"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      },
+      {
+        "id": "5765:62841",
+        "name": "Selection hunt",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5431:76524",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "DISSOLVE",
+            "easing": {
+              "type": "EASE_IN"
+            },
+            "duration": 0.4000000059604645
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "5431:74963",
+    "name": "Scene 1",
+    "flow": "Tutorial",
+    "links": [
+      {
+        "id": "5431:74963",
+        "name": "Scene 1",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5431:75473",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "SMART_ANIMATE",
+            "easing": {
+              "type": "EASE_IN"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      },
+      {
+        "id": "5833:64248",
+        "name": "Map Button",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5431:72844",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "SMART_ANIMATE",
+            "easing": {
+              "type": "EASE_IN"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      },
+      {
+        "id": "I5431:74976;4568:31692",
+        "name": "Artifact",
+        "t": {
+          "type": "ON_KEY_DOWN",
+          "device": "KEYBOARD",
+          "keyCodes": [
+            32
+          ]
+        },
+        "a": {
+          "type": "NODE",
+          "to": "4568:29953",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "DISSOLVE",
+            "easing": {
+              "type": "EASE_OUT"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "5431:75473",
+    "name": "Scen 2",
+    "flow": "Tutorial",
+    "links": [
+      {
+        "id": "5431:75473",
+        "name": "Scen 2",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5431:72916",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "SMART_ANIMATE",
+            "easing": {
+              "type": "EASE_IN"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      },
+      {
+        "id": "5833:64249",
+        "name": "Map Button",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5431:72844",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "SMART_ANIMATE",
+            "easing": {
+              "type": "EASE_IN"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      },
+      {
+        "id": "I5431:75486;4568:31692",
+        "name": "Artifact",
+        "t": {
+          "type": "ON_KEY_DOWN",
+          "device": "KEYBOARD",
+          "keyCodes": [
+            32
+          ]
+        },
+        "a": {
+          "type": "NODE",
+          "to": "4568:29953",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "DISSOLVE",
+            "easing": {
+              "type": "EASE_OUT"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "5833:64302",
+    "name": "Scene 6",
+    "flow": "Tutorial",
+    "links": [
+      {
+        "id": "5833:64302",
+        "name": "Scene 6",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5833:64957",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "SMART_ANIMATE",
+            "easing": {
+              "type": "EASE_IN"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      },
+      {
+        "id": "I5833:64316;4568:31692",
+        "name": "Artifact",
+        "t": {
+          "type": "ON_KEY_DOWN",
+          "device": "KEYBOARD",
+          "keyCodes": [
+            32
+          ]
+        },
+        "a": {
+          "type": "NODE",
+          "to": "4568:29953",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "DISSOLVE",
+            "easing": {
+              "type": "EASE_OUT"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "5833:64957",
+    "name": "Scene 7",
+    "flow": "Tutorial",
+    "links": [
+      {
+        "id": "5833:64957",
+        "name": "Scene 7",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5833:65692",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "DISSOLVE",
+            "easing": {
+              "type": "EASE_IN"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      },
+      {
+        "id": "I5833:64971;4568:31692",
+        "name": "Artifact",
+        "t": {
+          "type": "ON_KEY_DOWN",
+          "device": "KEYBOARD",
+          "keyCodes": [
+            32
+          ]
+        },
+        "a": {
+          "type": "NODE",
+          "to": "4568:29953",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "DISSOLVE",
+            "easing": {
+              "type": "EASE_OUT"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "5833:65692",
+    "name": "Scene 8",
+    "flow": "Tutorial",
+    "links": [
+      {
+        "id": "5833:65692",
+        "name": "Scene 8",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5839:66317",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "DISSOLVE",
+            "easing": {
+              "type": "EASE_IN"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      },
+      {
+        "id": "I5833:65706;4568:31692",
+        "name": "Artifact",
+        "t": {
+          "type": "ON_KEY_DOWN",
+          "device": "KEYBOARD",
+          "keyCodes": [
+            32
+          ]
+        },
+        "a": {
+          "type": "NODE",
+          "to": "4568:29953",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "DISSOLVE",
+            "easing": {
+              "type": "EASE_OUT"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "5839:66317",
+    "name": "Scene 9",
+    "flow": "Tutorial",
+    "links": [
+      {
+        "id": "5839:66317",
+        "name": "Scene 9",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5853:94667",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "DISSOLVE",
+            "easing": {
+              "type": "EASE_IN"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      },
+      {
+        "id": "I5839:66331;4568:31692",
+        "name": "Artifact",
+        "t": {
+          "type": "ON_KEY_DOWN",
+          "device": "KEYBOARD",
+          "keyCodes": [
+            32
+          ]
+        },
+        "a": {
+          "type": "NODE",
+          "to": "4568:29953",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "DISSOLVE",
+            "easing": {
+              "type": "EASE_OUT"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "5853:94667",
+    "name": "Reward ticket",
+    "flow": "Tutorial",
+    "links": [
+      {
+        "id": "5853:94667",
+        "name": "Reward ticket",
+        "t": {
+          "type": "ON_MEDIA_END"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5431:77309",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "DISSOLVE",
+            "easing": {
+              "type": "EASE_IN"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "5431:76618",
+    "name": "History - Page 2",
+    "flow": "History page",
+    "links": [
+      {
+        "id": "I5431:76682;5113:53331",
+        "name": "Icon Button",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5431:76687",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "SMART_ANIMATE",
+            "easing": {
+              "type": "EASE_IN"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "5431:76687",
+    "name": "History - Page 3",
+    "flow": "History page",
+    "links": [
+      {
+        "id": "I5431:76751;5113:53331",
+        "name": "Icon Button",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5431:76756",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "SMART_ANIMATE",
+            "easing": {
+              "type": "EASE_IN"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "5431:76756",
+    "name": "History - Page 4",
+    "flow": "History page",
+    "links": [
+      {
+        "id": "5431:76762",
+        "name": "Icon Button",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5431:76969",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "SMART_ANIMATE",
+            "easing": {
+              "type": "EASE_IN"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      },
+      {
+        "id": "I5431:76820;5113:53331",
+        "name": "Icon Button",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5431:76825",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "SMART_ANIMATE",
+            "easing": {
+              "type": "EASE_IN"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "5431:76825",
+    "name": "History - Page 5",
+    "flow": "History page",
+    "links": [
+      {
+        "id": "I5431:76827;5131:35069",
+        "name": "Hunt",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "6123:92190",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "DISSOLVE",
+            "easing": {
+              "type": "EASE_IN"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      },
+      {
+        "id": "5431:76831",
+        "name": "Icon Button",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5431:76969",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "SMART_ANIMATE",
+            "easing": {
+              "type": "EASE_IN"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "5431:76903",
+    "name": "History - Page 1",
+    "flow": "History page",
+    "links": [
+      {
+        "id": "5431:76909",
+        "name": "Icon Button",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5431:76969",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "SMART_ANIMATE",
+            "easing": {
+              "type": "EASE_IN"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      },
+      {
+        "id": "I5431:76967;5113:53293",
+        "name": "Icon Button",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5431:76618",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "SMART_ANIMATE",
+            "easing": {
+              "type": "EASE_IN"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "5431:76998",
+    "name": "Quick Info",
+    "flow": "Info + Architec Page",
+    "links": [
+      {
+        "id": "I5431:77003;5415:24229",
+        "name": "Icon Button",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5431:76969",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "SMART_ANIMATE",
+            "easing": {
+              "type": "EASE_IN"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "5431:77079",
+    "name": "Architect - Page 1",
+    "flow": "Info + Architec Page",
+    "links": [
+      {
+        "id": "I5431:77084;5415:24229",
+        "name": "Icon Button",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5431:76969",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "DISSOLVE",
+            "easing": {
+              "type": "EASE_IN"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "5431:77200",
+    "name": "Artifact",
+    "flow": "Artifact page",
+    "links": [
+      {
+        "id": "I5431:77205;5415:24229",
+        "name": "Icon Button",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5431:76969",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "DISSOLVE",
+            "easing": {
+              "type": "EASE_IN"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      },
+      {
+        "id": "5431:77209",
+        "name": "Artifact Card",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5798:56365",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "SMART_ANIMATE",
+            "easing": {
+              "type": "EASE_IN"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "5431:77278",
+    "name": "Mascot guide 2",
+    "flow": "Artifact page",
+    "links": [
+      {
+        "id": "5431:77278",
+        "name": "Mascot guide 2",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5431:77200",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "SMART_ANIMATE",
+            "easing": {
+              "type": "EASE_IN"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "5798:55728",
+    "name": "Mascot guide + Animate",
+    "flow": "Artifact page",
+    "links": [
+      {
+        "id": "5798:55728",
+        "name": "Mascot guide + Animate",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5431:77278",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "SMART_ANIMATE",
+            "easing": {
+              "type": "EASE_IN"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "5798:56365",
+    "name": "Mascot guide",
+    "flow": "Artifact page",
+    "links": [
+      {
+        "id": "5798:56365",
+        "name": "Mascot guide",
+        "t": {
+          "type": "AFTER_TIMEOUT",
+          "timeout": 0.5
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5798:55728",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "SMART_ANIMATE",
+            "easing": {
+              "type": "LINEAR"
+            },
+            "duration": 0.800000011920929
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "5431:72844",
+    "name": "Open Map",
+    "flow": "Main",
+    "links": [
+      {
+        "id": "5833:64282",
+        "name": "Map Button",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5431:72844",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "SMART_ANIMATE",
+            "easing": {
+              "type": "EASE_IN"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      },
+      {
+        "id": "I5431:72857;4568:31692",
+        "name": "Artifact",
+        "t": {
+          "type": "ON_KEY_DOWN",
+          "device": "KEYBOARD",
+          "keyCodes": [
+            32
+          ]
+        },
+        "a": {
+          "type": "NODE",
+          "to": "4568:29953",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "DISSOLVE",
+            "easing": {
+              "type": "EASE_OUT"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      },
+      {
+        "id": "5778:29205",
+        "name": "Icon",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5778:29260",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "DISSOLVE",
+            "easing": {
+              "type": "QUICK"
+            },
+            "duration": 0.744255542755127
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "5782:32892",
+    "name": "Select region 2",
+    "flow": "Main",
+    "links": [
+      {
+        "id": "I5782:32905;4568:31692",
+        "name": "Artifact",
+        "t": {
+          "type": "ON_KEY_DOWN",
+          "device": "KEYBOARD",
+          "keyCodes": [
+            32
+          ]
+        },
+        "a": {
+          "type": "NODE",
+          "to": "4568:29953",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "DISSOLVE",
+            "easing": {
+              "type": "EASE_OUT"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      },
+      {
+        "id": "5782:34020",
+        "name": "Button",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5431:77309",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "SMART_ANIMATE",
+            "easing": {
+              "type": "EASE_IN"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "5778:29260",
+    "name": "Select place",
+    "flow": "Main",
+    "links": [
+      {
+        "id": "5833:64283",
+        "name": "Map Button",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5431:72844",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "SMART_ANIMATE",
+            "easing": {
+              "type": "EASE_IN"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      },
+      {
+        "id": "I5778:29273;4568:31692",
+        "name": "Artifact",
+        "t": {
+          "type": "ON_KEY_DOWN",
+          "device": "KEYBOARD",
+          "keyCodes": [
+            32
+          ]
+        },
+        "a": {
+          "type": "NODE",
+          "to": "4568:29953",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "DISSOLVE",
+            "easing": {
+              "type": "EASE_OUT"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      },
+      {
+        "id": "I5778:29280;5608:71982",
+        "name": "Tag",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5778:29810",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "DISSOLVE",
+            "easing": {
+              "type": "QUICK"
+            },
+            "duration": 0.744255542755127
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "5778:29810",
+    "name": "Select region",
+    "flow": "Main",
+    "links": [
+      {
+        "id": "5833:64281",
+        "name": "Map Button",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5431:72844",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "SMART_ANIMATE",
+            "easing": {
+              "type": "EASE_IN"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      },
+      {
+        "id": "I5778:29823;4568:31692",
+        "name": "Artifact",
+        "t": {
+          "type": "ON_KEY_DOWN",
+          "device": "KEYBOARD",
+          "keyCodes": [
+            32
+          ]
+        },
+        "a": {
+          "type": "NODE",
+          "to": "4568:29953",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "DISSOLVE",
+            "easing": {
+              "type": "EASE_OUT"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      },
+      {
+        "id": "5782:32884",
+        "name": "Button",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5765:80437",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "SMART_ANIMATE",
+            "easing": {
+              "type": "EASE_IN"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "5782:33449",
+    "name": "Open map 2",
+    "flow": "Main",
+    "links": [
+      {
+        "id": "I5782:33462;4568:31692",
+        "name": "Artifact",
+        "t": {
+          "type": "ON_KEY_DOWN",
+          "device": "KEYBOARD",
+          "keyCodes": [
+            32
+          ]
+        },
+        "a": {
+          "type": "NODE",
+          "to": "4568:29953",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "DISSOLVE",
+            "easing": {
+              "type": "EASE_OUT"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      },
+      {
+        "id": "5782:33472",
+        "name": "Tag",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5782:32892",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "DISSOLVE",
+            "easing": {
+              "type": "QUICK"
+            },
+            "duration": 0.744255542755127
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "5431:76969",
+    "name": "Museum details",
+    "flow": "Main",
+    "links": [
+      {
+        "id": "5431:76992",
+        "name": "Button",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5431:76998",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "DISSOLVE",
+            "easing": {
+              "type": "EASE_IN"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      },
+      {
+        "id": "5431:76993",
+        "name": "Button",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5431:76903",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "SMART_ANIMATE",
+            "easing": {
+              "type": "EASE_IN"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      },
+      {
+        "id": "5431:76994",
+        "name": "Button",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5431:77200",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "DISSOLVE",
+            "easing": {
+              "type": "EASE_IN"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      },
+      {
+        "id": "5431:76995",
+        "name": "Button",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5431:77079",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "DISSOLVE",
+            "easing": {
+              "type": "EASE_IN"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "5431:77309",
+    "name": "Museum Page",
+    "flow": "Main",
+    "links": [
+      {
+        "id": "I5431:77322;4568:31692",
+        "name": "Artifact",
+        "t": {
+          "type": "ON_KEY_DOWN",
+          "device": "KEYBOARD",
+          "keyCodes": [
+            32
+          ]
+        },
+        "a": {
+          "type": "NODE",
+          "to": "4568:29953",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "DISSOLVE",
+            "easing": {
+              "type": "EASE_OUT"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      },
+      {
+        "id": "5431:77323",
+        "name": "Museum card",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5431:76969",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "SMART_ANIMATE",
+            "easing": {
+              "type": "EASE_IN"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      },
+      {
+        "id": "5781:32133",
+        "name": "Map Button",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5431:72844",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "SMART_ANIMATE",
+            "easing": {
+              "type": "EASE_IN"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "5765:80437",
+    "name": "Museum Page 2",
+    "flow": "Main",
+    "links": [
+      {
+        "id": "5765:80518",
+        "name": "Avatar",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5782:33449",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "SMART_ANIMATE",
+            "easing": {
+              "type": "EASE_OUT"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "5642:78537",
+    "name": "Artifact details",
+    "flow": "Collection",
+    "links": [
+      {
+        "id": "I5642:78542;5415:24229",
+        "name": "Icon Button",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5675:37564",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "DISSOLVE",
+            "easing": {
+              "type": "EASE_IN"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      },
+      {
+        "id": "5867:109057",
+        "name": "Button",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5802:61396",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "SMART_ANIMATE",
+            "easing": {
+              "type": "EASE_IN"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      },
+      {
+        "id": "5867:109091",
+        "name": "Guide",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5675:36436",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "SMART_ANIMATE",
+            "easing": {
+              "type": "EASE_IN"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "5675:36436",
+    "name": "Artifact details",
+    "flow": "Collection",
+    "links": [
+      {
+        "id": "5675:36436",
+        "name": "Artifact details",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5675:37045",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "SMART_ANIMATE",
+            "easing": {
+              "type": "EASE_IN"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "5802:61396",
+    "name": "Post card",
+    "flow": "Collection",
+    "links": [
+      {
+        "id": "I5802:61511;5415:24248",
+        "name": "Icon Button",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5642:78537",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "SMART_ANIMATE",
+            "easing": {
+              "type": "EASE_IN"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "5675:37045",
+    "name": "Artifact details",
+    "flow": "Collection",
+    "links": [
+      {
+        "id": "5675:37045",
+        "name": "Artifact details",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5642:78537",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "SMART_ANIMATE",
+            "easing": {
+              "type": "EASE_IN"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "5675:37564",
+    "name": "Collection Page",
+    "flow": "Collection",
+    "links": [
+      {
+        "id": "5675:37564",
+        "name": "Collection Page",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5781:30418",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "DISSOLVE",
+            "easing": {
+              "type": "EASE_IN"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "5853:107638",
+    "name": "Mascot guide 2",
+    "flow": "Collection",
+    "links": [
+      {
+        "id": "5853:107638",
+        "name": "Mascot guide 2",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5867:110836",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "SMART_ANIMATE",
+            "easing": {
+              "type": "EASE_IN"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "5853:95894",
+    "name": "Mascot guide 1",
+    "flow": "Collection",
+    "links": [
+      {
+        "id": "5853:95894",
+        "name": "Mascot guide 1",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5853:107638",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "SMART_ANIMATE",
+            "easing": {
+              "type": "EASE_IN"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "5781:30418",
+    "name": "Collection - Full Page",
+    "flow": "Collection",
+    "links": [
+      {
+        "id": "I5781:30421;4568:34183",
+        "name": "Events",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5955:35421",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "DISSOLVE",
+            "easing": {
+              "type": "EASE_IN"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "5867:110836",
+    "name": "Mascot guide 4",
+    "flow": "Collection",
+    "links": [
+      {
+        "id": "6144:32758",
+        "name": "Selection artifact",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5642:78537",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "DISSOLVE",
+            "easing": {
+              "type": "EASE_IN"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "5431:48518",
+    "name": "Name",
+    "flow": "Onboarding",
+    "links": [
+      {
+        "id": "5431:48518",
+        "name": "Name",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5431:48558",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "SMART_ANIMATE",
+            "easing": {
+              "type": "EASE_IN"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "5431:48558",
+    "name": "Typing name",
+    "flow": "Onboarding",
+    "links": [
+      {
+        "id": "5431:48595",
+        "name": "Button",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5431:72658",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "DISSOLVE",
+            "easing": {
+              "type": "EASE_IN"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "5431:72658",
+    "name": "Select Avatar",
+    "flow": "Onboarding",
+    "links": [
+      {
+        "id": "5431:72711",
+        "name": "Avatar",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5431:48666",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "SMART_ANIMATE",
+            "easing": {
+              "type": "EASE_IN"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "5431:48666",
+    "name": "Select 1",
+    "flow": "Onboarding",
+    "links": [
+      {
+        "id": "5431:48719",
+        "name": "Avatar",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5784:34108",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "SMART_ANIMATE",
+            "easing": {
+              "type": "EASE_IN"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "5784:34108",
+    "name": "Select 2",
+    "flow": "Onboarding",
+    "links": [
+      {
+        "id": "5784:34153",
+        "name": "Avatar",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5784:53435",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "SMART_ANIMATE",
+            "easing": {
+              "type": "EASE_IN"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "5784:53435",
+    "name": "Select 3",
+    "flow": "Onboarding",
+    "links": [
+      {
+        "id": "5784:53502",
+        "name": "Button",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5431:74963",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "SMART_ANIMATE",
+            "easing": {
+              "type": "SLOW"
+            },
+            "duration": 1.2501229047775269
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "5431:48734",
+    "name": "Scene 1",
+    "flow": "Onboarding",
+    "links": [
+      {
+        "id": "5431:48734",
+        "name": "Scene 1",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5431:48743",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "SMART_ANIMATE",
+            "easing": {
+              "type": "EASE_IN"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "5431:48737",
+    "name": "Start",
+    "flow": "Onboarding",
+    "links": [
+      {
+        "id": "5431:48737",
+        "name": "Start",
+        "t": {
+          "type": "AFTER_TIMEOUT",
+          "timeout": 0.800000011920929
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5431:48734",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "DISSOLVE",
+            "easing": {
+              "type": "LINEAR"
+            },
+            "duration": 0.6000000238418579
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "5431:48739",
+    "name": "Button appear",
+    "flow": "Onboarding",
+    "links": [
+      {
+        "id": "I5431:48741;5248:50228",
+        "name": "Button",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5431:48737",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "SMART_ANIMATE",
+            "easing": {
+              "type": "EASE_IN"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "5431:55395",
+    "name": "Loading screen",
+    "flow": "Onboarding",
+    "links": [
+      {
+        "id": "5431:55395",
+        "name": "Loading screen",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5431:48739",
+          "nav": "NAVIGATE",
+          "transition": null
+        }
+      }
+    ]
+  },
+  {
+    "id": "5431:48743",
+    "name": "Scene 2",
+    "flow": "Onboarding",
+    "links": [
+      {
+        "id": "5431:48743",
+        "name": "Scene 2",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5431:48746",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "SMART_ANIMATE",
+            "easing": {
+              "type": "EASE_IN"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "5431:48746",
+    "name": "Scene 3",
+    "flow": "Onboarding",
+    "links": [
+      {
+        "id": "5431:48746",
+        "name": "Scene 3",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5431:48766",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "SMART_ANIMATE",
+            "easing": {
+              "type": "EASE_IN"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "5431:48766",
+    "name": "Scene 4",
+    "flow": "Onboarding",
+    "links": [
+      {
+        "id": "5431:48766",
+        "name": "Scene 4",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5431:48798",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "SMART_ANIMATE",
+            "easing": {
+              "type": "EASE_IN"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "5431:48798",
+    "name": "Scene 5",
+    "flow": "Onboarding",
+    "links": [
+      {
+        "id": "5431:48798",
+        "name": "Scene 5",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5431:48801",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "SMART_ANIMATE",
+            "easing": {
+              "type": "EASE_IN"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "5431:48801",
+    "name": "Scene 6",
+    "flow": "Onboarding",
+    "links": [
+      {
+        "id": "5431:48801",
+        "name": "Scene 6",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5431:48518",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "SMART_ANIMATE",
+            "easing": {
+              "type": "SLOW"
+            },
+            "duration": 1.2502009868621826
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "5749:27213",
+    "name": "App screen",
+    "flow": "Onboarding",
+    "links": [
+      {
+        "id": "5749:28479",
+        "name": "App Icon",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5431:55395",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "SMART_ANIMATE",
+            "easing": {
+              "type": "LINEAR"
+            },
+            "duration": 0.4000000059604645
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "6116:37996",
+    "name": "Post card",
+    "flow": "Profile",
+    "links": []
+  },
+  {
+    "id": "5955:35421",
+    "name": "Profile",
+    "flow": "Profile",
+    "links": [
+      {
+        "id": "5955:36015",
+        "name": "Button",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "6113:33517",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "DISSOLVE",
+            "easing": {
+              "type": "EASE_IN"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      },
+      {
+        "id": "6113:33068",
+        "name": "Medal",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "6123:90739",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "DISSOLVE",
+            "easing": {
+              "type": "EASE_IN"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "6123:90739",
+    "name": "Medal info",
+    "flow": "Profile",
+    "links": [
+      {
+        "id": "I6123:92162;5415:24248",
+        "name": "Icon Button",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "5955:35421",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "DISSOLVE",
+            "easing": {
+              "type": "EASE_IN"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "6113:33517",
+    "name": "Profile",
+    "flow": "Profile",
+    "links": [
+      {
+        "id": "6113:34687",
+        "name": "Ticket",
+        "t": {
+          "type": "ON_CLICK"
+        },
+        "a": {
+          "type": "NODE",
+          "to": "6116:37996",
+          "nav": "NAVIGATE",
+          "transition": {
+            "type": "DISSOLVE",
+            "easing": {
+              "type": "EASE_IN"
+            },
+            "duration": 0.30000001192092896
+          }
+        }
+      }
+    ]
+  }
+]

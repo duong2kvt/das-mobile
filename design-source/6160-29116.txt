@@ -1,0 +1,32 @@
+const imgGroup1171277078 = "https://www.figma.com/api/mcp/asset/0c53e5dd-2511-4afb-a4b7-d287b068f081.svg";
+
+type PointerUpProps = {
+  className?: string;
+  state?: "Default";
+};
+
+function PointerUp({ className, state = "Default" }: PointerUpProps) {
+  return (
+    <div className={className || "h-[112px] overflow-clip relative w-[80px]"} data-node-id="6160:29098">
+      <div className="-translate-y-1/2 absolute drop-shadow-[4px_4px_0px_#4f3927] left-0 overflow-clip size-[80px] top-[calc(50%+18px)]" data-node-id="6160:29090" data-name="Icon/Point">
+        <div className="absolute inset-[8.33%_14.47%]" data-node-id="I6160:29090;5765:62751">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgGroup1171277078} />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default function PointerUp1() {
+  return <PointerUp className="relative size-full" />;
+}
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+These styles are contained in the design: Foundation/Neutral/neutral-50: #F4F0ED, Card Shadow/Card shadow 1: Effect(type: DROP_SHADOW, color: #000000E5, offset: (-2, -2), radius: 0, spread: 0); Effect(type: DROP_SHADOW, color: #4F3927, offset: (4, 4), radius: 0, spread: 0); Effect(type: GRAIN, radius: 1).
+The generated code contains image and SVG URL constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These URLs are temporary download sources and expire after 7 days. Download each asset into the project with curl -L, then replace its URL in the generated code with a reference to the downloaded asset. Never use the temporary URLs as runtime image sources.

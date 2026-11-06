@@ -1,0 +1,129 @@
+const imgNote1 = "https://www.figma.com/api/mcp/asset/8155850c-21a5-4145-bb62-e9e28bb45dbd.png";
+const imgImage851 = "https://www.figma.com/api/mcp/asset/d7a76c10-aca3-45d7-a8d8-7220caa58df1.png";
+const imgNote = "https://www.figma.com/api/mcp/asset/36259886-4fc6-423f-910a-bcf9a3be2b4b.svg";
+const imgPattern = "https://www.figma.com/api/mcp/asset/829f51d3-06a5-43b9-889d-cf0caed45bae.svg";
+const imgPattern1 = "https://www.figma.com/api/mcp/asset/8aefd5ec-e163-468d-8325-7f573c8c8fa1.svg";
+const imgPattern2 = "https://www.figma.com/api/mcp/asset/6af03bcc-bc8a-4bab-95d9-8760427286c2.svg";
+const imgPattern3 = "https://www.figma.com/api/mcp/asset/f9d7e69e-7b0d-4b20-9380-ac36b6c9e685.svg";
+const imgRoundedRectangle12 = "https://www.figma.com/api/mcp/asset/b936adbb-dcf7-44ce-a5e4-bbbff36a6762.svg";
+const imgEllipse1 = "https://www.figma.com/api/mcp/asset/fc7b699e-2154-46c5-a757-38a8d9c3b4b7.svg";
+const imgEllipse3 = "https://www.figma.com/api/mcp/asset/efa61dce-ffe5-4d6f-9b24-3b37312d8a36.svg";
+const imgShape10 = "https://www.figma.com/api/mcp/asset/4a962a87-c680-4ca6-a91b-ad42cef9c1b1.svg";
+const imgShape24 = "https://www.figma.com/api/mcp/asset/e5471484-d009-4b80-a1ea-da6340667af2.svg";
+const imgShape9 = "https://www.figma.com/api/mcp/asset/a690aca7-b881-4e7f-97a0-a25c5e6868b5.svg";
+const imgShape11 = "https://www.figma.com/api/mcp/asset/3c9ff77e-d466-42cd-9544-b5613c808fef.svg";
+const imgRibbo = "https://www.figma.com/api/mcp/asset/3fdb7162-e1be-4bc1-bdd3-9e5b5e7a4392.svg";
+
+export default function Popup() {
+  return (
+    <div className="relative size-full" data-node-id="6123:92019" data-name="Popup">
+      <div className="absolute bottom-0 left-0 top-[13.11%] w-[377px]" data-node-id="6123:92020" data-name="note">
+        <div className="absolute inset-[-0.2%_-0.53%_-0.78%_-0.13%]">
+          <img alt="" className="block max-w-none size-full" src={imgNote} />
+        </div>
+      </div>
+      <div className="absolute bottom-[3.05%] content-stretch flex flex-col gap-[48px] items-center justify-center left-0 top-[22.27%] w-[376px]" data-node-id="6123:92021" data-name="Content">
+        <div className="-translate-x-1/2 absolute contents left-[calc(50%-0.48px)] top-[-0.23px]" data-node-id="6123:92022" data-name="Note">
+          <div className="-translate-x-1/2 absolute bottom-[0.13%] left-[calc(50%-0.48px)] top-[-0.11%] w-[353.045px]" data-node-id="6123:92023" data-name="note">
+            <div className="absolute inset-[-0.23%_-0.28%_-0.46%_-0.14%]">
+              <img alt="" className="block max-w-none size-full" height="220.99" src={imgNote1} width="354.545" />
+            </div>
+          </div>
+          <div className="absolute flex h-[24.07px] items-center justify-center left-[18.7px] top-[6.98px] w-[24px]" data-node-id="6123:92024">
+            <div className="flex-none rotate-180">
+              <div className="h-[24.07px] relative w-[24px]" data-name="Pattern">
+                <div className="absolute inset-[-2.08%]">
+                  <img alt="" className="block max-w-none size-full" src={imgPattern} />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="absolute bottom-[7.49px] h-[24.07px] right-[19.3px] w-[24px]" data-node-id="6123:92029" data-name="Pattern">
+            <div className="absolute inset-[-2.08%]">
+              <img alt="" className="block max-w-none size-full" src={imgPattern1} />
+            </div>
+          </div>
+          <div className="absolute flex items-center justify-center right-[19.3px] size-[24px] top-[6.98px]" data-node-id="6123:92034">
+            <div className="-scale-y-100 flex-none">
+              <div className="relative size-[24px]" data-name="Pattern">
+                <div className="absolute inset-[-2.08%]">
+                  <img alt="" className="block max-w-none size-full" src={imgPattern2} />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="absolute bottom-[11.56px] flex items-center justify-center left-[22.7px] size-[24px]" data-node-id="6123:92039">
+            <div className="-scale-y-100 flex-none rotate-180">
+              <div className="relative size-[24px]" data-name="Pattern">
+                <div className="absolute inset-[-2.08%]">
+                  <img alt="" className="block max-w-none size-full" src={imgPattern3} />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="content-stretch flex flex-[1_0_0] flex-col gap-[24px] items-center min-h-px py-[32px] relative w-full" data-node-id="6123:92045" data-name="Layout">
+          <div className="content-stretch flex gap-[16px] items-center justify-center px-[32px] relative shrink-0 w-full" data-node-id="6123:92046">
+            <div className="h-[96px] relative shrink-0 w-[115.2px]" data-node-id="6123:92047" data-name="Medal">
+              <div className="absolute h-[14.081px] left-[8.2px] top-[7.7px] w-[97.652px]" data-node-id="I6123:92047;6113:34764" data-name="Rounded Rectangle 12">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgRoundedRectangle12} />
+              </div>
+              <div className="absolute h-[22.813px] left-[0.95px] top-[3.8px] w-[114.06px]" data-node-id="I6123:92047;6113:34765">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse1} />
+              </div>
+              <div className="absolute h-[22.813px] left-[0.95px] top-[3.79px] w-[114.06px]" data-node-id="I6123:92047;6113:34768">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse3} />
+              </div>
+              <div className="absolute h-[51.326px] left-[24.71px] top-[40.87px] w-[69.387px]" data-node-id="I6123:92047;6113:34773" data-name="Shape 10">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgShape10} />
+              </div>
+              <div className="absolute h-[51.326px] left-[24.71px] top-[40.86px] w-[69.387px]" data-node-id="I6123:92047;6113:34776" data-name="Shape 24">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgShape24} />
+              </div>
+              <div className="absolute h-[84.991px] left-[16.77px] top-[4.54px] w-[80.708px]" data-node-id="I6123:92047;6113:34783" data-name="Shape 9">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgShape9} />
+              </div>
+              <div className="absolute h-[84.991px] left-[16.8px] top-[4.8px] w-[80.708px]" data-node-id="I6123:92047;6113:34788" data-name="Shape 11">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgShape11} />
+              </div>
+              <div className="-translate-x-1/2 -translate-y-1/2 absolute left-[calc(50%+2.8px)] size-[67.2px] top-1/2" data-node-id="I6123:92047;6113:34795" data-name="image 851">
+                <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                  <img alt="" className="absolute left-[1.5%] max-w-none size-[96.43%] top-[1.16%]" src={imgImage851} />
+                </div>
+              </div>
+            </div>
+            <p className="[word-break:break-word] flex-[1_0_0] font-['Inter:Medium_Italic'] font-medium italic leading-[1.4] min-w-px relative text-[#3c2b1e] text-[16px] tracking-[-0.32px]" data-node-id="6123:92048" style={{ fontFeatureSettings: '"cv01" 1, "cv02" 1, "cv03" 1, "cv04" 1, "cv10" 1' }}>
+              “Đây là huy hiệu đặc biệt dành cho nhà khảo cổ lần đầu tiên săn tìm được một cổ vật.”
+            </p>
+          </div>
+          <div className="content-stretch flex gap-[8px] items-center justify-center px-[28px] relative shrink-0 w-[294px]" data-node-id="6123:92049" data-name="Guide">
+            <p className="[word-break:break-word] font-['Inter:Regular'] font-[450] leading-[0] not-italic relative shrink-0 text-[#3c2b1e] text-[0px] text-center tracking-[-0.28px] w-[156px]" data-node-id="6123:92062" style={{ fontFeatureSettings: '"cv01" 1, "cv02" 1, "cv03" 1, "cv04" 1, "cv10" 1' }}>
+              <span className="leading-[20px] text-[14px]">{`Huy hiệu được trao vào `}</span>
+              <span className="font-['Inter:Medium'] font-medium leading-[20px] text-[#8a2921] text-[14px]" style={{ fontFeatureSettings: '"cv01" 1, "cv02" 1, "cv03" 1, "cv04" 1, "cv10" 1' }}>
+                13/06/2025
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="-translate-x-1/2 absolute h-[52px] left-[calc(50%+11px)] top-[5.63px] w-[257px]" data-node-id="6123:92069" data-name="Ribbon">
+        <div className="absolute h-[52px] left-0 top-0 w-[257px]" data-node-id="I6123:92069;5239:46049" data-name="Ribbo">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgRibbo} />
+        </div>
+        <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Young_Display_Bold:Bold'] leading-[normal] left-[calc(50%-0.5px)] not-italic text-[#291d14] text-[20px] text-center top-[calc(50%-13px)] tracking-[-0.6px] whitespace-nowrap" data-node-id="I6123:92069;5239:46106" style={{ fontFeatureSettings: '"cv01" 1, "cv02" 1, "cv03" 1, "cv04" 1, "cv10" 1' }}>
+          Cổ vật đầu tiên
+        </p>
+      </div>
+    </div>
+  );
+}
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+These styles are contained in the design: Foundation/Neutral/neutral-500: #8F6747, Card Shadow/Card shadow: Effect(type: DROP_SHADOW, color: #000000E5, offset: (-2, -2), radius: 0, spread: 0); Effect(type: DROP_SHADOW, color: #4F3927, offset: (2, 2), radius: 0, spread: 0); Effect(type: GRAIN, radius: 0.5), White paper BG/40: #FBFAF9,, Card Shadow/Card shadow 0.5: Effect(type: DROP_SHADOW, color: #000000E5, offset: (-2, -2), radius: 0, spread: 0); Effect(type: DROP_SHADOW, color: #4F3927, offset: (1, 1), radius: 0, spread: 0); Effect(type: GRAIN, radius: 0.5), Blur texture/Blur texture 1: Effect(type: GRAIN, radius: 0.5), Foundation /Red/red-700: #8A2921, Foundation/Red/red-500: #C33A2E, Foundation /Red/red-400: #CF6158, Foundation/Neutral/neutral-900: #3C2B1E, Body/text-Body-Small/normal: Font(family: "Inter", style: Regular, size: 14, weight: 450, lineHeight: 20, letterSpacing: -2), Foundation /Accent/accent-700: #AD9021, Foundation /Accent/accent-600: #DDB92A, Foundation /Accent/accent-400: #F5D558, Foundation/Neutral/neutral-950: #291D14, Fonts/Display/bold: Font(family: "Young Display Bold", style: Bold, size: 20, weight: 700, lineHeight: 100, letterSpacing: -3).
+The generated code contains image and SVG URL constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These URLs are temporary download sources and expire after 7 days. Download each asset into the project with curl -L, then replace its URL in the generated code with a reference to the downloaded asset. Never use the temporary URLs as runtime image sources.

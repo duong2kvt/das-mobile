@@ -1,0 +1,18 @@
+<frame id="5853:95898" name="List" x="15" y="120" width="377" height="691">
+  <frame id="5853:95899" name="Row group" x="34.50032043457031" y="24" width="307.9993591308594" height="576">
+    <frame id="5853:95900" name="Row" x="0" y="0" width="307.9993591308594" height="183.9976348876953">
+      <instance id="5853:95901" name="Stamp" x="0" y="0" width="143.9996795654297" height="183.9976348876953" />
+      <instance id="5853:95902" name="Stamp" x="163.9996795654297" y="0" width="143.9996795654297" height="183.9976348876953" />
+    </frame>
+    <frame id="5853:95903" name="Row" x="0" y="195.9976348876953" width="307.9993591308594" height="183.9976348876953">
+      <instance id="5853:95904" name="Stamp" x="0" y="0" width="143.9996795654297" height="183.9976348876953" />
+      <instance id="5853:95905" name="Stamp" x="163.9996795654297" y="0" width="143.9996795654297" height="183.9976348876953" />
+    </frame>
+    <frame id="5853:95906" name="Row" x="0" y="391.9952697753906" width="307.9993591308594" height="183.9976348876953">
+      <instance id="5853:95907" name="Stamp" x="0" y="0" width="143.9996795654297" height="183.9976348876953" />
+      <instance id="5853:95908" name="Stamp" x="163.9996795654297" y="0" width="143.9996795654297" height="183.9976348876953" />
+    </frame>
+  </frame>
+  <instance id="5853:95909" name="Pagination" x="28.5" y="635" width="320" height="40" />
+</frame>
+IMPORTANT: The design was too large to fit into context with get_design_context. Instead you have received a sparse metadata response, you MUST call get_design_context on the IDs of the sublayers to get the full code. Split up the calls to ensure the sublayers do not also exceed the context limit.
