@@ -22,27 +22,29 @@ jobs:
         run: |
           if [ ! -f package-lock.json ]; then npm install --package-lock-only; fi
           npm ci
-      - name: Prepare source assets
-        run: npm run prepare:design
       - name: Inspect original reward media
         run: |
+          if ! command -v ffmpeg; then sudo apt-get update && sudo apt-get install -y ffmpeg; fi
           mkdir -p public/qa
           for name in reward reward-ticket; do
             ffprobe -v error -show_entries stream=width,height,duration -of json public/assets/$name.mp4 > public/qa/$name.json
             ffmpeg -y -ss 2 -i public/assets/$name.mp4 -frames:v 1 public/qa/$name-before.jpg
             cp public/assets/$name.mp4 public/assets/$name-clean.mp4
           done
+      - name: Prepare source assets
+        run: npm run prepare:design
+      - name: Save durable assets and lockfile to repository
+        if: always()
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add package-lock.json design-source src public/assets public/qa
+          git diff --cached --quiet || git commit -m 'Save locked build, generated source and durable Figma assets'
+          git push
       - name: Verify and build
         run: |
           npm test
           npm run build
-      - name: Save durable assets and lockfile to repository
-        run: |
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add package-lock.json design-source/assets.json src/screens src/catalog.js public/assets public/qa
-          git diff --cached --quiet || git commit -m 'Save locked build, generated source and durable Figma assets'
-          git push
       - name: Install browser for cloud QA
         run: npx playwright install --with-deps chromium
       - name: Check mobile flows and offline app

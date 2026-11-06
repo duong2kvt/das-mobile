@@ -17,14 +17,16 @@ for(const file of files){const raw=await fs.readFile(path.join(dir,file),'utf8')
 }
 const saved=JSON.parse(await fs.readFile('design-source/assets.json','utf8').catch(()=>'{}'));
 const list=[...urls];let cursor=0;
+const failures=[];
 await Promise.all(Array.from({length:5},async()=>{while(cursor<list.length){const url=list[cursor++];if(saved[url]){try{await fs.access(assetDir+'/'+saved[url]);continue;}catch{}}
  const temp=assetDir+'/'+url.split('/').pop();
- await exec('curl',['-f','-L','--retry','4','--retry-delay','2','--max-time','120','-sS',url,'-o',temp]);
- const bytes=await fs.readFile(temp);if(!bytes.length)throw Error('Empty asset '+url);
+ let bytes;for(let attempt=0;attempt<3;attempt++){try{await exec('curl',['-f','-L','--retry','4','--retry-delay','2','--max-time','120','-sS',url,'-o',temp]);bytes=await fs.readFile(temp);if(bytes.length)break;}catch(e){if(attempt===2)console.error(e.message);} }
+ if(!bytes?.length){failures.push(url);continue;}
  const ext=path.extname(temp);const dest=crypto.createHash('sha256').update(bytes).digest('hex').slice(0,24)+ext;
  await fs.rename(temp,assetDir+'/'+dest);saved[url]=dest;
 }}));
 await fs.writeFile('design-source/assets.json',JSON.stringify(saved,null,2));
+if(failures.length)throw Error('Invalid source assets: '+failures.join(', '));
 const bg=sources.get('5431-77309').match(/const imgMuseumPage = "([^"]+)"/)[1];
 const icon=sources.get('5749-27213').match(/const imgLogoapp25 = "([^"]+)"/)[1];
 await fs.copyFile(assetDir+'/'+saved[icon],assetDir+'/app-icon.png');
