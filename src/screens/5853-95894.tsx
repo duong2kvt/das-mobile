@@ -1,0 +1,8 @@
+import Layer0 from './5853-95895';
+import Layer1 from './5853-95896';
+import Layer2 from './5853-95897';
+import Layer3 from './5675-37568';
+import Layer4 from './5853-95910';
+import Layer5 from './5853-96969';
+import Layer6 from './6118-38656';
+export default function ComposedScreen(){return <div data-node-id="5853:95894" style={{position:'relative',width:'100%',height:'100%'}}><img alt="" style={{position:'absolute',inset:0,width:'100%',height:'100%',objectFit:'cover'}} src="/das-mobile/assets/ed63c43039361e656bfb3c22.png"/><div data-node-id="5853:95895" data-name="Group tag" style={{position:'absolute',left:31,top:78,width:344,height:56}}><Layer0/></div><div data-node-id="5853:95896" data-name="Book" style={{position:'absolute',left:-10,top:120,width:445,height:756}}><Layer1/></div><div data-node-id="5853:95897" data-name="Navbar" style={{position:'absolute',left:0,top:827,width:440,height:129}}><Layer2/></div><div data-node-id="5853:95898" data-name="List" style={{position:'absolute',left:15,top:120,width:377,height:691}}><Layer3/></div><div data-node-id="5853:95910" data-name="Linear BG" style={{position:'absolute',left:0,top:76,width:440,height:76}}><Layer4/></div><div data-node-id="5853:96969" data-name="Dimmer" style={{position:'absolute',left:0,top:956,width:440,height:956}}><Layer5/></div><div data-node-id="6118:38656" data-name="Mascot Guide" style={{position:'absolute',left:34,top:497,width:371,height:419}}><Layer6/></div></div>}

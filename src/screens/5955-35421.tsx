@@ -1,0 +1,5 @@
+import Layer0 from './5955-35422';
+import Layer1 from './5955-35423';
+import Layer2 from './5955-35424';
+import Layer3 from './5955-35463';
+export default function ComposedScreen(){return <div data-node-id="5955:35421" style={{position:'relative',width:'100%',height:'100%'}}><img alt="" style={{position:'absolute',inset:0,width:'100%',height:'100%',objectFit:'cover'}} src="/das-mobile/assets/ed63c43039361e656bfb3c22.png"/><div data-node-id="5955:35422" data-name="Book" style={{position:'absolute',left:-10,top:56,width:445,height:820}}><Layer0/></div><div data-node-id="5955:35423" data-name="Navbar" style={{position:'absolute',left:0,top:827,width:440,height:129}}><Layer1/></div><div data-node-id="5955:35424" data-name="Containner" style={{position:'absolute',left:14,top:56,width:380,height:750}}><Layer2/></div><div data-node-id="5955:35463" data-name="Linear BG" style={{position:'absolute',left:0,top:76,width:440,height:76}}><Layer3/></div></div>}

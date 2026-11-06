@@ -1,0 +1,8 @@
+import Layer0 from './6123-90740';
+import Layer1 from './6123-90741';
+import Layer2 from './6123-90742';
+import Layer3 from './6123-90800';
+import Layer4 from './6123-91875';
+import Layer5 from './6123-92019';
+import Layer6 from './6123-92161';
+export default function ComposedScreen(){return <div data-node-id="6123:90739" style={{position:'relative',width:'100%',height:'100%'}}><img alt="" style={{position:'absolute',inset:0,width:'100%',height:'100%',objectFit:'cover'}} src="/das-mobile/assets/ed63c43039361e656bfb3c22.png"/><div data-node-id="6123:90740" data-name="Book" style={{position:'absolute',left:-10,top:56,width:445,height:820}}><Layer0/></div><div data-node-id="6123:90741" data-name="Navbar" style={{position:'absolute',left:0,top:827,width:440,height:129}}><Layer1/></div><div data-node-id="6123:90742" data-name="Containner" style={{position:'absolute',left:14,top:56,width:380,height:750}}><Layer2/></div><div data-node-id="6123:90800" data-name="Linear BG" style={{position:'absolute',left:0,top:76,width:440,height:76}}><Layer3/></div><div data-node-id="6123:91875" data-name="Dimmer" style={{position:'absolute',left:0,top:956,width:440,height:956}}><Layer4/></div><div data-node-id="6123:92019" data-name="Popup" style={{position:'absolute',left:31,top:331,width:377,height:294}}><Layer5/></div><div data-node-id="6123:92161" data-name="Header" style={{position:'absolute',left:0,top:0,width:440,height:144}}><Layer6/></div></div>}
