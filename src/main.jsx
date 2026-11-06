@@ -22,12 +22,12 @@ function App(){
  const spec=byId[screen],Screen=components[screen],isVideo=screen==='5431:48897'||screen==='5853:94667';
  const scale=Math.min(viewport[0]/440,viewport[1]/956,1);
  useEffect(()=>{const onResize=()=>setViewport([innerWidth,innerHeight]);addEventListener('resize',onResize);return()=>removeEventListener('resize',onResize);},[]);
- function navigate(id,t){if(!byId[id]||busy.current||id===screen)return;
+ function navigate(id,t,record=true){if(!byId[id]||busy.current||id===screen)return;
   old.current=new Map();const count={};stage.current?.querySelectorAll('[data-name]').forEach(el=>{const n=el.dataset.name;const key=n+':'+(count[n]=(count[n]||0)+1);const b=el.getBoundingClientRect();if(b.width&&b.height)old.current.set(key,{rect:b,opacity:getComputedStyle(el).opacity});});
-  transition.current=t;historyRef.current.push(screen);setVideoError(false);setVideoActions(false);setScreen(id);setMenu(false);
+  transition.current=t;if(record)historyRef.current.push(screen);setVideoError(false);setVideoActions(false);setScreen(id);setMenu(false);
   const u=new URL(location.href);u.searchParams.delete('flow');u.searchParams.set('screen',id);history.pushState({screen:id},'',u);localStorage.setItem('das-last-screen',id);
  }
- function back(){navigate(historyRef.current.length>1?historyRef.current.at(-2):'5431:77309',{type:'DISSOLVE',duration:.3,easing:{type:'EASE_IN'}});}
+ function back(){navigate(historyRef.current.pop()||'5431:77309',{type:'DISSOLVE',duration:.3,easing:{type:'EASE_IN'}},false);}
  useEffect(()=>{const fn=()=>{const id=initial();if(byId[id])setScreen(id);};addEventListener('popstate',fn);return()=>removeEventListener('popstate',fn);},[]);
  useEffect(()=>{const auto=spec.links.find(l=>l.t.type==='AFTER_TIMEOUT');if(auto){const t=setTimeout(()=>navigate(auto.a.to,auto.a.transition),auto.t.timeout*1000);return()=>clearTimeout(t);}},[screen]);
 
@@ -50,6 +50,7 @@ function App(){
  const rects=regions[screen]||[];
  const clickLinks=links.map(l=>({...l,rect:rects.find(r=>r.id===l.id)}));
  const rootLink=clickLinks.find(l=>l.id===screen);
+ const hasAuthoredBack=clickLinks.some(l=>l.name==='Icon Button'&&l.rect&&l.rect.x<100&&l.rect.y<150&&byId[l.a.to]);
  const videoLink=spec.links.find(l=>l.t.type==='ON_MEDIA_END');
  const nameScreen=screen==='5431:48518'||screen==='5431:48558';
  const hasNav=['Main','Collection','Profile','History page','Info + Architec Page','Artifact page'].includes(spec.flow);
@@ -69,7 +70,7 @@ function App(){
     {screen==='5431:77309'&&<><button className="hotspot" style={{left:13,top:69,width:305,height:261}} aria-label="Bảo tàng Thành phố Hồ Chí Minh" onClick={()=>navigate('5431:76969',{type:'SMART_ANIMATE',duration:.3})}/><button className="hotspot" style={{left:101,top:318,width:292,height:245}} aria-label="Bảo tàng Vũng Tàu" onClick={()=>navigate('5431:76969',{type:'SMART_ANIMATE',duration:.3})}/></>}
     {screen==='5675:37564'&&<button className="hotspot" style={{left:49,top:144,width:144,height:184}} aria-label="Đầu chim phượng" onClick={()=>navigate('5642:78537',{type:'SMART_ANIMATE',duration:.3})}/>}
     {screen==='5781:30418'&&<button className="hotspot" style={{left:49,top:144,width:144,height:184}} aria-label="Đầu chim phượng" onClick={()=>navigate('5642:78537',{type:'SMART_ANIMATE',duration:.3})}/>}
-    {!tutorial&&!rootLink&&!['5431:77309','5955:35421','5675:37564','5781:30418'].includes(screen)&&!isVideo&&<button className="back-hit" aria-label="Quay lại" onClick={back}/>}
+    {!tutorial&&!rootLink&&!hasAuthoredBack&&!['5431:77309','5675:37564','5781:30418'].includes(screen)&&!isVideo&&<button className="back-hit" aria-label="Quay lại" onClick={back}/>}
     {videoError&&<div className="video-error" role="alert">Không tải được video. <button onClick={()=>navigate(videoLink.a.to,videoLink.a.transition)}>Tiếp tục hành trình</button></div>}
     {screen==='5431:48897'&&videoActions&&<div className="reward-actions"><button aria-label="Về bảo tàng" onClick={()=>navigate('5431:77309',{type:'DISSOLVE',duration:.3})}><NeutralButton label="Về bảo tàng"/></button><button aria-label="Xem cổ vật" onClick={()=>navigate('5853:95894',{type:'DISSOLVE',duration:.3})}><AccentButton label="Xem cổ vật"/></button></div>}
    </div>
@@ -78,7 +79,7 @@ function App(){
   {menu&&<aside className="flow-menu"><h1>D.A.S · Truy tìm cổ vật</h1><p>Bản demo tương tác</p>{flows.map(([key,label,id])=><button key={key} onClick={()=>navigate(id,{type:'DISSOLVE',duration:.3})}>{label}</button>)}<small>Nhận diện cổ vật, tài khoản và phần thưởng đang được mô phỏng. Dữ liệu tên chỉ lưu trên thiết bị này.</small><button onClick={()=>setMenu(false)}>Đóng</button></aside>}
  </div>;
 }
-function labelFor(l,s){if(l.name==='App Icon')return'Mở Truy tìm cổ vật';if(l.name==='Map Button')return'Mở bản đồ';if(l.name==='Medal')return'Xem huy hiệu';if(l.name==='Ticket')return'Xem vé';if(l.name==='Button'&&s.flow==='Hunt artifact')return'Chụp cổ vật';if(l.name==='Selection artifact')return'Xem cổ vật đã săn';if(l.name==='Museum card')return'Khám phá bảo tàng';return `${l.name} — ${byId[l.a.to]?.name||'Tiếp tục'}`;}
+function labelFor(l,s){const labels={'5431:48737':'Bắt đầu','5431:74963':'Xác nhận hình đại diện','5431:76998':'Thông tin bảo tàng','5431:76903':'Lịch sử bảo tàng','5431:77200':'Khám phá cổ vật','5431:77079':'Kiến trúc bảo tàng','6113:33517':'Vé của tôi','5802:61396':'Xem bưu thiếp','6116:37996':'Xem vé tham quan','5431:77309':'Về bảo tàng','5955:35421':'Về hồ sơ'};if(l.name==='App Icon')return'Mở Truy tìm cổ vật';if(l.name==='Map Button')return'Mở bản đồ';if(l.name==='Medal')return'Xem huy hiệu';if(l.name==='Ticket')return'Xem vé';if(l.name==='Button'&&s.flow==='Hunt artifact')return'Chụp cổ vật';if(l.name==='Selection artifact')return'Xem cổ vật đã săn';if(l.name==='Selection hunt')return'Bắt đầu săn cổ vật';if(l.name==='Museum card')return'Khám phá bảo tàng';if(l.name==='Avatar')return'Chọn hình đại diện';if(l.name==='Guide')return'Nghe giáo sư Zũ';if(labels[l.a.to])return labels[l.a.to];if(l.name==='Icon Button')return'Trang tiếp theo';if(l.name==='Tag'||l.name==='Icon')return'Chọn địa điểm';return'Xem tiếp';}
 createRoot(document.getElementById('root')).render(<App/>);
 if('serviceWorker'in navigator&&import.meta.env.PROD)navigator.serviceWorker.register(import.meta.env.BASE_URL+'sw.js');
 
