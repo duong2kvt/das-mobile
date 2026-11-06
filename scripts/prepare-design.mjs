@@ -36,13 +36,19 @@ await fs.copyFile(assetDir+'/'+saved[icon],assetDir+'/app-icon.png');
 for(const [id,raw]of sources){let code=raw.replace(/https:\/\/www\.figma\.com\/api\/mcp\/asset\/[\w.-]+/g,url=>'/das-mobile/assets/'+saved[url]);
  // Use the project's supported display family and flex syntax, preserving design measurements.
  code=code.replaceAll('flex-[1_0_0]','flex-1').replaceAll('font-[590]','font-semibold');
+ if(id==='5749-27213'){
+  const start=code.indexOf('<div className="bg-[#d8d6cc]');const end=code.indexOf('<div className="h-[15.323px] relative shrink-0 w-full"',start);
+  if(start<0||end<0)throw Error('Contacts icon source slot missing');
+  code=code.slice(0,start)+'<img alt="" width="66" height="66" src="/das-mobile/assets/contacts.svg" data-node-id="I5749:29882;2264:3307;1122:1190"/></div>\n'+code.slice(end);
+ }
+ if(id==='5431-77309')code=code.replace('className="absolute flex h-[244.312px] items-center justify-center left-[22px] top-[559px] w-[291.726px]"','className="absolute h-[226px] left-[22px] top-[577.835px] w-[277px] rotate-[-3.899deg] origin-top-left"');
  await fs.writeFile(`${out}/${id}.tsx`,code+'\n');
 }
 const split=JSON.parse(await fs.readFile(dir+'/split-layers.json','utf8'));
 const aliases={'5853:95898':'5675:37568','5853:107642':'5675:37568','5867:110840':'5675:37568'};
 // Identical locked collection rows are composed from their exact detailed source layers.
 await fs.writeFile(out+'/5675-37568.tsx',`import Row1 from './5675-37570';import Row2 from './5675-37573';import Row3 from './5675-37576';import Pagination from './5675-37579';export default function CollectionList(){return <div style={{position:'relative',width:'100%',height:'100%'}}><div style={{position:'absolute',left:34.5,top:24,width:308,height:576}}>{[Row1,Row2,Row3].map((Row,i)=><div key={i} style={{position:'absolute',left:0,top:i*196,width:308,height:184}}><Row/></div>)}</div><div style={{position:'absolute',left:28.5,top:635,width:320,height:40}}><Pagination/></div></div>}`);
-for(const s of split){const imports=[];const layers=[];for(const [i,c]of s.children.entries()){if(!c.visible)continue;const id=aliases[c.id]||c.id;imports.push(`import Layer${i} from './${id.replace(':','-')}';`);layers.push(`<div data-node-id="${c.id}" data-name="${c.name}" style={{position:'absolute',left:${c.x},top:${c.y},width:${c.width},height:${c.height}}}><Layer${i}/></div>`);}
+for(const s of split){const imports=[];const layers=[];for(const [i,c]of s.children.entries()){if(!c.visible)continue;const id=aliases[c.id]||c.id;const flipped=['Linear BG','Dimmer'].includes(c.name);imports.push(`import Layer${i} from './${id.replace(':','-')}';`);layers.push(`<div data-node-id="${c.id}" data-name="${c.name}" style={{position:'absolute',left:${c.x},top:${flipped?c.y-c.height:c.y},width:${c.width},height:${c.height},transform:'${flipped?'scaleY(-1)':'none'}'}}><Layer${i}/></div>`);}
  await fs.writeFile(out+'/'+s.id.replace(':','-')+'.tsx',imports.join('\n')+`\nexport default function ComposedScreen(){return <div data-node-id="${s.id}" style={{position:'relative',width:'100%',height:'100%'}}><img alt="" style={{position:'absolute',inset:0,width:'100%',height:'100%',objectFit:'cover'}} src="/das-mobile/assets/${saved[bg]}"/>${layers.join('')}</div>}`);
 }
 const graph=JSON.parse(await fs.readFile(dir+'/flows.json','utf8'));

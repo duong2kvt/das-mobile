@@ -33,7 +33,7 @@ function App(){
 
  // Enhance the imported visual tree only after its lazy module has rendered.
  function enhance(){const root=stage.current;if(!root||last.current===screen||!root.querySelector('[data-node-id]'))return;
-  last.current=screen;const t=transition.current;const duration=motionDuration(t);
+  last.current=screen;const t=transition.current;const duration=t?motionDuration(t):0;
   if(t?.type==='SMART_ANIMATE'&&duration){const count={};root.querySelectorAll('[data-name]').forEach(el=>{const n=el.dataset.name,key=n+':'+(count[n]=(count[n]||0)+1),prev=old.current.get(key);if(!prev)return;const b=el.getBoundingClientRect();if(!b.width||!b.height||!prev.rect.width||!prev.rect.height)return;const dx=(prev.rect.x-b.x)/scale,dy=(prev.rect.y-b.y)/scale;if(Math.abs(dx)+Math.abs(dy)>1&&el.parentElement?.dataset.name!==n)el.animate([{translate:`${dx}px ${dy}px`,opacity:prev.opacity},{translate:'0px 0px',opacity:getComputedStyle(el).opacity}],{duration,easing:easing(t)});});}
   else if(duration)root.animate([{opacity:0},{opacity:1}],{duration,easing:easing(t)});
   // Figma's animated text is exported as overlapping word-state components.
@@ -59,7 +59,7 @@ function App(){
   <main className="device" aria-label="Truy tìm cổ vật" style={{width:440*scale,height:956*scale}}>
    <div className="stage" ref={stage} data-screen={screen} style={{transform:`scale(${scale})`}}>
     <div className="screen-art" onClick={rootLink?()=>goLink(rootLink):undefined}>
-     {isVideo?<video key={screen} data-node-id={screen} className="reward-video" src={`${import.meta.env.BASE_URL}assets/${screen==='5431:48897'?'reward':'reward-ticket'}-clean.mp4`} autoPlay={!reduced()} muted playsInline controls={reduced()} onTimeUpdate={e=>setVideoActions(e.currentTarget.currentTime>=2)} onEnded={()=>navigate(videoLink.a.to,videoLink.a.transition)} onError={()=>setVideoError(true)}/>:<Suspense fallback={<div className="loading" role="status">Đang mở hành trình…</div>}><Screen/></Suspense>}
+     {isVideo?<video key={screen} data-node-id={screen} className="reward-video" autoPlay={!reduced()} muted playsInline controls={reduced()} onTimeUpdate={e=>setVideoActions(e.currentTarget.currentTime>=2)} onEnded={()=>navigate(videoLink.a.to,videoLink.a.transition)} onError={()=>setVideoError(true)}><source src={`${import.meta.env.BASE_URL}assets/${screen==='5431:48897'?'reward':'reward-ticket'}-clean.mp4`} type="video/mp4"/><source src={`${import.meta.env.BASE_URL}assets/${screen==='5431:48897'?'reward':'reward-ticket'}-clean.webm`} type="video/webm"/></video>:<Suspense fallback={<div className="loading" role="status">Đang mở hành trình…</div>}><Screen/></Suspense>}
     </div>
     {rootLink&&!nameScreen&&!isVideo&&<button className="tap-anywhere" aria-label="Tiếp tục" onClick={()=>goLink(rootLink)}/>}
     {clickLinks.filter(l=>l.id!==screen&&l.rect&&byId[l.a.to]).map((l,i)=><button key={i} className="hotspot" data-source={l.id} style={{left:l.rect.x,top:l.rect.y,width:l.rect.w,height:l.rect.h}} aria-label={labelFor(l,spec)} onClick={()=>goLink(l)}/>)}

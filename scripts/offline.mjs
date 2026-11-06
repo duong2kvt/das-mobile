@@ -1,5 +1,6 @@
 import fs from 'node:fs/promises';import path from 'node:path';import crypto from 'node:crypto';
 async function walk(dir){const r=[];for(const e of await fs.readdir(dir,{withFileTypes:true})){const p=path.join(dir,e.name);if(e.isDirectory())r.push(...await walk(p));else r.push(p);}return r;}
-const files=(await walk('dist')).filter(x=>!x.endsWith('.mp4')).map(x=>'./'+x.slice(5).replaceAll('\\','/'));
+const files=(await walk('dist')).filter(x=>!x.endsWith('.mp4')&&!x.endsWith('.webm')).map(x=>'./'+x.slice(5).replaceAll('\\','/'));
 const revision=crypto.createHash('sha256').update(await fs.readFile('dist/index.html')).digest('hex').slice(0,12);
 await fs.writeFile('dist/sw.js',`const CACHE='das-${revision}',FILES=${JSON.stringify(files)};self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(FILES)).then(()=>self.skipWaiting())));self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k.startsWith('das-')&&k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));self.addEventListener('fetch',e=>{if(e.request.method!=='GET'||e.request.headers.has('range'))return;e.respondWith(fetch(e.request).then(r=>{if(r.ok&&new URL(e.request.url).origin===self.location.origin){const copy=r.clone();caches.open(CACHE).then(c=>c.put(e.request,copy));}return r;}).catch(()=>caches.match(e.request).then(r=>r||(e.request.mode==='navigate'?caches.match('./index.html'):Response.error()))));});`);
+
