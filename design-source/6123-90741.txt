@@ -1,12 +1,12 @@
-const imgIcon = "https://www.figma.com/api/mcp/asset/2ae3053d-e09a-4f88-8af2-89d63a17d00b.png";
-const imgArtifactImage = "https://www.figma.com/api/mcp/asset/4c0c1e72-31d4-420f-a217-a452796c4a09.png";
-const imgImage566 = "https://www.figma.com/api/mcp/asset/48503bf3-cbb4-461a-ae51-c211a279b870.png";
-const imgImage726 = "https://www.figma.com/api/mcp/asset/0b2a2d87-54ad-4377-b65e-808a79558e87.png";
-const imgShape = "https://www.figma.com/api/mcp/asset/925ef03f-63c5-4092-9ea8-13ee8d0e6db1.svg";
-const imgShape1 = "https://www.figma.com/api/mcp/asset/75b01781-0516-4ad6-a7b3-cd3cb42a6c13.svg";
-const imgShape2 = "https://www.figma.com/api/mcp/asset/7302a1ca-f0e6-4a27-a081-cb47fca652a7.svg";
-const imgVector = "https://www.figma.com/api/mcp/asset/7f3dbad5-2eb5-435e-b245-ab383e83839a.svg";
-const imgVector1 = "https://www.figma.com/api/mcp/asset/31d3bcb2-38e6-4a37-a480-7930486eb325.svg";
+const imgIcon = "https://www.figma.com/api/mcp/asset/c31a3cae-dc20-4fb8-8e83-63dab8762c5f.png";
+const imgArtifactImage = "https://www.figma.com/api/mcp/asset/4de29ec0-8cc6-4de9-933f-ae35506f0ec7.png";
+const imgImage566 = "https://www.figma.com/api/mcp/asset/de6b5bbd-c910-411d-9e10-433ff629ce96.png";
+const imgImage726 = "https://www.figma.com/api/mcp/asset/ef55bade-ee8b-4eaa-92db-8d4e9cf457db.png";
+const imgShape = "https://www.figma.com/api/mcp/asset/71685958-ceec-46e5-b92b-ca47a57e1751.svg";
+const imgShape1 = "https://www.figma.com/api/mcp/asset/dde66aed-0706-4379-8933-31528e99ab9f.svg";
+const imgShape2 = "https://www.figma.com/api/mcp/asset/2dc120e5-1374-4d70-989a-09eca53d4d1f.svg";
+const imgVector = "https://www.figma.com/api/mcp/asset/dbbf4ee3-b641-4796-91f5-a76b3a460842.svg";
+const imgVector1 = "https://www.figma.com/api/mcp/asset/bf2571f2-a4bd-447f-9317-9058dbfcc52e.svg";
 
 export default function Navbar() {
   return (

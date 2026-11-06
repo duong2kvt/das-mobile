@@ -1,8 +1,8 @@
-const imgMascot13 = "https://www.figma.com/api/mcp/asset/c4d6acee-cab6-4089-a37d-7e1f9311c965.png";
-const imgUnion = "https://www.figma.com/api/mcp/asset/43b736f7-39b0-4a35-89b5-95eb090d6e17.png";
-const imgVector1186 = "https://www.figma.com/api/mcp/asset/deab339f-9f54-49fe-98d5-b647c4c894d2.svg";
-const imgVector1171 = "https://www.figma.com/api/mcp/asset/9db96e0c-2e42-4509-ad4b-68ca747f9f12.svg";
-const imgIconInteract = "https://www.figma.com/api/mcp/asset/d1dfcae4-561b-460e-9cd7-98a23c8f6fb9.svg";
+const imgMascot13 = "https://www.figma.com/api/mcp/asset/c71ebc16-e176-4dbf-b32d-167c0a0acfbf.png";
+const imgUnion = "https://www.figma.com/api/mcp/asset/2dc24476-4934-4aae-87a0-becded0d1a74.png";
+const imgVector1186 = "https://www.figma.com/api/mcp/asset/b7a8d58b-0530-4f17-9b41-d3dafdab40ba.svg";
+const imgVector1171 = "https://www.figma.com/api/mcp/asset/3ce14a7d-6e9b-4f68-9f6e-7fc8f3e96938.svg";
+const imgIconInteract = "https://www.figma.com/api/mcp/asset/02428d55-2df7-4907-b380-56ee7826c195.svg";
 
 type ChucMngDenVauCVtDuTienDaThucVBnRiProps = {
   className?: string;

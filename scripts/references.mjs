@@ -1,0 +1,2 @@
+import fs from 'node:fs/promises';import{execFile}from'node:child_process';import{promisify}from'node:util';const exec=promisify(execFile);await fs.mkdir('public/qa/reference',{recursive:true});const refs=JSON.parse(await fs.readFile('design-source/references.json','utf8'));for(const [id,url]of Object.entries(refs)){const file='public/qa/reference/'+id.replace(':','-')+'.png';try{if((await fs.stat(file)).size>0)continue;}catch{}await exec('curl',['-f','-L','--retry','3','-sS',url,'-o',file]);if(!(await fs.stat(file)).size)throw Error('Empty QA reference '+id);}
+

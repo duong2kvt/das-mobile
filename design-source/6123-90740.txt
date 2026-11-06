@@ -1,4 +1,4 @@
-const imgBook = "https://www.figma.com/api/mcp/asset/31e214da-f49f-47a5-afab-3a9785c38bb4.png";
+const imgBook = "https://www.figma.com/api/mcp/asset/fe459b88-9c0b-496b-be95-e883068f5dc5.png";
 
 export default function Book() {
   return (

@@ -29,6 +29,7 @@ await Promise.all(Array.from({length:5},async()=>{while(cursor<list.length){cons
 }}));
 await fs.writeFile('design-source/assets.json',JSON.stringify(saved,null,2));
 if(failures.length)throw Error('Invalid source assets: '+failures.join(', '));
+for(const file of await fs.readdir(assetDir))if(/^[0-9a-f]{8}-[0-9a-f-]+\.(png|svg)$/.test(file)&&(await fs.stat(assetDir+'/'+file)).size===0)await fs.unlink(assetDir+'/'+file);
 const bg=sources.get('5431-77309').match(/const imgMuseumPage = "([^"]+)"/)[1];
 const icon=sources.get('5749-27213').match(/const imgLogoapp25 = "([^"]+)"/)[1];
 await fs.copyFile(assetDir+'/'+saved[icon],assetDir+'/app-icon.png');

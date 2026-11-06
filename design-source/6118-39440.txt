@@ -1,9 +1,9 @@
-const imgShapes = "https://www.figma.com/api/mcp/asset/bbe72392-6086-45aa-bfbb-11d1a92e0c2e.svg";
-const imgGroup1171277045 = "https://www.figma.com/api/mcp/asset/ea001a13-ad88-4202-a5e6-afa8d759b948.svg";
-const imgTakePhoto = "https://www.figma.com/api/mcp/asset/11a44de7-130a-4a3b-af57-063ac227bd26.png";
-const imgScan = "https://www.figma.com/api/mcp/asset/af4856a8-5349-440f-baa4-73b12aee04aa.svg";
-const imgShapes1 = "https://www.figma.com/api/mcp/asset/3d847b29-8a56-45b9-9a85-81f4b336c5a1.svg";
-const imgGroup1171277046 = "https://www.figma.com/api/mcp/asset/4d17763f-20d2-46b5-8264-3dbd25005664.svg";
+const imgShapes = "https://www.figma.com/api/mcp/asset/0b0ddebd-fcaa-4382-9a3a-98af7715e508.svg";
+const imgGroup1171277045 = "https://www.figma.com/api/mcp/asset/c8fb9979-883e-4e18-aa2b-0c05a06833d3.svg";
+const imgTakePhoto = "https://www.figma.com/api/mcp/asset/4303ee35-98df-4f71-ab6b-394aed8dc162.png";
+const imgScan = "https://www.figma.com/api/mcp/asset/1f43b148-978a-48c3-8354-7d42b1adc418.svg";
+const imgShapes1 = "https://www.figma.com/api/mcp/asset/500e21c5-29e4-467c-90c2-0ecf1e62a27f.svg";
+const imgGroup1171277046 = "https://www.figma.com/api/mcp/asset/a5ee5b50-3776-4460-8f61-e6b9343a0de4.svg";
 
 type IconButtonProps = {
   className?: string;
