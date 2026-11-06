@@ -11,6 +11,7 @@
 [data-screen="5955:35421"] [data-name="Category list"] .whitespace-pre-wrap,[data-screen="6113:33517"] [data-name="Category list"] .whitespace-pre-wrap,[data-screen="6123:90739"] [data-name="Category list"] .whitespace-pre-wrap{white-space:pre}
 [data-node-id="4625:73234"]{white-space:nowrap}
 [data-screen="5749:27213"] [data-name="Label"] p{line-height:15.323px!important}
+.hotspot{z-index:9}
 @media(display-mode:standalone){.flow-menu-button{top:max(12px,env(safe-area-inset-top))}.screen-art [data-name="Navbar"]{padding-bottom:max(28px,env(safe-area-inset-bottom))!important}.nav-hotspots{bottom:max(28px,env(safe-area-inset-bottom))}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
 

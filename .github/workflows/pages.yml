@@ -30,7 +30,7 @@ jobs:
             ffprobe -v error -show_entries stream=width,height,duration -of json public/assets/$name.mp4 > public/qa/$name.json
             ffmpeg -y -ss 2 -i public/assets/$name.mp4 -frames:v 1 public/qa/$name-before.jpg
             if [ "$name" = reward ]; then
-              ffmpeg -y -i public/assets/$name.mp4 -filter_complex "[0:v]split[main][sample];[sample]crop=260:36:398:1364,vflip[patch];[main]drawbox=x=398:y=1444:w=286:h=86:color=0x29251f:t=fill[base];[base][patch]overlay=398:1447:enable='gte(t,1.5)'[clean]" -map '[clean]' -c:v libx264 -crf 18 -preset medium -pix_fmt yuv420p -movflags +faststart -an public/assets/$name-clean.mp4
+              ffmpeg -y -i public/assets/$name.mp4 -filter_complex "[0:v]split[main][sample];[sample]crop=260:36:398:1364,vflip[patch];[main]drawbox=x=398:y=1444:w=286:h=86:color=0x29251f:t=fill[base];[base][patch]overlay=398:1447[clean]" -map '[clean]' -c:v libx264 -crf 18 -preset medium -pix_fmt yuv420p -movflags +faststart -an public/assets/$name-clean.mp4
             else
               ffmpeg -y -i public/assets/$name.mp4 -vf 'drawbox=x=398:y=1444:w=286:h=86:color=0x29251f:t=fill' -c:v libx264 -crf 18 -preset medium -pix_fmt yuv420p -movflags +faststart -an public/assets/$name-clean.mp4
             fi
