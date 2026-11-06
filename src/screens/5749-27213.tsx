@@ -238,29 +238,8 @@ export default function AppScreen() {
             </div>
             <div className="content-stretch flex flex-col gap-[6.567px] items-start relative shrink-0 w-[65.672px]" data-node-id="5749:29882" data-name="App Icon">
               <div className="content-stretch flex flex-col items-start relative rounded-[14.534px] shrink-0 w-full" data-node-id="I5749:29882;2264:3307" data-name="_Icons">
-                <div className="bg-[#d8d6cc] overflow-clip relative rounded-[14.535px] shrink-0 size-[65.672px]" data-node-id="I5749:29882;2264:3307;1122:1190" data-name="Icon">
-                  <SFSymbol>{`Image(systemName: "person.crop.circle")`}</SFSymbol>
-                  <div className="absolute h-[65.672px] left-[53.63px] overflow-clip pointer-events-none top-0 w-[12.04px]" data-node-id="I5749:29882;2264:3307;2413:7806" data-name="Side Bezel">
-                    <div className="absolute h-[16.418px] left-0 top-[49.25px] w-[12.04px]" data-node-id="I5749:29882;2264:3307;2413:7807" data-name="Side Bezel Part">
-                      <div aria-hidden className="absolute bg-[#4cd964] inset-0" />
-                      <div className="absolute inset-0 rounded-[inherit] shadow-[inset_2.189px_2.189px_4.378px_0px_rgba(30,77,11,0.25)]" />
-                    </div>
-                    <div className="absolute h-[16.418px] left-0 top-[32.84px] w-[12.04px]" data-node-id="I5749:29882;2264:3307;2413:7808" data-name="Side Bezel Part">
-                      <div aria-hidden className="absolute bg-[#ff9500] inset-0" />
-                      <div className="absolute inset-0 rounded-[inherit] shadow-[inset_2.189px_2.189px_4.378px_0px_rgba(69,45,16,0.25)]" />
-                    </div>
-                    <div className="absolute h-[16.418px] left-0 top-[16.42px] w-[12.04px]" data-node-id="I5749:29882;2264:3307;2413:7809" data-name="Side Bezel Part">
-                      <div aria-hidden className="absolute bg-[#5ac8fa] inset-0" />
-                      <div className="absolute inset-0 rounded-[inherit] shadow-[inset_2.189px_2.189px_4.378px_0px_rgba(74,97,112,0.25)]" />
-                    </div>
-                    <div className="absolute h-[16.418px] left-0 top-0 w-[12.04px]" data-node-id="I5749:29882;2264:3307;2413:7810" data-name="Side Bezel Part">
-                      <div aria-hidden className="absolute bg-[#c4c2ba] inset-0" />
-                      <div className="absolute inset-0 rounded-[inherit] shadow-[inset_2.189px_2.189px_4.378px_0px_rgba(0,0,0,0.25)]" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="h-[15.323px] relative shrink-0 w-full" data-node-id="I5749:29882;2264:3298" data-name="_Label">
+                <img alt="" width="66" height="66" src="/das-mobile/assets/contacts.svg" data-node-id="I5749:29882;2264:3307;1122:1190"/></div>
+<div className="h-[15.323px] relative shrink-0 w-full" data-node-id="I5749:29882;2264:3298" data-name="_Label">
                 <div className="-translate-x-1/2 absolute content-stretch flex gap-[2.189px] items-center justify-center left-[calc(50%+0.16px)] px-[4.378px] top-0 w-[43.781px]" data-node-id="I5749:29882;2264:3298;1899:2493" data-name="Label">
                   <p className="[word-break:break-word] font-['SF_Pro:Regular'] font-normal leading-[normal] max-h-[15.323383092880249px] max-w-[70.04975128173828px] overflow-hidden relative shrink-0 text-[14.38px] text-[color:var(--labels\/primary,white)] text-center text-ellipsis whitespace-nowrap" data-node-id="I5749:29882;2264:3298;1899:2496" style={{ fontVariationSettings: '"wdth" 100' }}>
                     Contacts

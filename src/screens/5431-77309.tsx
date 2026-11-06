@@ -294,7 +294,7 @@ export default function MuseumPage() {
           </div>
         </div>
       </div>
-      <MuseumCard className="absolute flex h-[244.312px] items-center justify-center left-[22px] top-[559px] w-[291.726px]" prop2TextLine />
+      <MuseumCard className="absolute h-[226px] left-[22px] top-[577.835px] w-[277px] rotate-[-3.899deg] origin-top-left" prop2TextLine />
       <div className="absolute flex h-[245.032px] items-center justify-center left-[101px] top-[318px] w-[292.296px]" data-node-id="5431:77324">
         <div className="flex-none rotate-[4.06deg]">
           <div className="h-[226px] relative w-[277px]" data-name="Museum card">
