@@ -29,7 +29,8 @@ jobs:
           for name in reward reward-ticket; do
             ffprobe -v error -show_entries stream=width,height,duration -of json public/assets/$name.mp4 > public/qa/$name.json
             ffmpeg -y -ss 2 -i public/assets/$name.mp4 -frames:v 1 public/qa/$name-before.jpg
-            cp public/assets/$name.mp4 public/assets/$name-clean.mp4
+            ffmpeg -y -i public/assets/$name.mp4 -vf 'drawbox=x=398:y=1444:w=286:h=86:color=0x29251f:t=fill' -c:v libx264 -crf 18 -preset medium -pix_fmt yuv420p -movflags +faststart -an public/assets/$name-clean.mp4
+            ffmpeg -y -ss 2 -i public/assets/$name-clean.mp4 -frames:v 1 public/qa/$name-after.jpg
           done
       - name: Prepare source assets
         run: npm run prepare:design
@@ -43,6 +44,8 @@ jobs:
           git push
       - name: Verify and build
         run: |
+          ffmpeg -y -i public/assets/app-icon.png -vf scale=192:192 public/assets/app-icon-192.png
+          ffmpeg -y -i public/assets/app-icon.png -vf scale=512:512 public/assets/app-icon-512.png
           npm test
           npm run build
       - name: Install browser for cloud QA
@@ -74,3 +77,4 @@ jobs:
       - name: Deploy GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+

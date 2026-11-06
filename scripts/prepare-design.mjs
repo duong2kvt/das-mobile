@@ -10,8 +10,10 @@ await fs.mkdir(out,{recursive:true});await fs.mkdir(assetDir,{recursive:true});
 const files=(await fs.readdir(dir)).filter(f=>f.endsWith('.txt'));
 const sources=new Map();const urls=new Set();
 for(const file of files){const raw=await fs.readFile(path.join(dir,file),'utf8');
- if(!raw.includes('export default function'))continue;
+ if(!raw.includes('export default function')&&!raw.includes('function Button('))continue;
  let code=raw.split('\nSUPER CRITICAL:')[0].trim();
+ if(!code.includes('export default'))code+='\nexport default Button;';
+ if(['5049-41224.txt','5049-41246.txt'].includes(file))code=code.replace('className?: string;','className?: string; label?: string;').replace('Button({ className,','Button({ className, label = "Thông tin",').replace(/\n        Thông tin\n/g,'\n        {label}\n');
  for(const m of code.matchAll(/https:\/\/www\.figma\.com\/api\/mcp\/asset\/[\w.-]+/g))urls.add(m[0]);
  sources.set(file.replace('.txt',''),code);
 }
@@ -20,7 +22,7 @@ const list=[...urls];let cursor=0;
 const failures=[];
 await Promise.all(Array.from({length:5},async()=>{while(cursor<list.length){const url=list[cursor++];if(saved[url]){try{await fs.access(assetDir+'/'+saved[url]);continue;}catch{}}
  const temp=assetDir+'/'+url.split('/').pop();
- let bytes;for(let attempt=0;attempt<3;attempt++){try{await exec('curl',['-f','-L','--retry','4','--retry-delay','2','--max-time','120','-sS',url,'-o',temp]);bytes=await fs.readFile(temp);if(bytes.length)break;}catch(e){if(attempt===2)console.error(e.message);} }
+ let bytes;for(let attempt=0;attempt<4;attempt++){try{await exec('curl',['-f','-L','--retry','4','--retry-delay','2','--max-time','120','-sS',url,'-o',temp]);bytes=await fs.readFile(temp);if(bytes.length)break;}catch(e){if(attempt===3)console.error(e.message);}await new Promise(r=>setTimeout(r,3000));}
  if(!bytes?.length){failures.push(url);continue;}
  const ext=path.extname(temp);const dest=crypto.createHash('sha256').update(bytes).digest('hex').slice(0,24)+ext;
  await fs.rename(temp,assetDir+'/'+dest);saved[url]=dest;
@@ -45,3 +47,4 @@ for(const s of split){const imports=[];const layers=[];for(const [i,c]of s.child
 const graph=JSON.parse(await fs.readFile(dir+'/flows.json','utf8'));
 await fs.writeFile('src/catalog.js',`export const screens=${JSON.stringify(graph)};\nexport const modules={${graph.map(s=>`'${s.id}':()=>import('./screens/${s.id.replace(':','-')}.tsx')`).join(',')}};\n`);
 console.log(`Prepared ${graph.length} screens; ${list.length} source assets, ${new Set(Object.values(saved)).size} local files.`);
+

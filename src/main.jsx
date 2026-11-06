@@ -4,6 +4,8 @@ import {screens,modules} from './catalog';
 import regions from '../design-source/hotspots.json';
 import 'virtual:uno.css';
 import './style.css';
+import NeutralButton from './screens/5049-41224';
+import AccentButton from './screens/5049-41246';
 
 const flows=[['onboarding','Bắt đầu','5749:27213'],['tutorial','Hướng dẫn','5431:74963'],['museum','Bảo tàng','5431:77309'],['scan','Săn cổ vật','6123:92190'],['collection','Bộ sưu tập','5853:95894'],['profile','Hồ sơ','5955:35421']];
 const components=Object.fromEntries(Object.entries(modules).map(([id,load])=>[id,lazy(load)]));
@@ -15,14 +17,14 @@ function easing(t){return ({EASE_IN:'cubic-bezier(.42,0,1,1)',EASE_OUT:'cubic-be
 
 function App(){
  const [screen,setScreen]=useState(initial),[menu,setMenu]=useState(false),[viewport,setViewport]=useState([innerWidth,innerHeight]);
- const [playerName,setPlayerName]=useState(()=>localStorage.getItem('das-name')||''),[videoError,setVideoError]=useState(false);
+ const [playerName,setPlayerName]=useState(()=>localStorage.getItem('das-name')||''),[videoError,setVideoError]=useState(false),[videoActions,setVideoActions]=useState(false);
  const stage=useRef(null),old=useRef(new Map()),transition=useRef(null),busy=useRef(false),historyRef=useRef([]),last=useRef('');
  const spec=byId[screen],Screen=components[screen],isVideo=screen==='5431:48897'||screen==='5853:94667';
  const scale=Math.min(viewport[0]/440,viewport[1]/956,1);
  useEffect(()=>{const onResize=()=>setViewport([innerWidth,innerHeight]);addEventListener('resize',onResize);return()=>removeEventListener('resize',onResize);},[]);
  function navigate(id,t){if(!byId[id]||busy.current||id===screen)return;
   old.current=new Map();const count={};stage.current?.querySelectorAll('[data-name]').forEach(el=>{const n=el.dataset.name;const key=n+':'+(count[n]=(count[n]||0)+1);const b=el.getBoundingClientRect();if(b.width&&b.height)old.current.set(key,{rect:b,opacity:getComputedStyle(el).opacity});});
-  transition.current=t;historyRef.current.push(screen);setVideoError(false);setScreen(id);setMenu(false);
+  transition.current=t;historyRef.current.push(screen);setVideoError(false);setVideoActions(false);setScreen(id);setMenu(false);
   const u=new URL(location.href);u.searchParams.delete('flow');u.searchParams.set('screen',id);history.pushState({screen:id},'',u);localStorage.setItem('das-last-screen',id);
  }
  function back(){navigate(historyRef.current.length>1?historyRef.current.at(-2):'5431:77309',{type:'DISSOLVE',duration:.3,easing:{type:'EASE_IN'}});}
@@ -40,6 +42,7 @@ function App(){
   // Keep device chrome native; keyboard illustrations are replaced by a real input below.
   root.querySelectorAll('[data-name="Keyboard"]').forEach(el=>el.style.display='none');
   root.querySelectorAll('img').forEach(el=>{el.draggable=false;});
+  const name=localStorage.getItem('das-name');if(name){const walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT);let n;while(n=walker.nextNode())if(/Đen [Vv]âu|ĐEN VÂU/.test(n.textContent))n.textContent=n.textContent.replace(/Đen [Vv]âu|ĐEN VÂU/g,name);}
  }
  useLayoutEffect(()=>{last.current='';const root=stage.current;const observer=new MutationObserver(enhance);observer.observe(root,{childList:true,subtree:true});enhance();return()=>observer.disconnect();},[screen]);
 
@@ -56,7 +59,7 @@ function App(){
   <main className="device" aria-label="Truy tìm cổ vật" style={{width:440*scale,height:956*scale}}>
    <div className="stage" ref={stage} data-screen={screen} style={{transform:`scale(${scale})`}}>
     <div className="screen-art" onClick={rootLink?()=>goLink(rootLink):undefined}>
-     {isVideo?<video key={screen} data-node-id={screen} className="reward-video" src={`${import.meta.env.BASE_URL}assets/${screen==='5431:48897'?'reward':'reward-ticket'}-clean.mp4`} autoPlay muted playsInline controls={reduced()} onEnded={()=>navigate(videoLink.a.to,videoLink.a.transition)} onError={()=>setVideoError(true)}/>:<Suspense fallback={<div className="loading" role="status">Đang mở hành trình…</div>}><Screen/></Suspense>}
+     {isVideo?<video key={screen} data-node-id={screen} className="reward-video" src={`${import.meta.env.BASE_URL}assets/${screen==='5431:48897'?'reward':'reward-ticket'}-clean.mp4`} autoPlay={!reduced()} muted playsInline controls={reduced()} onTimeUpdate={e=>setVideoActions(e.currentTarget.currentTime>=2)} onEnded={()=>navigate(videoLink.a.to,videoLink.a.transition)} onError={()=>setVideoError(true)}/>:<Suspense fallback={<div className="loading" role="status">Đang mở hành trình…</div>}><Screen/></Suspense>}
     </div>
     {rootLink&&!nameScreen&&!isVideo&&<button className="tap-anywhere" aria-label="Tiếp tục" onClick={()=>goLink(rootLink)}/>}
     {clickLinks.filter(l=>l.id!==screen&&l.rect&&byId[l.a.to]).map((l,i)=><button key={i} className="hotspot" data-source={l.id} style={{left:l.rect.x,top:l.rect.y,width:l.rect.w,height:l.rect.h}} aria-label={labelFor(l,spec)} onClick={()=>goLink(l)}/>)}
@@ -68,6 +71,7 @@ function App(){
     {screen==='5781:30418'&&<button className="hotspot" style={{left:49,top:144,width:144,height:184}} aria-label="Đầu chim phượng" onClick={()=>navigate('5642:78537',{type:'SMART_ANIMATE',duration:.3})}/>}
     {!tutorial&&!rootLink&&!['5431:77309','5955:35421','5675:37564','5781:30418'].includes(screen)&&!isVideo&&<button className="back-hit" aria-label="Quay lại" onClick={back}/>}
     {videoError&&<div className="video-error" role="alert">Không tải được video. <button onClick={()=>navigate(videoLink.a.to,videoLink.a.transition)}>Tiếp tục hành trình</button></div>}
+    {screen==='5431:48897'&&videoActions&&<div className="reward-actions"><button aria-label="Về bảo tàng" onClick={()=>navigate('5431:77309',{type:'DISSOLVE',duration:.3})}><NeutralButton label="Về bảo tàng"/></button><button aria-label="Xem cổ vật" onClick={()=>navigate('5853:95894',{type:'DISSOLVE',duration:.3})}><AccentButton label="Xem cổ vật"/></button></div>}
    </div>
   </main>
   <button className="flow-menu-button" aria-label="Mở danh sách 6 hành trình" aria-expanded={menu} onClick={()=>setMenu(!menu)}>☰</button>
@@ -77,3 +81,4 @@ function App(){
 function labelFor(l,s){if(l.name==='App Icon')return'Mở Truy tìm cổ vật';if(l.name==='Map Button')return'Mở bản đồ';if(l.name==='Medal')return'Xem huy hiệu';if(l.name==='Ticket')return'Xem vé';if(l.name==='Button'&&s.flow==='Hunt artifact')return'Chụp cổ vật';if(l.name==='Selection artifact')return'Xem cổ vật đã săn';if(l.name==='Museum card')return'Khám phá bảo tàng';return `${l.name} — ${byId[l.a.to]?.name||'Tiếp tục'}`;}
 createRoot(document.getElementById('root')).render(<App/>);
 if('serviceWorker'in navigator&&import.meta.env.PROD)navigator.serviceWorker.register(import.meta.env.BASE_URL+'sw.js');
+
